@@ -1,93 +1,97 @@
 // Top-level state machine for the demo: setup → running → done.
-// All client-side — switches between three views.
+// URL-driven:
+//   /                   → setup
+//   /r/[slug]?phase=running → sim viz playback (auto-advances)
+//   /r/[slug]           → results (the headline + persona panel)
 
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { SavedRun } from "@/lib/runs";
 import { SetupView } from "./setup-view";
 import { SimViz } from "./sim-viz";
 import { Showdown } from "./showdown";
 import { PersonaPanel } from "./persona-panel";
+import { getDemoBrand } from "@/lib/fixtures/demo-brands";
 
 type Phase = "setup" | "running" | "done";
 
-type Props = {
-  runsByBrand: Record<string, SavedRun>;
-  initialPhase?: Phase;
-};
+/* ───────── Entry point (used at /) ───────── */
 
-export function DemoFlow({ runsByBrand, initialPhase = "setup" }: Props) {
-  const [phase, setPhase] = useState<Phase>(initialPhase);
-  const brandIds = Object.keys(runsByBrand);
-  const [activeBrandId, setActiveBrandId] = useState<string>(
-    brandIds[0] ?? "",
+export function DemoSetupEntry() {
+  const router = useRouter();
+  return (
+    <SetupView
+      onRun={({ brandId }) => {
+        const brand = getDemoBrand(brandId);
+        if (!brand) return;
+        router.push(`/r/${brand.slug}?phase=running`);
+      }}
+    />
   );
-  const activeRun: SavedRun | undefined = runsByBrand[activeBrandId];
+}
 
-  if (phase === "setup") {
+/* ───────── Per-run page (used at /r/[slug]) ───────── */
+
+export function DemoRunPage({
+  run,
+  initialPhase,
+  slug,
+}: {
+  run: SavedRun;
+  initialPhase: Phase;
+  slug: string;
+}) {
+  const router = useRouter();
+  const [phase, setPhase] = useState<Phase>(initialPhase);
+
+  if (phase === "running") {
     return (
-      <SetupView
-        defaultBrandId={activeBrandId}
-        onRun={({ brandId }) => {
-          // Switch the active run to the one matching the user's pick
-          if (runsByBrand[brandId]) setActiveBrandId(brandId);
-          setPhase("running");
+      <SimViz
+        run={run}
+        onComplete={() => {
+          setPhase("done");
+          // strip ?phase=running from URL so refresh shows results
+          router.replace(`/r/${slug}`);
         }}
       />
     );
   }
 
-  if (phase === "running") {
-    if (!activeRun) {
-      return <NoRunFallback brandId={activeBrandId} onBack={() => setPhase("setup")} />;
-    }
-    return (
-      <SimViz
-        run={activeRun}
-        onComplete={() => setPhase("done")}
-        onSkip={() => setPhase("done")}
-      />
-    );
-  }
-
   // phase === "done"
-  if (!activeRun) {
-    return <NoRunFallback brandId={activeBrandId} onBack={() => setPhase("setup")} />;
-  }
-  return <Results run={activeRun} onRestart={() => setPhase("setup")} />;
+  return <Results run={run} slug={slug} />;
 }
 
-function Results({
-  run,
-  onRestart,
-}: {
-  run: SavedRun;
-  onRestart: () => void;
-}) {
+/* ───────── Results view ───────── */
+
+function Results({ run, slug }: { run: SavedRun; slug: string }) {
   return (
     <main className="min-h-screen bg-paper">
       <header className="bg-card border-b border-hairline sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-baseline gap-4">
-            <div className="font-display text-2xl font-extrabold tracking-tight text-ink leading-none">
+            <a
+              href="/"
+              className="font-display text-2xl font-extrabold tracking-tight text-ink leading-none hover:opacity-80"
+            >
               INBOX WARS
-            </div>
+            </a>
             <div className="hidden sm:block font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
               · {run.brandName}
             </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <div className="font-mono text-[10px] uppercase tracking-wider text-muted tabular-nums">
               {run.personas.length} customers ·{" "}
               {new Date(run.generatedAt).toLocaleDateString()}
             </div>
-            <button
-              onClick={onRestart}
+            <a
+              href="/"
               className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted hover:text-ink transition-colors"
             >
               ↺ new run
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -99,41 +103,16 @@ function Results({
         <section>
           <PersonaPanel run={run} />
         </section>
-        <footer className="text-center font-mono text-[10px] uppercase tracking-[0.15em] text-muted py-8 border-t border-hairline">
-          simulated · {run.personas.length} stratified llm persona agents ·
-          paired a/b · claude sonnet 4.6
+        <footer className="text-center font-mono text-[10px] uppercase tracking-[0.15em] text-muted py-8 border-t border-hairline space-y-1">
+          <div>
+            simulated · {run.personas.length} stratified llm persona agents ·
+            paired a/b · claude sonnet 4.6
+          </div>
+          <div className="text-muted/60">
+            run /r/{slug} · permalink
+          </div>
         </footer>
       </div>
     </main>
-  );
-}
-
-function NoRunFallback({
-  brandId,
-  onBack,
-}: {
-  brandId: string;
-  onBack: () => void;
-}) {
-  return (
-    <div className="min-h-screen bg-paper flex items-center justify-center p-8">
-      <div className="max-w-md text-center bg-card rounded-md border border-hairline p-8">
-        <div className="font-display text-2xl font-bold tracking-tight text-ink">
-          No cached run for this brand
-        </div>
-        <p className="text-muted mt-3 mb-4 text-sm">
-          Run a fresh simulation first:
-        </p>
-        <pre className="text-left bg-paper border border-hairline rounded-sm px-4 py-3 text-xs font-mono text-ink">
-          pnpm sim --brand={brandId}
-        </pre>
-        <button
-          onClick={onBack}
-          className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-muted hover:text-ink"
-        >
-          ← back to setup
-        </button>
-      </div>
-    </div>
   );
 }

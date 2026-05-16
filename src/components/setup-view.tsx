@@ -1,11 +1,16 @@
 // Setup view — entry of the demo flow.
-// Real fixture data: 3 brands, real emails with real subjects, 9 real competitors.
-// User picks brand + email A + email B → click Run → transitions to sim viz.
+// Real fixture data with REAL email screenshots. Dropdown + chip controls.
 
 "use client";
 
 import { useState } from "react";
-import { DEMO_BRANDS, COMPETITOR_BRANDS, getDemoBrand } from "@/lib/fixtures/demo-brands";
+import {
+  DEMO_BRANDS,
+  AVAILABLE_COMPETITORS,
+  DEFAULT_COMPETITORS,
+  getDemoBrand,
+  type DemoEmailOption,
+} from "@/lib/fixtures/demo-brands";
 
 type Props = {
   defaultBrandId?: string;
@@ -13,16 +18,19 @@ type Props = {
     brandId: string;
     emailAId: string;
     emailBId: string;
+    competitors: string[];
   }) => void;
 };
 
 export function SetupView({ defaultBrandId, onRun }: Props) {
-  const [brandId, setBrandId] = useState<string>(
-    defaultBrandId ?? DEMO_BRANDS[0].id,
-  );
+  const [brandId, setBrandId] = useState(defaultBrandId ?? DEMO_BRANDS[0].id);
   const brand = getDemoBrand(brandId) ?? DEMO_BRANDS[0];
-  const [emailAId, setEmailAId] = useState<string>(brand.defaultA);
-  const [emailBId, setEmailBId] = useState<string>(brand.defaultB);
+  const [emailAId, setEmailAId] = useState(brand.defaultA);
+  const [emailBId, setEmailBId] = useState(brand.defaultB);
+  const [competitors, setCompetitors] = useState<string[]>(DEFAULT_COMPETITORS);
+
+  const emailA = brand.emails.find((e) => e.chatId === emailAId);
+  const emailB = brand.emails.find((e) => e.chatId === emailBId);
 
   const onBrandChange = (id: string) => {
     setBrandId(id);
@@ -33,11 +41,12 @@ export function SetupView({ defaultBrandId, onRun }: Props) {
     }
   };
 
+  const canRun = emailAId && emailBId && emailAId !== emailBId && competitors.length >= 3;
+
   return (
     <div className="min-h-screen bg-paper">
-      {/* Wordmark + run-context strip */}
       <header className="border-b border-hairline bg-card">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
           <div className="font-display text-2xl font-extrabold tracking-tight text-ink leading-none">
             INBOX WARS
           </div>
@@ -47,208 +56,358 @@ export function SetupView({ defaultBrandId, onRun }: Props) {
         </div>
       </header>
 
-      <div className="max-w-5xl mx-auto px-6 py-16 space-y-12">
-        {/* Title block */}
-        <div className="text-center space-y-3">
-          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-            agentic a/b testing for marketing email
-          </div>
-          <h1 className="font-display text-5xl font-extrabold tracking-tight text-ink">
-            Which email should you send?
-          </h1>
-          <p className="text-muted text-base max-w-xl mx-auto leading-relaxed">
-            We&rsquo;ll drop your two candidates into a 100-email inbox alongside real
-            competitor emails, then run 10 LLM persona agents grounded in your
-            actual customer psychographics. See which one wins before you hit send.
-          </p>
-        </div>
+      <div className="max-w-6xl mx-auto px-8 py-16 space-y-12">
+        <h1 className="font-display text-5xl font-extrabold tracking-tight text-ink text-center">
+          Which email should you send?
+        </h1>
 
-        {/* Step 1 — Brand selector */}
-        <Step number="01" label="Pick a brand">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            {DEMO_BRANDS.map((b) => {
-              const selected = b.id === brandId;
-              return (
-                <button
-                  key={b.id}
-                  onClick={() => onBrandChange(b.id)}
-                  className={[
-                    "text-left rounded-md border p-4 transition-all",
-                    selected
-                      ? "border-ink bg-ink text-paper"
-                      : "border-hairline bg-card text-ink hover:border-muted",
-                  ].join(" ")}
-                >
-                  <div className="font-display text-base font-semibold mb-1">
-                    {b.name}
-                  </div>
-                  <div
-                    className={[
-                      "text-xs leading-relaxed",
-                      selected ? "text-paper/70" : "text-muted",
-                    ].join(" ")}
-                  >
-                    {b.blurb}
-                  </div>
-                  <div
-                    className={[
-                      "mt-3 font-mono text-[10px] uppercase tracking-wider",
-                      selected ? "text-paper/60" : "text-muted/70",
-                    ].join(" ")}
-                  >
-                    {b.emails.length} authored emails · {b.category}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </Step>
+        {/* Brand */}
+        <Row label="Brand">
+          <Dropdown
+            value={brandId}
+            onChange={onBrandChange}
+            options={DEMO_BRANDS.map((b) => ({
+              value: b.id,
+              label: b.name,
+              detail: b.blurb,
+            }))}
+          />
+        </Row>
 
-        {/* Step 2 — Pick A vs B */}
-        <Step number="02" label="Choose two emails to test">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <EmailPicker
+        {/* A vs B */}
+        <Row label="A vs B">
+          <div className="grid grid-cols-2 gap-4">
+            <EmailCandidate
               arm="A"
-              brand={brand}
-              value={emailAId}
+              selected={emailAId}
               onChange={setEmailAId}
+              emails={brand.emails}
               other={emailBId}
+              preview={emailA}
             />
-            <EmailPicker
+            <EmailCandidate
               arm="B"
-              brand={brand}
-              value={emailBId}
+              selected={emailBId}
               onChange={setEmailBId}
+              emails={brand.emails}
               other={emailAId}
+              preview={emailB}
             />
           </div>
-        </Step>
+        </Row>
 
-        {/* Step 3 — Competitor preview */}
-        <Step number="03" label="In a 100-email inbox alongside">
-          <div className="rounded-md border border-hairline bg-card px-5 py-4">
-            <div className="flex flex-wrap gap-2">
-              {COMPETITOR_BRANDS.map((name) => (
-                <span
-                  key={name}
-                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-paper border border-hairline font-mono text-[11px] text-ink"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-muted/40" />
-                  {name}
-                </span>
-              ))}
-            </div>
-            <div className="mt-3 text-xs text-muted">
-              Real promotional emails from these brands, scraped from public inboxes
-              — same 99 background emails across both arms.
-            </div>
-          </div>
-        </Step>
+        {/* Inbox / Competitors */}
+        <Row label="Inbox">
+          <InboxBuilder
+            competitors={competitors}
+            setCompetitors={setCompetitors}
+            brand={brand}
+            emailA={emailA}
+            emailB={emailB}
+          />
+        </Row>
 
-        {/* Run button */}
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-2">
           <button
             onClick={() =>
-              onRun({ brandId, emailAId, emailBId })
+              onRun({ brandId, emailAId, emailBId, competitors })
             }
-            disabled={!emailAId || !emailBId || emailAId === emailBId}
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-ink text-paper rounded-md font-display font-semibold text-lg hover:bg-ink/90 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+            disabled={!canRun}
+            className="inline-flex items-center gap-3 px-10 py-4 bg-ink text-paper rounded-md font-display font-semibold text-lg hover:bg-ink/90 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
           >
             Run Simulation
-            <span className="font-mono text-sm opacity-70 group-hover:translate-x-0.5 transition-transform">
-              →
-            </span>
+            <span className="font-mono opacity-60">→</span>
           </button>
-        </div>
-
-        <div className="text-center font-mono text-[10px] uppercase tracking-[0.15em] text-muted">
-          10 persona agents · paired a/b design · claude sonnet 4.6
         </div>
       </div>
     </div>
   );
 }
 
-function Step({
-  number,
+/* ───────────────────────── Row ───────────────────────── */
+
+function Row({
   label,
   children,
 }: {
-  number: string;
   label: string;
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <div className="flex items-baseline gap-3 mb-3">
-        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-          step {number}
-        </span>
-        <h2 className="font-display text-lg font-semibold text-ink">{label}</h2>
+    <section className="grid grid-cols-[120px_1fr] gap-8 items-start">
+      <div className="pt-2 font-mono text-[11px] uppercase tracking-[0.2em] text-muted text-right">
+        {label}
       </div>
-      {children}
+      <div>{children}</div>
+    </section>
+  );
+}
+
+/* ─────────────────────── Dropdown ────────────────────── */
+
+function Dropdown({
+  value,
+  onChange,
+  options,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  options: { value: string; label: string; detail?: string }[];
+}) {
+  const current = options.find((o) => o.value === value);
+  return (
+    <div className="relative">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full appearance-none bg-card border border-hairline rounded-md px-4 py-3 pr-10 font-display text-base font-semibold text-ink hover:border-muted cursor-pointer focus:outline-none focus:border-ink"
+      >
+        {options.map((o) => (
+          <option key={o.value} value={o.value}>
+            {o.label}
+            {o.detail ? ` — ${o.detail}` : ""}
+          </option>
+        ))}
+      </select>
+      <span className="absolute right-4 top-1/2 -translate-y-1/2 font-mono text-muted pointer-events-none">
+        ▾
+      </span>
+      {current?.detail && (
+        <div className="mt-1.5 text-xs text-muted px-1">{current.detail}</div>
+      )}
     </div>
   );
 }
 
-function EmailPicker({
+/* ────────────────────── EmailCandidate ───────────────── */
+
+function EmailCandidate({
   arm,
-  brand,
-  value,
+  selected,
   onChange,
+  emails,
   other,
+  preview,
 }: {
   arm: "A" | "B";
-  brand: ReturnType<typeof getDemoBrand>;
-  value: string;
+  selected: string;
   onChange: (id: string) => void;
+  emails: DemoEmailOption[];
   other: string;
+  preview?: DemoEmailOption;
 }) {
-  if (!brand) return null;
   return (
     <div className="rounded-md border border-hairline bg-card overflow-hidden">
-      <div className="px-4 py-2.5 border-b border-hairline bg-paper flex items-center justify-between">
+      <div className="px-3 py-2 border-b border-hairline bg-paper flex items-center justify-between">
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink">
-          [Candidate {arm}]
+          [{arm}]
         </span>
-        <span className="font-mono text-[10px] text-muted">{brand.name}</span>
+        <select
+          value={selected}
+          onChange={(e) => onChange(e.target.value)}
+          className="appearance-none bg-transparent border-0 font-mono text-xs text-ink cursor-pointer focus:outline-none pr-4"
+        >
+          {emails.map((e) => (
+            <option key={e.chatId} value={e.chatId} disabled={e.chatId === other}>
+              {e.subject}
+            </option>
+          ))}
+        </select>
       </div>
-      <ul className="divide-y divide-hairline">
-        {brand.emails.map((e) => {
-          const isSelected = e.chatId === value;
-          const isOther = e.chatId === other;
-          return (
-            <li key={e.chatId}>
-              <button
-                onClick={() => onChange(e.chatId)}
-                disabled={isOther}
-                className={[
-                  "w-full text-left px-4 py-2.5 flex items-center gap-3 transition-colors",
-                  isSelected
-                    ? "bg-ink text-paper"
-                    : isOther
-                      ? "opacity-30 cursor-not-allowed"
-                      : "hover:bg-paper",
-                ].join(" ")}
-              >
-                <span
-                  className={[
-                    "w-3.5 h-3.5 rounded-full border shrink-0",
-                    isSelected
-                      ? "bg-paper border-paper"
-                      : "border-muted/40",
-                  ].join(" ")}
-                />
-                <span className="text-sm flex-1 truncate">{e.subject}</span>
-                {isOther && (
-                  <span className="font-mono text-[9px] uppercase tracking-wider opacity-60">
-                    in use
-                  </span>
-                )}
-              </button>
-            </li>
-          );
-        })}
+      <div className="p-4">
+        <div className="font-display text-sm font-semibold text-ink leading-snug">
+          {preview?.subject}
+        </div>
+        <div className="text-xs text-muted mt-1 line-clamp-2 leading-snug">
+          {preview?.preheader}
+        </div>
+        {preview?.screenshotUrl ? (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img
+            src={preview.screenshotUrl}
+            alt={preview.subject}
+            className="mt-3 w-full max-h-80 object-cover object-top rounded-sm border border-hairline"
+          />
+        ) : (
+          <div className="mt-3 h-32 rounded-sm border border-hairline bg-paper" />
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────── InboxBuilder (chips + preview) ──────────────── */
+
+function InboxBuilder({
+  competitors,
+  setCompetitors,
+  brand,
+  emailA,
+  emailB,
+}: {
+  competitors: string[];
+  setCompetitors: (next: string[]) => void;
+  brand: { name: string };
+  emailA?: DemoEmailOption;
+  emailB?: DemoEmailOption;
+}) {
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const available = AVAILABLE_COMPETITORS.filter(
+    (c) => !competitors.includes(c),
+  );
+
+  const remove = (c: string) =>
+    setCompetitors(competitors.filter((x) => x !== c));
+  const add = (c: string) => {
+    setCompetitors([...competitors, c]);
+    setPickerOpen(false);
+  };
+
+  return (
+    <div className="space-y-3">
+      {/* Chip row */}
+      <div className="flex flex-wrap items-center gap-2">
+        {competitors.map((c) => (
+          <span
+            key={c}
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-card border border-hairline font-mono text-[11px] text-ink"
+          >
+            {c}
+            <button
+              onClick={() => remove(c)}
+              className="text-muted hover:text-ink text-sm leading-none -mr-0.5"
+              aria-label={`Remove ${c}`}
+            >
+              ×
+            </button>
+          </span>
+        ))}
+        {available.length > 0 && (
+          <div className="relative">
+            <button
+              onClick={() => setPickerOpen(!pickerOpen)}
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-sm border border-dashed border-muted/50 font-mono text-[11px] text-muted hover:text-ink hover:border-ink/40"
+            >
+              + add brand
+            </button>
+            {pickerOpen && (
+              <div className="absolute z-10 mt-1 bg-card border border-hairline rounded-sm shadow-lg overflow-hidden min-w-[180px]">
+                {available.map((c) => (
+                  <button
+                    key={c}
+                    onClick={() => add(c)}
+                    className="block w-full text-left px-3 py-1.5 text-xs hover:bg-paper font-mono text-ink"
+                  >
+                    {c}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        <span className="ml-auto font-mono text-[10px] text-muted tabular-nums">
+          {competitors.length} competitors · 100-email inbox
+        </span>
+      </div>
+
+      {/* Inbox preview */}
+      <InboxPreview
+        brand={brand}
+        emailA={emailA}
+        emailB={emailB}
+        competitors={competitors}
+      />
+    </div>
+  );
+}
+
+function InboxPreview({
+  brand,
+  emailA,
+  emailB,
+  competitors,
+}: {
+  brand: { name: string };
+  emailA?: DemoEmailOption;
+  emailB?: DemoEmailOption;
+  competitors: string[];
+}) {
+  // Build a synthetic preview of the first ~7 rows of a 100-email inbox.
+  // Test emails get a star; competitor rows use generic preheader copy.
+  const rows: Array<{ sender: string; subject: string; preview: string; star?: "A" | "B" }> = [];
+  if (emailA)
+    rows.push({
+      sender: brand.name,
+      subject: emailA.subject,
+      preview: emailA.preheader,
+      star: "A",
+    });
+  if (emailB)
+    rows.push({
+      sender: brand.name,
+      subject: emailB.subject,
+      preview: emailB.preheader,
+      star: "B",
+    });
+  const placeholders: Record<string, { subject: string; preview: string }> = {
+    Rhode: { subject: "ask rhode: Sportwear", preview: "what should I use for hydrocolloid patches?" },
+    Versed: { subject: "A 'Customer for life' SPF", preview: "Lightweight, no white cast, no breakouts." },
+    "Tower 28 Beauty": { subject: "NEW! Lip plumper made for sensitive skin", preview: "All plump, no pain." },
+    Nécessaire: { subject: "NEW! The Hand Wash + The Hand Lotion", preview: "Introducing Skincare for Hands." },
+    "Salt & Stone": { subject: "15% off — anything you want", preview: "Pick two and save." },
+    Tracksmith: { subject: "Match Your Top to the Tempo", preview: "Warmer days incoming, gear up." },
+    Glossier: { subject: "Our community's must-have products", preview: "Fall in love with them today." },
+    Lumin: { subject: "More Routine, Less Guesswork", preview: "Bundles that actually make sense." },
+    Olipop: { subject: "Back For Good: Blackberry Vanilla", preview: "Shop this fan favorite." },
+  };
+  for (const c of competitors.slice(0, 5)) {
+    const p = placeholders[c] ?? { subject: "Promotional email", preview: "Limited time offer this week" };
+    rows.push({ sender: c, subject: p.subject, preview: p.preview });
+  }
+  const remaining = 100 - rows.length;
+
+  return (
+    <div className="rounded-md border border-hairline bg-card overflow-hidden">
+      <div className="px-4 py-2 border-b border-hairline bg-paper flex items-center gap-2">
+        <span className="w-2 h-2 rounded-full bg-red-400/60" />
+        <span className="w-2 h-2 rounded-full bg-yellow-400/60" />
+        <span className="w-2 h-2 rounded-full bg-green-400/60" />
+        <span className="ml-2 font-mono text-[10px] uppercase tracking-wider text-muted">
+          gmail · promotions
+        </span>
+      </div>
+      <ul className="divide-y divide-hairline text-sm">
+        {rows.map((r, i) => (
+          <li
+            key={i}
+            className={[
+              "px-4 py-2.5 flex items-center gap-3",
+              r.star ? "bg-paper/80" : "",
+            ].join(" ")}
+          >
+            <span
+              className={[
+                "w-4 inline-flex justify-center font-mono text-xs",
+                r.star ? "text-ink" : "text-transparent",
+              ].join(" ")}
+            >
+              {r.star ? "★" : "·"}
+            </span>
+            <span className="w-32 truncate font-semibold text-ink">{r.sender}</span>
+            <span className="flex-1 min-w-0 truncate text-ink">
+              <span className="font-medium">{r.subject}</span>
+              <span className="text-muted"> — {r.preview}</span>
+            </span>
+            {r.star && (
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink shrink-0">
+                [{r.star}]
+              </span>
+            )}
+          </li>
+        ))}
+        <li className="px-4 py-2 text-xs text-muted text-center">
+          + {remaining} more emails
+        </li>
       </ul>
     </div>
   );

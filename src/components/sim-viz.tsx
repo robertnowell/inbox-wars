@@ -21,11 +21,9 @@ type Phase = "opens" | "clicks" | "purchases";
 export function SimViz({
   run,
   onComplete,
-  onSkip,
 }: {
   run: SavedRun;
   onComplete: () => void;
-  onSkip: () => void;
 }) {
   const [elapsed, setElapsed] = useState(0);
 
@@ -74,12 +72,9 @@ export function SimViz({
               />
             </div>
           </div>
-          <button
-            onClick={onSkip}
-            className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted hover:text-ink transition-colors"
-          >
-            skip →
-          </button>
+          <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted tabular-nums">
+            {Math.round(progress * 100)}%
+          </div>
         </div>
       </header>
 

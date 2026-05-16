@@ -41,5 +41,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# local simulation runs (not source of truth)
-/runs
+# local simulation runs (not source of truth) — EXCEPT the brand-pointer
+# fixtures, which we commit so /r/[slug] URLs work for everyone on clone.
+/runs/*
+!/runs/brand-*.json
