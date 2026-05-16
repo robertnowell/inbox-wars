@@ -216,9 +216,15 @@ export async function getEmailFromChat(chatId: string): Promise<Email> {
   };
 }
 
-/** Fetch products by their UUIDs (for resolving purchase rows in UI). */
+/** Fetch products by their UUIDs (for resolving purchase rows in UI).
+ *  Normalizes unicode dashes (–, —, ‐) → ASCII hyphen (-) since Claude
+ *  sometimes types these in narrative outputs and they break UUID parsing. */
 export async function getProductsByIds(ids: string[]): Promise<Product[]> {
   if (ids.length === 0) return [];
+  const normalized = ids
+    .map((id) => id.replace(/[‐-―−]/g, "-"))
+    .filter((id) => /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id));
+  if (normalized.length === 0) return [];
   const rows = await sql<
     Array<{
       id: string;
@@ -231,7 +237,7 @@ export async function getProductsByIds(ids: string[]): Promise<Product[]> {
   >`
     SELECT id, brand_id, title, description, price_cents, thumbnail_url
     FROM brand_products
-    WHERE id = ANY(${ids}::uuid[])
+    WHERE id = ANY(${normalized}::uuid[])
   `;
   return rows.map((r) => ({
     id: r.id,

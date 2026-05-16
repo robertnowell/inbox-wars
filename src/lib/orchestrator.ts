@@ -51,18 +51,17 @@ export async function runOneAgent(args: {
   persona: Persona;
   arm: Arm;
   candidateEmailId: string;
-  inbox: Email[]; // candidate email + background emails (100 total in prod, fewer for dev)
+  inbox: Email[]; // pre-shuffled by the pair-runner; this function does NOT shuffle again
   productsByBrand?: Map<string, Product>; // inline fallback for non-kopi brands; embedding search is primary
   productsPerEmail?: number; // top-N most relevant products per clicked email (default 3)
 }): Promise<AgentRunResult> {
   const { persona, arm, candidateEmailId, inbox, productsByBrand, productsPerEmail = 3 } = args;
 
-  // Round 1: shuffle per-agent for position-bias control.
-  // Capture the shuffled order so the UI can render the inbox in the SAME order
-  // the agent actually saw — otherwise "the candidate is always #1" is misleading.
-  const shuffledInbox = shuffled(inbox);
-  const inboxOrder = shuffledInbox.map((e) => e.id);
-  const r1 = await runOpenRound(persona, shuffledInbox);
+  // Round 1: inbox already arrives in the agent's display order
+  // (shuffled by the pair-runner so that both arms of the same persona see the
+  // SAME background-email order with only the candidate slot differing).
+  const inboxOrder = inbox.map((e) => e.id);
+  const r1 = await runOpenRound(persona, inbox);
 
   // Round 2: only the opened emails, shuffled again
   const openedEmails = r1.opens
@@ -143,16 +142,33 @@ export async function runPairedSimulation(
     onProgress,
   } = args;
 
-  // Build the two inboxes (identical background, different candidate slot)
-  const inboxA = [candidateA, ...backgroundEmails];
-  const inboxB = [candidateB, ...backgroundEmails];
-
-  // Paired jobs: every persona runs both arms
-  const jobs: Array<{ persona: Persona; arm: Arm; inbox: Email[]; candidateEmailId: string }> =
-    personas.flatMap((persona) => [
+  // For each persona, shuffle the background emails ONCE and pick ONE slot
+  // for the candidate. Both arms of this persona use that same shuffle + slot,
+  // so the only difference between arm A and arm B is the candidate email content.
+  // This is the cleanest experimental control: isolates the variable.
+  const jobs: Array<{
+    persona: Persona;
+    arm: Arm;
+    inbox: Email[];
+    candidateEmailId: string;
+  }> = personas.flatMap((persona) => {
+    const bgShuffled = shuffled(backgroundEmails);
+    const slotIdx = Math.floor(Math.random() * (bgShuffled.length + 1));
+    const inboxA = [
+      ...bgShuffled.slice(0, slotIdx),
+      candidateA,
+      ...bgShuffled.slice(slotIdx),
+    ];
+    const inboxB = [
+      ...bgShuffled.slice(0, slotIdx),
+      candidateB,
+      ...bgShuffled.slice(slotIdx),
+    ];
+    return [
       { persona, arm: "A" as const, inbox: inboxA, candidateEmailId: candidateA.id },
       { persona, arm: "B" as const, inbox: inboxB, candidateEmailId: candidateB.id },
-    ]);
+    ];
+  });
 
   let completed = 0;
   const agentRuns = await pMapLimit(jobs, concurrency, async (job) => {
