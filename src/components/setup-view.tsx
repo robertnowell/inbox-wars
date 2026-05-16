@@ -214,7 +214,7 @@ function ArchetypeCard({
           &ldquo;{archetype.summary}&rdquo;
         </p>
         <div className="mt-2 font-mono text-[10px] uppercase tracking-wider text-muted">
-          all 10 simulated customers below are sampled from this archetype
+          10 distinct customers will be sampled from this archetype for the test
         </div>
       </div>
     </div>
