@@ -1,7 +1,8 @@
 {
-  "name": "kopi-inbox-simulator",
+  "name": "inbox-wars",
   "version": "0.1.0",
   "private": true,
+  "description": "Agentic A/B simulator for marketing email — pick the winning campaign by running 100 LLM persona agents through a realistic inbox of competitor emails before you hit send.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
