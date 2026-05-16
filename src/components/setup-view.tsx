@@ -96,6 +96,12 @@ export function SetupView({ defaultBrandId, onRun }: Props) {
           </div>
         </Row>
 
+        {/* Brand archetype — the iconic customer all 10 simulated personas
+            are sampled from. Concise, evocative, lives just above the inbox. */}
+        <Row label="Customer">
+          <ArchetypeCard archetype={brand.archetype} />
+        </Row>
+
         {/* Inbox / Competitors */}
         <Row label="Inbox">
           <InboxBuilder
@@ -175,6 +181,42 @@ function Dropdown({
       {current?.detail && (
         <div className="mt-1.5 text-xs text-muted px-1">{current.detail}</div>
       )}
+    </div>
+  );
+}
+
+/* ────────────────────── ArchetypeCard ─────────────────── */
+
+function ArchetypeCard({
+  archetype,
+}: {
+  archetype: { title: string; summary: string; imageUrl: string };
+}) {
+  return (
+    <div className="rounded-md border border-hairline bg-card p-4 flex items-start gap-4">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={archetype.imageUrl}
+        alt={archetype.title}
+        className="w-20 h-20 rounded-full object-cover ring-1 ring-hairline shrink-0"
+      />
+      <div className="min-w-0 flex-1">
+        <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted mb-1">
+          archetype
+        </div>
+        <div className="font-display text-lg font-semibold text-ink leading-tight">
+          {archetype.title}
+        </div>
+        <p
+          className="mt-2 text-sm text-ink italic leading-relaxed"
+          style={{ fontFamily: "var(--font-mono)" }}
+        >
+          &ldquo;{archetype.summary}&rdquo;
+        </p>
+        <div className="mt-2 font-mono text-[10px] uppercase tracking-wider text-muted">
+          all 10 simulated customers below are sampled from this archetype
+        </div>
+      </div>
     </div>
   );
 }

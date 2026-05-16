@@ -23,6 +23,14 @@ export type DemoBrand = {
   defaultA: string;
   defaultB: string;
   emails: DemoEmailOption[];
+  // Brand-archetype persona — the "iconic customer" all 10 stratified
+  // simulated personas are sampled from. Shown on the setup page as a
+  // concise, evocative card so the user can see WHO they're testing against.
+  archetype: {
+    title: string; // e.g. "The Quiet Investigator"
+    summary: string; // 1-2 evocative sentences, first-person or third-person
+    imageUrl: string; // public/personas/<id>.png
+  };
 };
 
 export const DEMO_BRANDS: DemoBrand[] = [
@@ -34,6 +42,12 @@ export const DEMO_BRANDS: DemoBrand[] = [
     category: "body care",
     defaultA: "GDjhImfGuo",
     defaultB: "hI30rpIrWp",
+    archetype: {
+      title: "The quiet investigator",
+      summary:
+        "She's 50-something, has tried every deodorant on the shelf, and is tired of perfume that just masks. She wants science with receipts — not vibes.",
+      imageUrl: "/personas/p_51IbVnKs_00_diane_kowalski.png",
+    },
     emails: [
       {
         chatId: "GDjhImfGuo",
@@ -75,6 +89,12 @@ export const DEMO_BRANDS: DemoBrand[] = [
     category: "fitness apparel",
     defaultA: "3JaFCWLn4V",
     defaultB: "Nr2ymsryiP",
+    archetype: {
+      title: "The devoted lifter",
+      summary:
+        "Mid-20s, in the gym five days a week, pays for fabric that won't ride up mid-set. Loyal to brands that respect the work, allergic to anything that smells like 'fitness lifestyle.'",
+      imageUrl: "/personas/p_WbFWZRWK_00_marcus_oduya.png",
+    },
     emails: [
       {
         chatId: "3JaFCWLn4V",
@@ -128,6 +148,12 @@ export const DEMO_BRANDS: DemoBrand[] = [
     category: "considered fashion",
     defaultA: "QRUM1BeYbb",
     defaultB: "C4VwLjZbMa",
+    archetype: {
+      title: "The considered buyer",
+      summary:
+        "Late 30s, capsule-wardrobe believer, reads the materials label. Would rather pay full price for one well-made piece than chase ten discounts on things she doesn't need.",
+      imageUrl: "/personas/p_blrJdldS_00_maya_okonkwo.png",
+    },
     emails: [
       {
         chatId: "QRUM1BeYbb",
