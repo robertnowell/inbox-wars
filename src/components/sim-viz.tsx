@@ -8,6 +8,9 @@
 
 import { useEffect, useState } from "react";
 import type { SavedRun } from "@/lib/runs";
+import { SimVizPhase1 } from "./sim-viz-phase-1";
+import { SimVizPhase2 } from "./sim-viz-phase-2";
+import { SimVizPhase3 } from "./sim-viz-phase-3";
 
 const PHASE_DURATIONS = {
   opens: 30,    // 0–30s
@@ -78,25 +81,20 @@ export function SimViz({
         </div>
       </header>
 
-      {/* Body — placeholder until the phase animations land */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="text-center space-y-3">
-          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-            running simulation · {run.personas.length} agents · {run.brandName}
-          </div>
-          <h1 className="font-display text-4xl font-extrabold tracking-tight text-ink">
-            Phase: {phase}
-          </h1>
-          <p className="text-muted">
-            {phase === "opens" && "Agents glance at their inboxes…"}
-            {phase === "clicks" && "Agents click through on the emails that grabbed them…"}
-            {phase === "purchases" && "Agents make purchase decisions with their $100 budget…"}
-          </p>
-          <div className="font-mono text-xs text-muted/60">
-            {elapsed.toFixed(1)}s / {TOTAL_DURATION}s
-          </div>
-        </div>
-      </div>
+      {/* Body */}
+      {phase === "opens" && <SimVizPhase1 run={run} elapsed={elapsed} />}
+      {phase === "clicks" && (
+        <SimVizPhase2
+          run={run}
+          elapsed={elapsed - PHASE_DURATIONS.opens}
+        />
+      )}
+      {phase === "purchases" && (
+        <SimVizPhase3
+          run={run}
+          elapsed={elapsed - PHASE_DURATIONS.opens - PHASE_DURATIONS.clicks}
+        />
+      )}
     </div>
   );
 }
