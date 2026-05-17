@@ -53,26 +53,24 @@ function Hero() {
         </p>
       </div>
 
-      {/* Demo video — drop the final cut at /public/demo.mp4, or replace
-          this <video> with an <iframe> for YouTube / Loom. */}
+      {/* Demo video — Loom embed */}
       <div className="rounded-lg border border-hairline bg-card overflow-hidden shadow-sm">
         <div className="aspect-video bg-paper">
-          <video
-            controls
-            playsInline
-            preload="metadata"
-            poster="/demo-poster.png"
-            className="w-full h-full object-cover"
-          >
-            <source src="/demo.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            src="https://www.loom.com/embed/dbd94bd61ef348498420a1b52be39b2d"
+            title="Inbox Wars demo"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-full h-full"
+          />
         </div>
         <div className="px-4 py-2 border-t border-hairline flex items-center justify-between">
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-            demo · 3:00
+            demo
           </span>
           <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-            mirai · skincare · paired A/B
+            mirai · body care · paired A/B
           </span>
         </div>
       </div>
