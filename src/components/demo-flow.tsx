@@ -54,8 +54,12 @@ export function DemoRunPage({
         run={run}
         onComplete={() => {
           setPhase("done");
-          // strip ?phase=running from URL so refresh shows results
-          router.replace(`/r/${slug}`);
+          // Strip ?phase=running but PRESERVE ?a= and ?b= so the results page
+          // loads the same cached run the user chose (not the brand default).
+          const params = new URLSearchParams(window.location.search);
+          params.delete("phase");
+          const query = params.toString();
+          router.replace(`/r/${slug}${query ? `?${query}` : ""}`);
         }}
       />
     );
