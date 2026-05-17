@@ -56,6 +56,13 @@ export const DEMO_BRANDS: DemoBrand[] = [
         screenshotUrl: "https://file.rendit.io/n/97afd714980c.png",
       },
       {
+        chatId: "tAmsl9ZJsY",
+        subject: "Your allergies might be telling you something",
+        preheader:
+          "Spring allergies can quietly shift your body's natural scent. Here's what nobody talks about.",
+        screenshotUrl: "https://file.rendit.io/n/60c2a7b3f18f.png",
+      },
+      {
         chatId: "hI30rpIrWp",
         subject: "Facebook Going Crazy Over Persimmon Detergent",
         preheader: "Only U.S. laundry detergent that eliminates Nonenal aging odor.",
