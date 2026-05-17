@@ -89,7 +89,7 @@ function Results({ run, slug }: { run: SavedRun; slug: string }) {
               {new Date(run.generatedAt).toLocaleDateString()}
             </div>
             <a
-              href="/"
+              href="/simulation"
               className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted hover:text-ink transition-colors"
             >
               ↺ new run
