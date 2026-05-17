@@ -339,6 +339,33 @@ export async function getFeaturedProductsForEmail(chatId: string): Promise<Produ
     }));
 }
 
+/**
+ * Pull "products available to buy" for a candidate email:
+ *   1. PRIMARY: mediaPlan.products (author-selected)
+ *   2. FALLBACK: embedding-closest from brand_products
+ * Always returns at least 1 product if the brand has any in the catalog.
+ * Used by the running-viz so each candidate column shows real purchasable products.
+ */
+export async function getProductsForCandidate(
+  email: Email,
+  limit = 2,
+): Promise<Product[]> {
+  try {
+    const featured = await getFeaturedProductsForEmail(email.id);
+    if (featured.length > 0) return featured.slice(0, limit);
+  } catch {
+    // fall through
+  }
+  try {
+    const queryText = `${email.subject}\n${email.preheader ?? ""}\n${email.bodyText ?? ""}`;
+    const semantic = await searchProductsForEmail(email.brandId, queryText, limit);
+    if (semantic.length > 0) return semantic;
+  } catch {
+    // fall through
+  }
+  return [];
+}
+
 // -----------------------------------------------------------------------------
 // Embedding search for products (round-3 FALLBACK input)
 // -----------------------------------------------------------------------------

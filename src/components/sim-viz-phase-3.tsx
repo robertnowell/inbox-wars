@@ -60,10 +60,26 @@ export function SimVizPhase3({
 }) {
   const timeline = useMemo(() => buildBuyTimeline(run), [run]);
 
-  // Real products shown — those that are linked to candidate A's brand
+  // Products surfaced to the agent for each candidate email.
+  // Prefer server-augmented candidateAProducts / candidateBProducts (mediaPlan +
+  // embedding-closest fallback — always ≥1 product per email if the brand has any).
+  // Falls back to productsById (purchases only) for older cached runs.
   const products: Product[] = useMemo(() => {
+    const a = run.candidateAProducts ?? [];
+    const b = run.candidateBProducts ?? [];
+    if (a.length > 0 || b.length > 0) {
+      // De-dup by product id (A and B may share a product if no mediaPlan and embeddings overlap)
+      const seen = new Set<string>();
+      const merged: Product[] = [];
+      for (const p of [...a, ...b]) {
+        if (seen.has(p.id)) continue;
+        seen.add(p.id);
+        merged.push(p);
+      }
+      return merged;
+    }
+    // Legacy fallback: only products that were purchased
     const byId = run.productsById ?? {};
-    // Keep only products from the candidate's brand
     return Object.values(byId).filter(
       (p) => p.brandId === run.candidateA.brandId,
     );

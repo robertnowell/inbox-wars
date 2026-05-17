@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { loadRunForPair } from "@/lib/runs";
 import { getDemoBrandBySlug } from "@/lib/fixtures/demo-brands";
 import { DemoRunPage } from "@/components/demo-flow";
+import { getProductsForCandidate, closeDb } from "@/lib/kopi";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +30,20 @@ export default async function RunPage({
 
   const run = loadRunForPair(brand.id, aId, bId);
   if (!run) notFound();
+
+  // Augment with products available per candidate (mediaPlan + embedding fallback).
+  // Done server-side at request time so we always have ≥1 product per email
+  // without regenerating the cached run JSON.
+  try {
+    const [candidateAProducts, candidateBProducts] = await Promise.all([
+      getProductsForCandidate(run.candidateA, 2),
+      getProductsForCandidate(run.candidateB, 2),
+    ]);
+    run.candidateAProducts = candidateAProducts;
+    run.candidateBProducts = candidateBProducts;
+  } catch {
+    // If DB is unreachable, fall back to whatever was in productsById.
+  }
 
   const phase = sp.phase === "running" ? "running" : "done";
 

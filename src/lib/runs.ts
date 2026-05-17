@@ -30,6 +30,12 @@ export type SavedRun = {
   aggregated: { A: ArmAggregate; B: ArmAggregate };
   productsById: Record<string, Product>; // map of all products the agents could/did buy
   totalCost: SimulationResult["totalCost"];
+  // OPTIONAL: products surfaced to the agent for each candidate email
+  // (mediaPlan.products primary, embedding-closest fallback). Populated
+  // server-side at request time so we can always show ≥1 product per email
+  // in the running viz, without needing to regenerate the cached run.
+  candidateAProducts?: Product[];
+  candidateBProducts?: Product[];
 };
 
 export function saveRun(run: SavedRun): string {
