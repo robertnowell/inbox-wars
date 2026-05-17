@@ -1,9 +1,11 @@
-// Permalink for a specific brand's cached run.
-//   /r/mirai           → results view (the headline + persona panel)
-//   /r/mirai?phase=running → plays the sim viz, then auto-advances to results
+// Permalink for a specific brand's cached run + (optional) A/B pair.
+//   /r/mirai                    → defaults to brand's defaultA / defaultB
+//   /r/mirai?a=<id>&b=<id>      → load the cached run for that exact pair
+//   /r/mirai?phase=running      → play sim viz then advance
+//   /r/mirai?a=...&b=...&phase=running → both
 
 import { notFound } from "next/navigation";
-import { loadRunForBrand } from "@/lib/runs";
+import { loadRunForPair } from "@/lib/runs";
 import { getDemoBrandBySlug } from "@/lib/fixtures/demo-brands";
 import { DemoRunPage } from "@/components/demo-flow";
 
@@ -14,7 +16,7 @@ export default async function RunPage({
   searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ phase?: string }>;
+  searchParams: Promise<{ phase?: string; a?: string; b?: string }>;
 }) {
   const { slug } = await params;
   const sp = await searchParams;
@@ -22,7 +24,10 @@ export default async function RunPage({
   const brand = getDemoBrandBySlug(slug);
   if (!brand) notFound();
 
-  const run = loadRunForBrand(brand.id);
+  const aId = sp.a ?? brand.defaultA;
+  const bId = sp.b ?? brand.defaultB;
+
+  const run = loadRunForPair(brand.id, aId, bId);
   if (!run) notFound();
 
   const phase = sp.phase === "running" ? "running" : "done";

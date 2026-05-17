@@ -61,3 +61,48 @@ export function loadRunForBrand(brandId: string): SavedRun | null {
   if (!fs.existsSync(fp)) return null;
   return JSON.parse(fs.readFileSync(fp, "utf-8")) as SavedRun;
 }
+
+/**
+ * Load the cached run for a specific (A, B) email pair.
+ * Files are stored once per unordered pair (alphabetically sorted IDs).
+ * If user requests reverse order, swap the arm labels at load time.
+ * Falls back to the brand-level cached run if the specific pair isn't found.
+ */
+export function loadRunForPair(
+  brandId: string,
+  emailAId: string,
+  emailBId: string,
+): SavedRun | null {
+  const sorted = [emailAId, emailBId].sort();
+  const key = sorted.join("__");
+  const fp = path.join(RUNS_DIR, `brand-${brandId}__${key}.json`);
+  if (!fs.existsSync(fp)) {
+    return loadRunForBrand(brandId);
+  }
+  const stored = JSON.parse(fs.readFileSync(fp, "utf-8")) as SavedRun;
+  // If user's requested A matches the stored candidateA, serve as-is.
+  if (stored.candidateA.id === emailAId) return stored;
+  // Otherwise, swap arms so what user requested as "A" actually shows as A.
+  return swapArms(stored);
+}
+
+/** Relabel a SavedRun so arm A becomes arm B and vice versa. Inbox order stays. */
+function swapArms(run: SavedRun): SavedRun {
+  return {
+    ...run,
+    candidateA: run.candidateB,
+    candidateB: run.candidateA,
+    aggregated: {
+      A: { ...run.aggregated.B, arm: "A" },
+      B: { ...run.aggregated.A, arm: "B" },
+    },
+    agentRuns: run.agentRuns.map((r) => ({
+      ...r,
+      arm: r.arm === "A" ? "B" : "A",
+      candidateEmailId:
+        r.candidateEmailId === run.candidateA.id
+          ? run.candidateB.id
+          : run.candidateA.id,
+    })),
+  };
+}

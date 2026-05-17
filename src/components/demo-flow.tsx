@@ -23,10 +23,12 @@ export function DemoSetupEntry() {
   const router = useRouter();
   return (
     <SetupView
-      onRun={({ brandId }) => {
+      onRun={({ brandId, emailAId, emailBId }) => {
         const brand = getDemoBrand(brandId);
         if (!brand) return;
-        router.push(`/r/${brand.slug}?phase=running`);
+        const a = emailAId ?? brand.defaultA;
+        const b = emailBId ?? brand.defaultB;
+        router.push(`/r/${brand.slug}?a=${a}&b=${b}&phase=running`);
       }}
     />
   );

@@ -1,0 +1,1258 @@
+{
+  "id": "run_1778980756889_WbFWZRWK__4CmTK6v6Pg__AU0eZUOqW0",
+  "generatedAt": "2026-05-17T01:19:16.889Z",
+  "brandId": "WbFWZRWK5oVrdYoacO29W",
+  "brandName": "Gymshark",
+  "audienceExcerpt": "The Gymshark audience primarily consists of Gen Z and Millennial individuals, aged roughly 18-35, with a balanced gender mix. They have a moderate to high disposable income, allowing them to invest in quality fitness apparel. Geographically, they are global, with a strong presence in urban and suburban areas. Their lifestyle is highly active, revolving around regular gym attendance, weightlifting, bodybuilding, and various fitness disciplines. They value discipline, personal achievement, and sel",
+  "axes": [
+    {
+      "name": "training_identity_depth",
+      "values": [
+        "casual_active",
+        "committed_enthusiast",
+        "competitive_or_semi_pro"
+      ],
+      "rationale": "How central training is to self-identity drives how strongly messaging about performance, durability, and gear-as-self-expression will resonate versus fall flat."
+    },
+    {
+      "name": "purchase_decision_style",
+      "values": [
+        "research_heavy_skeptic",
+        "community_influenced",
+        "intuitive_value_seeker"
+      ],
+      "rationale": "This audience spans distinct decision paths — deep independent research, peer/influencer validation, or gut-feel value judgment — each requiring different email proof points and CTAs."
+    },
+    {
+      "name": "problem_awareness_stage",
+      "values": [
+        "unaware_or_tolerating",
+        "actively_frustrated",
+        "solution_ready"
+      ],
+      "rationale": "Where someone sits on the journey from vague dissatisfaction with current gear to actively seeking a better option determines whether an email should educate, validate, or convert."
+    },
+    {
+      "name": "lifestyle_crossover_priority",
+      "values": [
+        "gym_only_focus",
+        "gym_to_everyday_crossover"
+      ],
+      "rationale": "Whether the customer prioritizes pure performance or also values athleisure versatility shifts which product benefits and visual cues should be foregrounded in the email."
+    }
+  ],
+  "candidateA": {
+    "id": "AU0eZUOqW0",
+    "brandId": "WbFWZRWK5oVrdYoacO29W",
+    "brandName": "Gymshark",
+    "sender": "Gymshark <hello@gymshark.com>",
+    "subject": "Skip the egg hunt. Hit the iron.",
+    "preheader": "Men's stringers and shorts built for the work. Free shipping over $75.",
+    "bodyText": "[Image: Muscular man in a gym with GYMSHARK and IRON OVER EVERYTHING text overlay]\n\n Skip the egg hunt. The barbell won't lift itself.\n\n[Button: \n SHOP MENS\n ]\n\n GEAR UP. GET UNDER THE BAR.\n\n[Image: Man wearing a black sleeveless stringer with red HYBRID GYMSHARK CONDITIONING CLUB text on the back]\n\n STRINGERS — Cut for unrestricted pulls and presses. Zero fabric in your way.\n\n[Button: \n SHOP MENS\n ]\n\n SHORTS — Built to move under heavy load. Full range, every rep.\n\n[Button: \n SHOP MENS\n ]\n\n[Image: Man wearing black athletic shorts with white socks and sneakers in an industrial gym setting]\n\n FREE SHIPPING OVER $75\n\n Standard shipping on us. More iron, less overhead.\n\n[Button: \n SHOP MENS\n ]",
+    "previewScreenshotUrl": "https://file.rendit.io/n/9a6bd978e136.png"
+  },
+  "candidateB": {
+    "id": "4CmTK6v6Pg",
+    "brandId": "WbFWZRWK5oVrdYoacO29W",
+    "brandName": "Gymshark",
+    "sender": "Gymshark <hello@gymshark.com>",
+    "subject": "Gear up for the Gymshark66 challenge.",
+    "preheader": "Shop durable January bestsellers designed to help you perform at your peak.",
+    "bodyText": "[Image: A man with a tattoo on his arm wearing a blue-grey Gymshark t-shirt and black sweatpants against a neutral background. Text reads: YOUR 66-DAY UNIFORM - Durable Fits For the Daily Grind.]\n\n 66 DAYS TO CHANGE YOUR LIFE\n\n The Gymshark66 challenge is here. It takes 66 days to form a habit and transform your routine. Equip yourself for the daily grind with our most durable, top-performing January bestsellers built for maximum output.\n\n[Button: \n SHOP BESTSELLERS\n ]\n\n Protocol: Grind // Active \n\n Elevate The Standard.\n\n Performance without compromise.\n\n Unmatched durability and seamless tech for your daily grind.\n\n[Image: Black Gymshark GS66 T-Shirt with distressed 66 graphic]\n\n Gymshark GS66 T-Shirt - Black\n\n $32.00\n\n[Image: Iron Blue Gymshark GS66 T-Shirt with 66 graphic]\n\n Gymshark GS66 T-Shirt - Iron Blue\n\n $32.00\n\n[Image: Black Gymshark GS66 Jogger with drawcord waist]\n\n Gymshark GS66 Jogger - Black\n\n $50.00\n\n[Button: \n SHOP BESTSELLERS\n ]\n\n[Image: Determined man gripping a barbell in a bustling gym setting, wearing a Gymshark 66 t-shirt.]\n\n Get free standard shipping on orders over $75.\n\n[Button: \n SHOP BESTSELLERS\n ]",
+    "previewScreenshotUrl": "https://file.rendit.io/n/eda0e664cea5.png"
+  },
+  "backgroundEmails": [
+    {
+      "id": "bg_rhode_0",
+      "brandId": "milled-rhode",
+      "brandName": "Rhode",
+      "sender": "Rhode <hello@rhode.com>",
+      "subject": "ask rhode: Spotwear",
+      "preheader": "when should i use a hydrocolloid patch?",
+      "bodyText": "when should i use a hydrocolloid patch?"
+    },
+    {
+      "id": "bg_versed_1",
+      "brandId": "milled-versed",
+      "brandName": "Versed",
+      "sender": "Versed <hello@versed.com>",
+      "subject": "A “Customer for life” SPF",
+      "preheader": "Lightweight, no white cast, no breakouts",
+      "bodyText": "Lightweight, no white cast, no breakouts"
+    },
+    {
+      "id": "bg_tower-28-beauty_2",
+      "brandId": "milled-tower-28-beauty",
+      "brandName": "Tower 28 Beauty",
+      "sender": "Tower 28 Beauty <hello@tower28beauty.com>",
+      "subject": "NEW! Lip plumper made for sensitive skin",
+      "preheader": "All plump, no pain",
+      "bodyText": "All plump, no pain"
+    },
+    {
+      "id": "bg_n-cessaire_3",
+      "brandId": "milled-n-cessaire",
+      "brandName": "Nécessaire",
+      "sender": "Nécessaire <hello@ncessaire.com>",
+      "subject": "NEW! The Hand Wash + The Hand Lotion",
+      "preheader": "Introducing Sinkcare.",
+      "bodyText": "Introducing Sinkcare."
+    },
+    {
+      "id": "bg_salt-stone_4",
+      "brandId": "milled-salt-stone",
+      "brandName": "Salt & Stone",
+      "sender": "Salt & Stone <hello@saltstone.com>",
+      "subject": "15% off—anything you want",
+      "preheader": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team",
+      "bodyText": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team"
+    },
+    {
+      "id": "bg_tracksmith_5",
+      "brandId": "milled-tracksmith",
+      "brandName": "Tracksmith",
+      "sender": "Tracksmith <hello@tracksmith.com>",
+      "subject": "Match Your Top to the Temps",
+      "preheader": "Warmer days incoming…",
+      "bodyText": "Warmer days incoming…"
+    },
+    {
+      "id": "bg_glossier_6",
+      "brandId": "milled-glossier",
+      "brandName": "Glossier",
+      "sender": "Glossier <hello@glossier.com>",
+      "subject": "Our community’s must-have products",
+      "preheader": "fall in love with them today",
+      "bodyText": "fall in love with them today"
+    },
+    {
+      "id": "bg_lumin_7",
+      "brandId": "milled-lumin",
+      "brandName": "Lumin",
+      "sender": "Lumin <hello@lumin.com>",
+      "subject": "More Routine, Less Guesswork",
+      "preheader": "Bundles that actually make sense",
+      "bodyText": "Bundles that actually make sense"
+    },
+    {
+      "id": "bg_olipop_8",
+      "brandId": "milled-olipop",
+      "brandName": "Olipop",
+      "sender": "Olipop <hello@olipop.com>",
+      "subject": "Back for Good: Blackberry Vanilla ✨",
+      "preheader": "Shop this fan-favorite ➡️",
+      "bodyText": "Shop this fan-favorite ➡️"
+    }
+  ],
+  "personas": [
+    {
+      "id": "p_WbFWZRWK_00_marcus_oduya",
+      "name": "Marcus Oduya",
+      "age": 27,
+      "shortBio": "Competitive powerlifter and warehouse logistics coordinator in Chicago who treats his training like a second job.",
+      "longProfile": "I compete in powerlifting at the regional level, which means my training is structured, periodized, and non-negotiable. I'm in the gym five to six days a week, and the gear I wear isn't decoration — it has to actually work under serious load. I've been burned enough times by shorts that blow out at the seam mid-squat, or shirts that ride up and bunch under a belt, that I've gotten very deliberate about what I spend money on. When I get a marketing email for fitness apparel, the first thing I do is ignore the hero image and go straight to the details — fabric composition, stitching construction, size guide, return policy. If those are vague or padded with adjectives, I'm out in ten seconds. I want to see specifics. I'm also cross-referencing Reddit threads and powerlifting forums before I'd ever click 'buy.' The frustration I live with right now is that most brands engineer for the look of performance, not the reality of it. I need stuff that survives repeated max-effort sessions and doesn't degrade after thirty washes. I don't care much about wearing my gym clothes out to brunch — I want tools. I'm willing to pay a real price for real quality, but I need evidence before I trust a brand I haven't heard of.",
+      "stratum": {
+        "training_identity_depth": "competitive_or_semi_pro",
+        "purchase_decision_style": "research_heavy_skeptic",
+        "problem_awareness_stage": "actively_frustrated",
+        "lifestyle_crossover_priority": "gym_only_focus"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_01_priya_nair",
+      "name": "Priya Nair",
+      "age": 24,
+      "shortBio": "Marketing analyst and group fitness regular in London who cares just as much about looking put-together post-gym as during it.",
+      "longProfile": "I go to the gym before work four mornings a week and hit a HIIT class on Saturdays, and honestly it sets the tone for everything else. Training isn't a phase for me — it's part of who I am. But so is showing up to a client meeting or Saturday lunch looking like I have my life together. The problem is that most activewear seems designed for one or the other. Either it's so technical and utilitarian it screams 'I just came from the gym,' or it's cute but falls apart the second you actually sweat hard in it. I've had leggings that pilled after six washes, sports bras that lost their shape, and fabrics that somehow managed to be both stiff and see-through. It's exhausting. When I get fitness apparel emails, the visuals matter a lot — I need to see real bodies in real settings, not just a model in a studio. I take cues heavily from people I follow in the fitness and wellness space online, and from group chats with my gym friends. If someone in my community mentions a brand genuinely, that carries more weight than any email campaign. An email can open the door for me, but peer validation closes the deal. I'm suspicious of anything that leads with a discount — it signals low confidence in the product itself.",
+      "stratum": {
+        "training_identity_depth": "committed_enthusiast",
+        "purchase_decision_style": "community_influenced",
+        "problem_awareness_stage": "actively_frustrated",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_02_jake_sorrento",
+      "name": "Jake Sorrento",
+      "age": 31,
+      "shortBio": "Software engineer and recreational lifter in Austin who shops by gut and spends freely when something feels right.",
+      "longProfile": "I lift four days a week and genuinely love it — it's my decompression from a job that's 90% in my head. I've got a decent income and I don't mind spending on things that improve my day-to-day life, gym gear included. Honestly though, I haven't spent much energy agonizing over my current workout clothes. They're fine. A couple of things fit a bit weird and one pair of shorts has a seam that rubs, but it's not like I'm losing sleep over it. I kind of drift through this category without a strong vendor loyalty — I buy what catches my eye or what seems like a decent deal in the moment. When a marketing email lands well for me, it's usually because the aesthetic feels right immediately — the vibe matches how I see myself. I'm not going to deep-dive into fabric specs. If the copy is confident without being over-the-top, the photography looks real and not overly staged, and the price feels proportionate to what I'm seeing, I'll probably click through. What kills it for me is anything that feels like it's trying too hard — gimmicky subject lines, excessive exclamation points, or that aggressive countdown-timer urgency stuff. I like to feel like I discovered something, not like I was pushed into it.",
+      "stratum": {
+        "training_identity_depth": "committed_enthusiast",
+        "purchase_decision_style": "intuitive_value_seeker",
+        "problem_awareness_stage": "unaware_or_tolerating",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_03_anya_kowalczyk",
+      "name": "Anya Kowalczyk",
+      "age": 22,
+      "shortBio": "Kinesiology student and competitive CrossFit athlete in Warsaw who researches everything before spending a single złoty.",
+      "longProfile": "I'm studying kinesiology and competing in CrossFit at a regional level, so I approach gear the way I approach training — with actual rigor. I'm a student, so every purchase matters. I've done the thing where I bought cheaper activewear to save money and ended up replacing it after three months because the fabric chafed through double-unders or the waistband rolled during box jumps. That cycle of false economy is done for me. I know exactly what I need: something that holds up structurally under complex, varied movement, doesn't shift or bunch, and can handle the volume of washing that comes with training twice a day. I'm not looking to wear my gym kit to a café — I want pure performance. At this point I'm ready to buy; I just need the right option to trust. When I get a marketing email from a brand I don't know, I open it, go directly to the product page, check the material breakdown, read every review I can find — including negative ones — look for any athlete credibility that isn't just paid posts, and then I sit on it for a few days. High-pressure tactics or vague 'premium fabric' language without substance will get me to close the tab. I respond to honesty and technical specificity.",
+      "stratum": {
+        "training_identity_depth": "competitive_or_semi_pro",
+        "purchase_decision_style": "research_heavy_skeptic",
+        "problem_awareness_stage": "solution_ready",
+        "lifestyle_crossover_priority": "gym_only_focus"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_04_deshawn_merritt",
+      "name": "DeShawn Merritt",
+      "age": 29,
+      "shortBio": "Personal trainer and aspiring physique competitor in Atlanta who takes both the mirror and the movement seriously.",
+      "longProfile": "Training is literally my profession and my passion — I coach clients during the day and I'm prepping for my first physique competition. The gym is my office and my sanctuary, and what I wear matters on both fronts. My clients are watching me, and how I carry myself in my gear is part of the brand I'm building as a trainer. I need clothes that move with me through a full day of demonstration reps, look sharp while doing it, and then don't embarrass me if I grab lunch nearby after. The problem I keep running into is that stuff that fits my physique well during training looks awkward outside the gym, and stuff that looks good in lifestyle settings usually has some technical compromise — a fabric that wrinkles weird under load, a cut that restricts overhead movement. I'm tired of the trade-off. I know what I want to spend — I've mapped out a gear budget — I just haven't found the right fit yet. I'm very influenced by what other trainers and athletes I respect are actually wearing, not what they're sponsored to talk about. If something shows up in a marketing email and I recognize genuine credibility signals — real community presence, real reviews, aesthetic that matches my world — I'll follow up. But I sniff out paid endorsements immediately and those kill my trust.",
+      "stratum": {
+        "training_identity_depth": "competitive_or_semi_pro",
+        "purchase_decision_style": "community_influenced",
+        "problem_awareness_stage": "solution_ready",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_05_chloe_hartmann",
+      "name": "Chloe Hartmann",
+      "age": 26,
+      "shortBio": "UX designer and gym regular in Berlin who's slowly getting more serious about lifting and starting to notice her gear isn't keeping up.",
+      "longProfile": "I've been lifting consistently for about two years and I've noticed my commitment has quietly shifted — what started as a casual habit is now something I genuinely structure my week around. My gear hasn't really caught up with that shift. I'm wearing a mix of things I bought when I was less serious, and some of it is starting to feel wrong — not dramatically wrong, just a low-level friction I've started noticing. A waistband that doesn't sit right during Romanian deadlifts. A fabric that feels fine in the mirror but gets heavy and clingy mid-session. I haven't declared it a problem yet, but it's accumulating. I work in design, so I'm probably pickier than average about how things look and feel — a poorly designed product is almost offensive to me. When I get marketing emails for activewear I don't know, I'm skeptical by default. I will read the copy carefully, and bad writing is an instant turn-off — it tells me the brand doesn't really know its product or its customer. If I'm intrigued, I'll go to their site, look at the photography, read the 'about' section, and check whether any of it feels genuinely considered or just assembled. I'm not ready to buy right now, but I'm a few more frustrating sessions away from actively looking.",
+      "stratum": {
+        "training_identity_depth": "committed_enthusiast",
+        "purchase_decision_style": "research_heavy_skeptic",
+        "problem_awareness_stage": "unaware_or_tolerating",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_06_tomás_reyes",
+      "name": "Tomás Reyes",
+      "age": 21,
+      "shortBio": "College athlete turned gym-independent lifter in Mexico City who relies heavily on his training community to make decisions.",
+      "longProfile": "I played soccer at a competitive level through high school and into college, and when that chapter ended I redirected everything into the weight room. Training is how I stay connected to the athlete identity I've had my whole life. I go hard, six days a week, and the community I've built around the gym — the guys I train with, the accounts I follow, the Discord servers I'm in — is genuinely important to me. My frustration with gear is real and specific: I've had shorts that are fine for the first couple months and then start falling apart right at the crotch seam when I'm going heavy, or compression gear that loses its compression within a few weeks. Budget stuff has failed me too many times. I don't have a huge disposable income as a student but I'm willing to stretch for something I can trust. The thing is, I don't trust brands based on what brands say about themselves. I trust what people in my training circle actually recommend. If someone I respect in a gym community context mentions something genuinely and specifically, that carries real weight. A marketing email from an unknown brand can maybe get me curious, but it won't close the deal by itself — I'll take it to my community and see if anyone's heard of them.",
+      "stratum": {
+        "training_identity_depth": "committed_enthusiast",
+        "purchase_decision_style": "community_influenced",
+        "problem_awareness_stage": "actively_frustrated",
+        "lifestyle_crossover_priority": "gym_only_focus"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_07_aisha_olomide",
+      "name": "Aisha Olomide",
+      "age": 33,
+      "shortBio": "Corporate lawyer and weekend warrior in Lagos who wants gym clothes that can keep pace with a full, high-visibility life.",
+      "longProfile": "My schedule is brutal — I'm at the firm by eight and rarely out before seven, so my 5:30am gym sessions are sacred. I'm not going to claim training is my whole identity, but it is the thing that keeps me functional and sharp, and I protect that time fiercely. The problem I'm dealing with right now is that my gym wardrobe is a mess of compromises. I want things that look intentional and polished — I might go straight from an early session to a morning meeting, or from the office to an evening class — but everything I find either looks too athletic or performs poorly. I recently went through a stretch where three different pairs of leggings from different brands either pilled, faded, or lost their shape within a couple of months. I'm done tolerating that. I have the income to spend properly, and I'm ready to. The way I shop isn't super methodical — I don't read every review thread. I go on feel and presentation. If a marketing email looks clean, the product photography looks real rather than airbrushed, and the messaging doesn't talk down to me or feel generic, I'm likely to click through. What I hate is being addressed like I just discovered the gym last month. I know what I need. Speak to me like I do.",
+      "stratum": {
+        "training_identity_depth": "committed_enthusiast",
+        "purchase_decision_style": "intuitive_value_seeker",
+        "problem_awareness_stage": "actively_frustrated",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_08_ryan_faulkner",
+      "name": "Ryan Faulkner",
+      "age": 19,
+      "shortBio": "First-year university student and recreational gym-goer in Sydney who's just getting serious and figuring out what quality means.",
+      "longProfile": "I've been going to the gym about three times a week since I started university, and it's becoming a bigger part of my life than I expected. I'm not a serious lifter — I'm still figuring out programming and technique — but I genuinely enjoy it and I can feel the habit solidifying. My gear situation is honestly pretty basic: a couple of pairs of shorts I've had since high school, a few shirts that are fine. I haven't thought deeply about whether my clothes are holding me back because I haven't pushed hard enough yet to really notice. The thing is, I'm at an age where what I wear in the gym matters socially too — it's part of how I show up among the people I'm training with and the broader campus culture. I'm increasingly aware that I want to look like I take it seriously, not like I grabbed whatever was on the floor. My budget is real — I'm on a student income — so I'm not going to throw money at something impulsively. The way I make decisions about gear is mostly through what I see other people wearing, what gets talked about in online fitness communities I'm part of, and what shows up in content from gym creators I watch. A marketing email from a brand I've never heard of would have to feel super authentic and community-adjacent to get my attention. If it feels corporate and polished in that generic way, I'll scroll past.",
+      "stratum": {
+        "training_identity_depth": "casual_active",
+        "purchase_decision_style": "community_influenced",
+        "problem_awareness_stage": "unaware_or_tolerating",
+        "lifestyle_crossover_priority": "gym_to_everyday_crossover"
+      }
+    },
+    {
+      "id": "p_WbFWZRWK_09_nina_castellano",
+      "name": "Nina Castellano",
+      "age": 30,
+      "shortBio": "Strength coach and semi-competitive Olympic lifter in Toronto who has zero tolerance for gear that makes promises it can't keep.",
+      "longProfile": "I've been coaching strength sports for four years and competing in Olympic lifting for three. The gym is not a lifestyle accessory for me — it's my craft, my livelihood, and my competitive arena. I've cycled through enough gear at this point that I have a very calibrated nose for what's real and what's marketing theater. My current frustration is with fabrics that sound impressive on the hang tag but break down structurally under real training loads — seams that weaken, waistbands that curl, materials that stop moving with you after a few months of actual use. I've made my peace with spending real money. What I don't have patience for is spending real money and getting let down again. The interesting thing about how I shop is that I'm not actually super research-driven anymore — I've done that phase. At this point I trust my gut from years of experience. I can look at an email or a product page and tell pretty quickly whether the people behind it understand training or whether they're just selling to an aesthetic. If the copy uses the right vocabulary without overpromising, if the photography shows actual movement and not just posing, if there's a clear return policy that suggests they stand behind the product — I'll pull the trigger relatively fast. What I won't tolerate is vague superlatives. Tell me exactly what it does and why.",
+      "stratum": {
+        "training_identity_depth": "competitive_or_semi_pro",
+        "purchase_decision_style": "intuitive_value_seeker",
+        "problem_awareness_stage": "solution_ready",
+        "lifestyle_crossover_priority": "gym_only_focus"
+      }
+    }
+  ],
+  "agentRuns": [
+    {
+      "personaId": "p_WbFWZRWK_00_marcus_oduya",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "AU0eZUOqW0"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark mentioning stringers and shorts 'built for the work' — actually relevant to what I wear training, worth a quick look even if I'm skeptical of their construction quality."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4183,
+        "outputTokens": 129,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_00_marcus_oduya",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "4CmTK6v6Pg"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark, durable gear, 'perform at your peak' — actually relevant to what I wear training; worth a quick scan to see if they specify anything real about construction."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5933,
+        "outputTokens": 128,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_01_priya_nair",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "AU0eZUOqW0",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF that's lightweight with no white cast and no breakouts — that's exactly the trifecta I need for post-gym mornings, and the subject is specific enough that I trust it's not just filler."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith actually makes run gear I'd train hard in AND not be embarrassed wearing out — curious what they're pushing for warmer weather."
+          },
+          {
+            "emailId": "bg_rhode_0",
+            "reason": "Hydrocolloid patches are something I actually use after breakouts and I want to know if they have a specific recommendation or timing tip I'm missing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"Lightweight, no white cast, no breakouts\" hits three specific pain points I actually have with SPF — feels like they know exactly what I want in a gym-to-meeting skin situation."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5651,
+        "outputTokens": 298,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_01_priya_nair",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "4CmTK6v6Pg",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF that's lightweight with no white cast is exactly what I need for post-gym skin — specific claim, not just a discount."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith actually makes technical gear that looks good — 'match your top to the temps' is relevant as weather shifts."
+          },
+          {
+            "emailId": "bg_rhode_0",
+            "reason": "Hydrocolloid patches are something I actually use post-breakout and 'ask rhode' feels like a real Q&A, not a sales blast."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Seasonal timing hits right — warmer days means I'm already thinking about what to wear for outdoor runs, and Tracksmith's technical-but-aesthetic positioning is exactly the kind of thing I'd explore for real training use."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5654,
+        "outputTokens": 283,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_02_jake_sorrento",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "AU0eZUOqW0"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark talking gym gear directly — no fluff, the subject line is confident and funny without trying too hard, and I actually need shorts that don't rub."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Seasonal angle on workout tops feels relevant right now, and Tracksmith usually has clean aesthetics worth a quick look."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's skincare bundles — low-effort grooming routine sounds appealing and 'less guesswork' is exactly how I think about this stuff."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "The 'Skip the egg hunt. The barbell won't lift itself.' copy hit the right tone — confident, no-nonsense, and the stringer/shorts combo actually addresses that nagging fit issue I have with my current gear."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "f1da8aeb-423f-468b-bbc3-23b454580c6b",
+            "spent": 28,
+            "reason": "A classic stringer at $28 is a no-brainer for the gym — heavyweight cotton, slim fit, and a color that's not trying too hard; fills a gap without overthinking it."
+          }
+        ],
+        "totalSpent": 28
+      },
+      "cost": {
+        "inputTokens": 7983,
+        "outputTokens": 438,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_02_jake_sorrento",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "4CmTK6v6Pg"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "\"Match Your Top to the Temps\" is specific and seasonal — gym gear for warmer weather is actually relevant to me right now."
+          },
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "I lift four days a week and Gymshark is in my wheelhouse — \"January bestsellers\" is vague but gym performance gear is worth a quick look."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"Lightweight, no white cast, no breakouts\" is the kind of specific, confident copy that makes me actually want to read more — an SPF I'd realistically use."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "The $32 tee price point is reasonable, the photography looks real and unfussy, and I've got a seam-rubbing shorts situation that's been mildly annoying — seeing durable basics laid out plainly makes me want to browse."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "fafd0239-4e93-44f5-91ab-db52dc10a367",
+            "spent": 32,
+            "reason": "Iron Blue colorway stands out more than basic black and the relaxed cotton tee fits the aesthetic I actually wear post-lift without feeling like a campaign costume."
+          }
+        ],
+        "totalSpent": 32
+      },
+      "cost": {
+        "inputTokens": 8057,
+        "outputTokens": 440,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_03_anya_kowalczyk",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "AU0eZUOqW0",
+        "bg_salt-stone_4",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_lumin_7",
+        "bg_n-cessaire_3"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith actually makes performance gear with real technical specs — curious if this is about summer training tops with actual fabric/temp range info."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'No white cast, no breakouts' is specific enough that I want to see if they back it up with actual formula details — SPF is relevant for outdoor WODs."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5568,
+        "outputTokens": 186,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_03_anya_kowalczyk",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "4CmTK6v6Pg",
+        "bg_salt-stone_4",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_lumin_7",
+        "bg_n-cessaire_3"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark actually has decent performance gear and 'durable January bestsellers designed to perform at your peak' is specific enough to at least check what they're pushing right now."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith makes legit technical running kit and 'Match Your Top to the Temps' sounds like it might be about actual fabric weight/performance specs — worth a look."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5971,
+        "outputTokens": 182,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_04_deshawn_merritt",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_glossier_6",
+        "AU0eZUOqW0",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark stringers and shorts is literally what I wear at work every day — this is directly relevant and the subject line didn't try to be cute about it."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith has real credibility in the performance space and 'match your top to the temps' is specific enough that it sounds like actual product content, not just a promo blast."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "I'm a guy who actually cares about grooming as part of the professional image I project, and Lumin is a brand I've noticed other trainers use — curious what bundles they're pushing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "The stringer and shorts copy speaks directly to functional range of motion — 'zero fabric in your way' and 'full range, every rep' are real technical claims that match what I actually need for demonstration reps, and the aesthetic looks like my gym environment."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "27d722ba-6637-4e55-ae60-9b843fd4ba0b",
+            "spent": 50,
+            "reason": "Sweat-wicking poly/elastane blend with movement-friendly side splits actually solves my training-to-street problem — I can demo overhead movements and not look sloppy grabbing lunch after."
+          }
+        ],
+        "totalSpent": 50
+      },
+      "cost": {
+        "inputTokens": 5877,
+        "outputTokens": 488,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_04_deshawn_merritt",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_glossier_6",
+        "4CmTK6v6Pg",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith has real runner/athlete credibility and seasonal gear drops are relevant — curious if there's something that works for my dual-use trainer lifestyle."
+          },
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark actually shows up in my world and a challenge-tied gear drop could mean functional stuff that's actually being tested — worth a quick scan."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5971,
+        "outputTokens": 176,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_05_chloe_hartmann",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "AU0eZUOqW0",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight, no white cast, no breakouts — that's specific and earned, not just hype, and I'm always low-key hunting for a better SPF."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Matching layers to temperature is actually how I think about training gear, and Tracksmith tends to write with some intentionality."
+          },
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "The copy is punchy and self-aware — 'skip the egg hunt, hit the iron' lands, and I'm curious what their current women's cut looks like."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5881,
+        "outputTokens": 230,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_05_chloe_hartmann",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "4CmTK6v6Pg",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF with no white cast or breakouts is actually a specific, useful claim — curious if the formula is legit."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Matching tops to temps is weirdly specific and relevant — Tracksmith tends to actually know running/training gear, worth a glance."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "The specific callouts — lightweight, no white cast, no breakouts — feel like they actually know SPF pain points, and the 'customer for life' framing made me curious enough to check if the formula holds up."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5591,
+        "outputTokens": 231,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_06_tomás_reyes",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "AU0eZUOqW0",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark talking stringers and shorts specifically for lifting — that's exactly my thing, and the Easter angle is kinda funny, I'll see what they're pushing."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's skincare routines — I've been half-thinking about getting something consistent going, bundles framing it as simple is actually appealing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark is a brand I've actually heard guys in my training circle mention, and the stringer/shorts copy — 'cut for unrestricted pulls and presses' and 'built to move under heavy load' — speaks directly to my specific gear frustration with seams failing during heavy lifts."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7877,
+        "outputTokens": 313,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_06_tomás_reyes",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "4CmTK6v6Pg",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark is a brand I actually know and the challenge angle feels relevant to how I train — curious what the 'durable' claim is about specifically."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's skincare routines are something I've been low-key trying to figure out, and 'less guesswork' is exactly my vibe — I don't want to research a 10-step routine."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark is a brand I've actually heard guys in my training circle mention, and the 66-day challenge framing + 'durable' call-out hits my specific frustration with gear falling apart — worth checking if the construction has improved."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7946,
+        "outputTokens": 321,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_07_aisha_olomide",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "AU0eZUOqW0",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Warmer weather = I actually need to think about what I'm wearing to early sessions, and Tracksmith tends to look polished enough to not embarrass me if I'm running into the office after."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight, no white cast, no breakouts — that's exactly the SPF brief I have, and 'customer for life' is a confident claim that makes me curious if it holds up."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire's aesthetic is clean and their body products are genuinely good — 'Sinkcare' is a specific enough concept that I want to see how they've positioned it."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"No white cast, no breakouts\" speaks directly to my specific SPF frustrations — that's not generic copy, it's addressing real deal-breakers, and I want to see the product."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5647,
+        "outputTokens": 315,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_07_aisha_olomide",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "4CmTK6v6Pg",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Warmer days, new tops — this is exactly the kind of performance-meets-polish drop I'm always hunting for, and Tracksmith actually gets that aesthetic."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF, no white cast, no breakouts — that's three specific claims that matter to me, and 'customer for life' suggests they're confident enough not to oversell it."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire's branding is clean and their body products are solid — curious what 'Sinkcare' looks like as a concept."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Tracksmith's seasonal training gear framing speaks directly to my actual wardrobe problem — performance pieces that look intentional — and the subject line is specific enough to feel relevant rather than generic."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5650,
+        "outputTokens": 296,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_08_ryan_faulkner",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_rhode_0",
+        "AU0eZUOqW0",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_versed_1",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark actually speaks my language — stringers and shorts are exactly what I'm thinking about upgrading, and the Easter gym angle is kind of funny."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "Gymshark is actually a brand people talk about in fitness communities I follow, and the stringer + shorts combo is exactly what I've been thinking about upgrading to — the 'Iron Over Everything' tone feels legit, not corporate."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "f1da8aeb-423f-468b-bbc3-23b454580c6b",
+            "spent": 28,
+            "reason": "Gymshark is exactly the brand I see at the gym and in fitness communities, and a $28 stringer is an easy way to upgrade from my worn-out high school gear without wrecking my student budget."
+          }
+        ],
+        "totalSpent": 28
+      },
+      "cost": {
+        "inputTokens": 6327,
+        "outputTokens": 340,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_08_ryan_faulkner",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_rhode_0",
+        "4CmTK6v6Pg",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_versed_1",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark is actually on my radar from gym content I watch — curious what the January bestsellers are and whether any of it looks worth upgrading my basic shorts situation."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark is actually a brand I've seen all over gym communities and fitness creators I follow, and the 66-day challenge framing plus the $32 tee price point feels accessible enough on a student budget to actually check out."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "7898e21b-001f-4b64-bcca-f3ed770368c2",
+            "spent": 32,
+            "reason": "Gymshark is actually talked about in the fitness communities I follow, black is versatile and low-risk, and $32 for a gym tee from a brand that looks legit is within what I'd actually spend."
+          }
+        ],
+        "totalSpent": 32
+      },
+      "cost": {
+        "inputTokens": 6222,
+        "outputTokens": 345,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_09_nina_castellano",
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "AU0eZUOqW0",
+        "bg_salt-stone_4",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "AU0eZUOqW0",
+            "reason": "The subject actually speaks my language — no fluff, just 'hit the iron,' and the preview mentions specifics (stringers, shorts, built for the work). Worth a glance to see if the product shots show real lifting or just posing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4185,
+        "outputTokens": 157,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_WbFWZRWK_09_nina_castellano",
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "4CmTK6v6Pg",
+        "bg_salt-stone_4",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "4CmTK6v6Pg",
+            "reason": "Gymshark is actually making gear claims around durability and performance — worth a quick scan to see if the copy holds up or if it's just aesthetic fluff."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5937,
+        "outputTokens": 124,
+        "cacheReadTokens": 0
+      }
+    }
+  ],
+  "aggregated": {
+    "A": {
+      "arm": "A",
+      "candidateEmailId": "AU0eZUOqW0",
+      "openedBy": 7,
+      "clickedBy": 4,
+      "purchasedBy": 3,
+      "revenue": 106,
+      "totalPersonas": 10
+    },
+    "B": {
+      "arm": "B",
+      "candidateEmailId": "4CmTK6v6Pg",
+      "openedBy": 7,
+      "clickedBy": 3,
+      "purchasedBy": 2,
+      "revenue": 64,
+      "totalPersonas": 10
+    }
+  },
+  "productsById": {
+    "27d722ba-6637-4e55-ae60-9b843fd4ba0b": {
+      "id": "27d722ba-6637-4e55-ae60-9b843fd4ba0b",
+      "brandId": "WbFWZRWK5oVrdYoacO29W",
+      "name": "Gymshark Tactical Oversized T-Shirt - Iron Blue",
+      "price": 50,
+      "description": "PERFORMANCE YOU CAN WEAR ANYWHERE\n\nTactical’s subtle design details and high-performance features combine to create fits that work for you, so you can keep working on yourself.\n\n * Premium durable fabric that lasts through every rep & step\n * Lightweight, sweat-wicking fabric keeps you cool enough to push through that final round\n * Overlapping side splits for more freedom of movement\n * Subtle gothic wordmark on the front for a performance-ready tee you can wear anywhere\n\n\n\n\nSIZE & FIT\n\n * Oversized fit\n * Model is 6'1\" and wears M\n\n\n\n\nMATERIALS & CARE\n\n * 86% Recycled Polyester, 14% Elastane",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0156/6146/files/images-TacticalOversizedT_ShirtGSIronBlueA3B5G_UCTM_2961_V4.jpg?v=1764761742"
+    },
+    "7898e21b-001f-4b64-bcca-f3ed770368c2": {
+      "id": "7898e21b-001f-4b64-bcca-f3ed770368c2",
+      "brandId": "WbFWZRWK5oVrdYoacO29W",
+      "name": "Gymshark GS66 T-Shirt - Black",
+      "price": 32,
+      "description": "GYMSHARK66\n\nYou’re changing your life in 66 days. Celebrate the work you’ve put in and the progress you’ve made with these Gymshark66 graphic styles.\n\n * Gymshark66 graphic to celebrate the work you’ve put in\n\n\n\n\nSIZE & FIT\n\n * Oversized fit\n * Model is 5'11 and wears M\n\n\n\n\nMATERIALS & CARE\n\n * 100% Cotton\n\n\n\n\nSKU: A3C4Y-BB2J",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0156/6146/files/images-GFXGS66EssentialOST_ShirtGSBlackA3C4Y_BB2J_0724_V1a.jpg?v=1763567304"
+    },
+    "f1da8aeb-423f-468b-bbc3-23b454580c6b": {
+      "id": "f1da8aeb-423f-468b-bbc3-23b454580c6b",
+      "brandId": "WbFWZRWK5oVrdYoacO29W",
+      "name": "Gymshark Power Stringer - Deep Petrol Blue",
+      "price": 28,
+      "description": "POWER. TIME TO WORK.\n\nPower’s timeless, tireless design is built to work just as hard as you do. Early mornings, late nights, squat racks, race tracks, it’s the no-brainer you reach for time and time again, and you know it’ll have your back through it all.\n\n * Classic stringer shape shows off your upper body pump\n * Durable heavyweight fabric lasts through every rep\n * Bright and muted colourways for standing out or laying low\n\n\n\n\nSIZE & FIT\n\n * Slim fit\n * Regular length\n * Model is 5'10\" and wears M\n\n\n\n\nMATERIALS & CARE\n\n * 100% Cotton\n * 220gsm, heavyweight fabric\n\n\n\n\nSKU: A4B4A-UDRL",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0156/6146/files/images-PowerOriginalsStringerGSDeepPetrolBlueA4B4A_UDRL_0652_V2.jpg?v=1765201868"
+    },
+    "fafd0239-4e93-44f5-91ab-db52dc10a367": {
+      "id": "fafd0239-4e93-44f5-91ab-db52dc10a367",
+      "brandId": "WbFWZRWK5oVrdYoacO29W",
+      "name": "Gymshark GS66 T-Shirt - Iron Blue",
+      "price": 32,
+      "description": "GYMSHARK66\n\nYou’re changing your life in 66 days. Celebrate the work you’ve put in and the progress you’ve made with these Gymshark66 graphic styles.\n\n * Gymshark66 graphic to celebrate the work you’ve put in\n\n\n\n\nSIZE & FIT\n\n * Oversized fit\n * Model is 5'11\" and wears M\n\n\n\n\nMATERIALS & CARE\n\n * 100% Cotton\n\n\n\n\nSKU: A3C4Y-UCTM",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0156/6146/files/images-GFXGS66EssentialOST_ShirtGSIronBlueA3C4Y_UCTM_0710_V2.jpg?v=1763567854"
+    }
+  },
+  "totalCost": {
+    "inputTokens": 122111,
+    "outputTokens": 5420,
+    "cacheReadTokens": 0
+  }
+}

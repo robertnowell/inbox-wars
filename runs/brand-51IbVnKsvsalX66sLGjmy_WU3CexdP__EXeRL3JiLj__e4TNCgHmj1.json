@@ -1,0 +1,1296 @@
+{
+  "id": "run_1778980667889_51IbVnKs__EXeRL3JiLj__e4TNCgHmj1",
+  "generatedAt": "2026-05-17T01:17:47.889Z",
+  "brandId": "51IbVnKsvsalX66sLGjmy_WU3CexdP",
+  "brandName": "Mirai Clinical",
+  "audienceExcerpt": "The target audience for Mirai Clinical primarily consists of individuals aged 45 and above, with a slight skew towards women, though the products are suitable for all genders. They are likely to be middle-to-upper-middle class, with disposable income to invest in quality personal care. Their lifestyle may involve active social lives, professional careers, or caregiving roles, and they value self-care, health, and maintaining a sense of vitality and confidence as they age. They are proactive abou",
+  "axes": [
+    {
+      "name": "problem_awareness_stage",
+      "values": [
+        "recently_noticed",
+        "long_struggling_unresolved",
+        "actively_researching_solutions"
+      ],
+      "rationale": "How long and how consciously a customer has been living with this problem strongly shapes urgency, skepticism, and openness to a new product's claims in email messaging."
+    },
+    {
+      "name": "shopping_style",
+      "values": [
+        "ingredient_researcher",
+        "review_driven",
+        "trusted_brand_loyalist"
+      ],
+      "rationale": "This audience researches carefully but through different lenses — some scrutinize formulations, some rely on peer reviews, some defer to brand reputation — driving very different responses to email content and proof points."
+    },
+    {
+      "name": "emotional_coping_stance",
+      "values": [
+        "quietly_withdrawn",
+        "anxiously_managing",
+        "pragmatically_proactive"
+      ],
+      "rationale": "The emotional weight of this problem varies — some have started avoiding social contact, some carry active anxiety, some approach it matter-of-factly — and this determines whether aspirational, empathetic, or efficacy-led email framing resonates most."
+    },
+    {
+      "name": "category_engagement",
+      "values": [
+        "conventional_product_fatigue",
+        "natural_and_clean_oriented"
+      ],
+      "rationale": "Whether a customer has primarily cycled through mainstream products or is already seeking clean/natural alternatives shifts which value propositions and ingredient narratives land in an email."
+    }
+  ],
+  "candidateA": {
+    "id": "e4TNCgHmj1",
+    "brandId": "51IbVnKsvsalX66sLGjmy_WU3CexdP",
+    "brandName": "Mirai Clinical",
+    "sender": "Mirai Clinical <hello@miraiclinical.com>",
+    "subject": "HuffPost Confirms: “Old Person Smell” Is Real? (Clone)",
+    "preheader": "Medical experts explain the science behind Nonenal and aging skin.",
+    "bodyText": "[Image: Trending Now: The Science of Freshness. HuffPost headline: 'Old Person Smell' Is Real. Text: Free Soap on Orders $70+ | Read the Article & Shop.]\n\n Science confirms: It's biology, not hygiene.\n\n Hi {{ first_name|default:'friend' }}, The secret is out. A recent HuffPost article dives into the science of \"Nonenal\"—the distinct odor caused by hormonal imbalances and aging. The good news? You don't have to live with it.\n\n[Button: \n Shop the Solution\n ]\n\n[Image: Collage of women reacting to unpleasant odors.]\n\n Why everyone is talking about it\n\n It happens to the best of us. Around age 40, our body's natural antioxidant defenses weaken, allowing fatty acids to oxidize into Nonenal .\n\n Unlike sweat, Nonenal is oil-based—meaning water and regular soaps can't wash it away. They simply mask it.\n\n The Japanese Secret to Freshness\n\n Only Mirai Soap eliminates 97% of Nonenal (aging) odor. Harnessed from antioxidant-rich Japanese Persimmon, it dissolves odor at the source for all-day confidence.\n\n[Button: \n Shop Soap\n ]\n\n[Image: Deodorizing Soap with Persimmon next to fresh persimmon fruit and packaging.]\n\n Special Offer for Readers\n\n Enjoy FREE shipping on all orders over $50.\n\n[Button: \n Shop Now\n ]\n\n Stay fresh and confident, The Mirai Clinical Team\n\n Unsubscribe",
+    "previewScreenshotUrl": "https://file.rendit.io/n/b384b26886a2.png"
+  },
+  "candidateB": {
+    "id": "EXeRL3JiLj",
+    "brandId": "51IbVnKsvsalX66sLGjmy_WU3CexdP",
+    "brandName": "Mirai Clinical",
+    "sender": "Mirai Clinical <hello@miraiclinical.com>",
+    "subject": "Memorial Day: 20% Off + Points Expire",
+    "preheader": "Stack sitewide savings with your rewards before they vanish—two ways to save this weekend ",
+    "bodyText": "[Image: Mirai Clinical Memorial Day Stack 20% OFF Plus Points banner showing a smiling woman with brown hair holding three colorful translucent persimmon soaps in orange, yellow, and purple in front of a soft cream patriotic frame with navy and crimson accents that fades into a cream base at the bottom]\n\n {{ first_name|default:'friend' }}, your rewards + 20% OFF stack automatically. This weekend only.\n\n[Button: \n Shop The Sale\n ]\n\n Stack & Save Twice\n\n ✅ Sign into your Mirai account at checkout\n\n ✅ Apply code MEMORIAL20 for 20% OFF SITEWIDE\n\n ✅ Rewards points apply automatically on top\n\n[Button: \n Shop The Sale\n ]\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★\n\n ★ \n MEMORIAL DAY EXCLUSIVE \n ★ \n\n Rewards Reset At Midnight\n\n The long weekend wraps Monday night — and every unspent rewards point disappears with it.\n Cash them in now and stack 20% OFF on top for the season's deepest discount on every\n persimmon favorite.\n\n REDEEM POINTS NOW \n\n Memorial Day Favorites\n\n[Image: Round translucent amber Japanese persimmon soap with embossed floral design covered in white suds and lather, photographed in a clean white sink]\n\n Deodorizing Soap\n\n[Button: \n Shop The Sale\n ]\n\n[Image: White pump bottle of Mirai Clinical Purifying and Deodorizing Body Wash with Japanese Persimmon and Green Tea, next to two ripe orange persimmons on a neutral background]\n\n Body Wash\n\n[Button: \n Shop The Sale\n ]",
+    "previewScreenshotUrl": "https://file.rendit.io/n/a8746eae1149.png"
+  },
+  "backgroundEmails": [
+    {
+      "id": "bg_rhode_0",
+      "brandId": "milled-rhode",
+      "brandName": "Rhode",
+      "sender": "Rhode <hello@rhode.com>",
+      "subject": "ask rhode: Spotwear",
+      "preheader": "when should i use a hydrocolloid patch?",
+      "bodyText": "when should i use a hydrocolloid patch?"
+    },
+    {
+      "id": "bg_versed_1",
+      "brandId": "milled-versed",
+      "brandName": "Versed",
+      "sender": "Versed <hello@versed.com>",
+      "subject": "A “Customer for life” SPF",
+      "preheader": "Lightweight, no white cast, no breakouts",
+      "bodyText": "Lightweight, no white cast, no breakouts"
+    },
+    {
+      "id": "bg_tower-28-beauty_2",
+      "brandId": "milled-tower-28-beauty",
+      "brandName": "Tower 28 Beauty",
+      "sender": "Tower 28 Beauty <hello@tower28beauty.com>",
+      "subject": "NEW! Lip plumper made for sensitive skin",
+      "preheader": "All plump, no pain",
+      "bodyText": "All plump, no pain"
+    },
+    {
+      "id": "bg_n-cessaire_3",
+      "brandId": "milled-n-cessaire",
+      "brandName": "Nécessaire",
+      "sender": "Nécessaire <hello@ncessaire.com>",
+      "subject": "NEW! The Hand Wash + The Hand Lotion",
+      "preheader": "Introducing Sinkcare.",
+      "bodyText": "Introducing Sinkcare."
+    },
+    {
+      "id": "bg_salt-stone_4",
+      "brandId": "milled-salt-stone",
+      "brandName": "Salt & Stone",
+      "sender": "Salt & Stone <hello@saltstone.com>",
+      "subject": "15% off—anything you want",
+      "preheader": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team",
+      "bodyText": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team"
+    },
+    {
+      "id": "bg_tracksmith_5",
+      "brandId": "milled-tracksmith",
+      "brandName": "Tracksmith",
+      "sender": "Tracksmith <hello@tracksmith.com>",
+      "subject": "Match Your Top to the Temps",
+      "preheader": "Warmer days incoming…",
+      "bodyText": "Warmer days incoming…"
+    },
+    {
+      "id": "bg_glossier_6",
+      "brandId": "milled-glossier",
+      "brandName": "Glossier",
+      "sender": "Glossier <hello@glossier.com>",
+      "subject": "Our community’s must-have products",
+      "preheader": "fall in love with them today",
+      "bodyText": "fall in love with them today"
+    },
+    {
+      "id": "bg_lumin_7",
+      "brandId": "milled-lumin",
+      "brandName": "Lumin",
+      "sender": "Lumin <hello@lumin.com>",
+      "subject": "More Routine, Less Guesswork",
+      "preheader": "Bundles that actually make sense",
+      "bodyText": "Bundles that actually make sense"
+    },
+    {
+      "id": "bg_olipop_8",
+      "brandId": "milled-olipop",
+      "brandName": "Olipop",
+      "sender": "Olipop <hello@olipop.com>",
+      "subject": "Back for Good: Blackberry Vanilla ✨",
+      "preheader": "Shop this fan-favorite ➡️",
+      "bodyText": "Shop this fan-favorite ➡️"
+    }
+  ],
+  "personas": [
+    {
+      "id": "p_51IbVnKs_00_diane_kowalski",
+      "name": "Diane Kowalski",
+      "age": 58,
+      "shortBio": "Semi-retired school principal in suburban Ohio, meticulous researcher who reads every label before buying anything.",
+      "longProfile": "I spent thirty years running a middle school, which means I spent thirty years in close quarters with staff, parents, and kids. I've always been fastidious about my appearance and hygiene — it was part of the job. But somewhere in my early fifties, something shifted. I started noticing an odor that wasn't there before, and it wasn't the kind that a shower fixes. I've gone through probably a dozen different deodorants and body washes at this point, and the clinical-strength ones either irritated my skin or just... didn't hold. I'm not someone who buys things impulsively. I read ingredient lists the way other people read restaurant menus. I want to understand what I'm putting on my body and why it's supposed to work. When I get a marketing email, the fastest way to lose me is to lead with vague promises — 'odor-free all day!' without any explanation of the mechanism. I click through when something makes a coherent scientific case without being condescending. I check whether the listed ingredients actually match what they're claiming. I still worry every time I'm in a close meeting or a hug with my grandkids. I haven't stopped living my life, but there's this low hum of anxiety that wasn't there a decade ago. I'm not looking for a miracle. I'm looking for an honest product that does what it says.",
+      "stratum": {
+        "problem_awareness_stage": "long_struggling_unresolved",
+        "shopping_style": "ingredient_researcher",
+        "emotional_coping_stance": "anxiously_managing",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_01_marcus_thibodeau",
+      "name": "Marcus Thibodeau",
+      "age": 52,
+      "shortBio": "Commercial real estate broker in Atlanta, high social exposure, pragmatic about solving problems fast.",
+      "longProfile": "My job is relationships. I'm shaking hands, doing walk-throughs, sitting across tables from clients who are spending millions of dollars. I cannot afford to be distracted by worrying about how I smell. I noticed the odor issue a couple years back and didn't overthink it — I just started trying to fix it. I've been through the whole drugstore rotation, I've tried the fancy stuff from upscale department stores, I've tried prescription antiperspirants. Some things helped a little. Nothing stuck. Now I'm in active problem-solving mode. I Google, I read Reddit threads, I spend time on review sites filtering by people who describe the same situation I'm in — older, otherwise healthy, tried everything. Reviews from real people who are specific about their experience carry a lot of weight with me. Vague five-star reviews don't move me; detailed accounts of what worked and for how long do. When a marketing email lands, I skim fast. If the subject line sounds like it's aimed at someone actually living this problem — not just generic 'feel fresh' language — I'll open it. If there's social proof in the email itself, customer quotes that feel real rather than polished, I'll click. I'm not emotionally tortured by this. It's a problem. I want it solved. I'll pay for something that works.",
+      "stratum": {
+        "problem_awareness_stage": "actively_researching_solutions",
+        "shopping_style": "review_driven",
+        "emotional_coping_stance": "pragmatically_proactive",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_02_sylvia_okonkwo",
+      "name": "Sylvia Okonkwo",
+      "age": 63,
+      "shortBio": "Retired hospital administrator in Houston, values trust and ethics in brands, loyal once she finds something good.",
+      "longProfile": "I worked in healthcare for over thirty years, which means I think seriously about what goes into and onto my body. I made the shift to cleaner personal care products a while back — I'm the person who checks for parabens, synthetic fragrance, aluminum compounds. It matters to me that a company is honest about what's in their products and why. The problem I've been dealing with — this persistent body odor that showed up in my late fifties and doesn't respond the way it used to — has been quietly devastating. I haven't said that out loud to many people. I've pulled back from things I used to love: book club, dancing with my sister, close time with my grandchildren. It feels shameful to even write it. I've tried several natural deodorants and they've been inconsistent at best. But I haven't given up on the category. What I need is a brand I can trust — one that communicates honestly, shows me they understand the science, and has a real presence and history. When I get an email from a company I don't know, my default is skepticism. I look for signs of integrity: transparent ingredient sourcing, realistic claims, a tone that respects my intelligence. If I feel like a company is talking at me rather than with me, I unsubscribe immediately. But if something earns my trust, I stick with it.",
+      "stratum": {
+        "problem_awareness_stage": "long_struggling_unresolved",
+        "shopping_style": "trusted_brand_loyalist",
+        "emotional_coping_stance": "quietly_withdrawn",
+        "category_engagement": "natural_and_clean_oriented"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_03_tom_vasquez",
+      "name": "Tom Vasquez",
+      "age": 47,
+      "shortBio": "High school history teacher and weekend cyclist in Denver, recently noticed the problem and mildly puzzled by it.",
+      "longProfile": "I've always been an active guy — I bike, I hike, I'm on my feet all day in a classroom. Sweat has never been a stranger. But in the last year or so I've noticed something different. The odor is more persistent, different in character, and my usual routine isn't keeping up with it the way it used to. I'm not panicking about it. I'm mostly just curious and a little annoyed. I haven't gone deep on researching it yet — I've mostly upgraded my deodorant a couple times without any real system. I do rely on reviews before I buy almost anything. I'm an Amazon review reader, a Wirecutter reader. I like seeing how a product performs across a range of people, especially people in similar situations — active, middle-aged, dealing with something specific. When a marketing email shows up for a personal care product, I don't automatically delete it. If the subject line is interesting and not cheesy, I'll scan the email. I respond to clear, no-nonsense communication. I'm turned off by aspirational lifestyle photography that has nothing to do with the product itself. Show me what it does, who it works for, what real users say, and keep it short. I'm at an early stage here — I'm open, but I haven't committed time or serious money to solving this yet. The right email at the right moment could actually move me.",
+      "stratum": {
+        "problem_awareness_stage": "recently_noticed",
+        "shopping_style": "review_driven",
+        "emotional_coping_stance": "pragmatically_proactive",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_04_linda_fenstein",
+      "name": "Linda Fenstein",
+      "age": 61,
+      "shortBio": "Freelance graphic designer in Portland, deeply committed to clean beauty, emotionally exhausted by this problem.",
+      "longProfile": "I've been a clean beauty person for over a decade. This isn't a trend for me — it's a value system. I care about what I put on my skin, I care about environmental impact, I care about whether a company's ethics hold up. So when this odor problem started in my late fifties, I assumed I could find a clean solution. I've been wrong about that, repeatedly. I've tried every natural deodorant I can find. I've read ingredient deep-dives on wellness blogs. I've joined online communities where people share formulations that supposedly help. Nothing has been reliable. I've quietly started declining invitations, sitting farther from people in meetings, avoiding the close creative collaborations I used to love. I haven't told anyone why. As a designer, I also notice how brands present themselves — so marketing emails get evaluated on multiple levels. Is the visual presentation thoughtful? Is the copy authentic or is it stuffed with buzzwords? Is the ingredient story coherent, or does it feel like they threw 'natural' and 'clean' on the label without substance? I'm deeply skeptical of overclaiming, especially in this space. But I haven't given up. I'm actively looking. If an email offers a genuinely clear, scientifically grounded explanation for why their approach addresses the root cause — not just the symptom — I'll read every word. I'll also go straight to the website and read more.",
+      "stratum": {
+        "problem_awareness_stage": "actively_researching_solutions",
+        "shopping_style": "ingredient_researcher",
+        "emotional_coping_stance": "quietly_withdrawn",
+        "category_engagement": "natural_and_clean_oriented"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_05_janet_morrissey",
+      "name": "Janet Morrissey",
+      "age": 55,
+      "shortBio": "Suburban Chicago nurse practitioner, anxious about the problem at work, trusts brands with clinical credibility.",
+      "longProfile": "I work in close physical proximity to patients every single day. That's the context that makes this problem especially hard. I'm a nurse practitioner — hygiene isn't just a personal concern, it's a professional one. The odor started maybe five or six years ago and has gotten worse. I've doubled down on my routine, tried prescription-strength products, changed my diet, and nothing has resolved it. The anxiety I carry into work some mornings is real. I've had patients be my whole focus while part of my brain is running a background check on whether I smell okay. It's exhausting and demoralizing. Because of my clinical background, I think about this through a physiological lens — I understand that body chemistry changes with age and hormonal shifts. That knowledge makes me more discerning, not less. I want products backed by credible science, ideally associated with dermatologists or clinicians. I'm brand-loyal by nature — when something earns my confidence, I don't switch. Getting my confidence is hard. Marketing emails need to feel like they come from a serious company, not a lifestyle brand. If the email is all soft photography and vague wellness language, I delete it. If it references a real mechanism, shows clinical testing, and doesn't overpromise, I take notice. I'm ready to invest in something that actually works — financially and in terms of loyalty.",
+      "stratum": {
+        "problem_awareness_stage": "long_struggling_unresolved",
+        "shopping_style": "trusted_brand_loyalist",
+        "emotional_coping_stance": "anxiously_managing",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_06_ray_sutherland",
+      "name": "Ray Sutherland",
+      "age": 68,
+      "shortBio": "Retired electrical engineer in Scottsdale, methodical decision-maker, recently started noticing this problem.",
+      "longProfile": "I spent forty years solving engineering problems. My approach to personal decisions is about the same — gather the data, understand the system, make a rational choice. I recently started noticing that something has changed with body odor. I'm retired, fairly active, healthy — I wasn't expecting this. I've been doing some reading and I get that body chemistry shifts as we age. I'm not emotionally worked up about it. I just want to understand it and address it correctly, the first time if possible. I've already moved toward cleaner, simpler products in general — I don't want things loaded with synthetic chemicals I can't identify. So when I start looking for something to address this specifically, I'm going to be reading ingredient lists carefully, looking for things I can verify independently, and being skeptical of anything that sounds like marketing without substance. I don't get many marketing emails — I'm selective about who I give my address to. When one does land, I evaluate it like a technical document: is the reasoning sound? Are the claims proportionate to the evidence? Is there unnecessary complexity or obfuscation? I appreciate brevity and directness. I'm at an early stage of looking for a solution, which means I'm still forming my mental model of what the right kind of product even looks like. I'm open to learning, but I need the teacher to be credible.",
+      "stratum": {
+        "problem_awareness_stage": "recently_noticed",
+        "shopping_style": "ingredient_researcher",
+        "emotional_coping_stance": "pragmatically_proactive",
+        "category_engagement": "natural_and_clean_oriented"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_07_carolyn_yuen",
+      "name": "Carolyn Yuen",
+      "age": 49,
+      "shortBio": "Marketing manager in San Francisco, socially anxious about the problem, relies heavily on peer reviews and community.",
+      "longProfile": "I work in marketing, which means I can see through most email campaigns before I've finished the subject line. That makes me harder to reach than most — I notice the tricks, the artificial urgency, the carefully A/B-tested subject lines. Which is ironic, because I'm genuinely looking for a solution to something that's been affecting me more than I let on. The odor issue started in my mid-forties and has slowly gotten worse. I run a tight, consistent hygiene routine. I've switched to cleaner products across the board. None of it has fixed this. I'm anxious about it in a way that's starting to color my social life — I overthink seating arrangements, worry about crowded meetings, feel dread before close conversations. I've been quietly researching for months, mostly in online communities where people talk candidly about this kind of thing. Reviews are my primary currency. Not the curated ones on a brand's own website — I mean the long, detailed, unsponsored accounts from people who clearly aren't being paid to say nice things. When a marketing email earns my click, it's because something in the copy signals that the brand actually understands the specific experience I'm having — not just 'odor' in the abstract, but the persistent, unexplained, embarrassing kind that hygiene alone doesn't solve. Empathy in the copy matters. So does real social proof. I'll verify both independently before I buy.",
+      "stratum": {
+        "problem_awareness_stage": "actively_researching_solutions",
+        "shopping_style": "review_driven",
+        "emotional_coping_stance": "anxiously_managing",
+        "category_engagement": "natural_and_clean_oriented"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_08_gloria_hutchins",
+      "name": "Gloria Hutchins",
+      "age": 71,
+      "shortBio": "Retired librarian in Savannah, socially withdrawn, cautious buyer who values brand reputation and word of mouth.",
+      "longProfile": "I was a librarian for thirty-four years. Books and quiet company were my world. I'm retired now, and I had imagined this chapter of life being full of the things I love: my church choir, my garden club, my friends from work. Instead, I've been slowly pulling back from all of it. I started having a body odor problem about eight years ago, and it's never fully resolved. I've tried everything available at the drugstore and then some. I've spent money I didn't need to spend on things that promised results and didn't deliver. I don't talk about it. It feels too private, too embarrassing — the kind of thing you manage alone. I'm not a trendy shopper and I'm not an online researcher. I buy things based on trust built over time, recommendations from people I know, and a company's reputation for doing what they say they'll do. I'm on a few email lists because I like to stay informed, but I delete most marketing emails without opening them. If I do open one, I'm reading for tone first — does this company seem honest, or are they selling me a fantasy? I'm deeply tired of being sold things that don't work. At this point, what would move me is a combination of word of mouth from someone I trust and a brand that communicates with genuine warmth and humility rather than hype. No more miracle claims. Just evidence and decency.",
+      "stratum": {
+        "problem_awareness_stage": "long_struggling_unresolved",
+        "shopping_style": "trusted_brand_loyalist",
+        "emotional_coping_stance": "quietly_withdrawn",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    },
+    {
+      "id": "p_51IbVnKs_09_patrick_doherty",
+      "name": "Patrick Doherty",
+      "age": 54,
+      "shortBio": "Senior IT project manager in Boston, matter-of-fact about the problem, no-nonsense inbox behavior.",
+      "longProfile": "I manage large IT projects for a living, which means I'm professionally trained to cut through noise and focus on what actually matters. I apply that same approach to my personal life. I noticed this odor problem a couple years ago — different from normal sweat odor, persistent in a way that was new to me. I read up on it enough to understand that something about body chemistry shifts with age, and that conventional deodorants weren't designed with that in mind. So I've been systematically trying options and tracking results, roughly. I've gone through a few clinical-strength products. Nothing has fully worked. I'm now looking more carefully at ingredients and formulations, because the shotgun approach isn't delivering. I'm not embarrassed by this problem in a paralyzing way — it's annoying, it's inconvenient, and I want to fix it efficiently. My inbox is ruthlessly managed. I have a spam folder that earns its keep. Marketing emails survive my filter only if the subject line suggests something genuinely relevant to a real problem I have — not lifestyle aspiration, not vague wellness. If I open an email and the first three sentences tell me what the product does and why, I'll keep reading. If it's padded with brand story or customer testimonials before it gets to the point, I'm gone. I want mechanism, evidence, and a clear value proposition. I'll research the ingredients independently before I order.",
+      "stratum": {
+        "problem_awareness_stage": "actively_researching_solutions",
+        "shopping_style": "ingredient_researcher",
+        "emotional_coping_stance": "pragmatically_proactive",
+        "category_engagement": "conventional_product_fatigue"
+      }
+    }
+  ],
+  "agentRuns": [
+    {
+      "personaId": "p_51IbVnKs_00_diane_kowalski",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "e4TNCgHmj1",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2",
+        "bg_versed_1",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "This is exactly what I've been trying to understand — if HuffPost is citing medical experts explaining the actual science behind nonenal, I want to read every word."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "I've been curious about Salt & Stone's deodorant formula — a discount might be worth it if I can verify the ingredients stack up."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The explanation of Nonenal as an oil-based oxidation byproduct — not sweat — that regular soap can't remove is exactly the kind of mechanistic, science-grounded claim I've been looking for to understand why my current products aren't working."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 10698,
+        "outputTokens": 320,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_00_diane_kowalski",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "EXeRL3JiLj",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2",
+        "bg_versed_1",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is specifically formulated for the nonenal odor issue that comes with aging — this is exactly what I've been researching, and a sale makes it worth a look."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "Salt & Stone makes deodorant I've had on my radar — 15% off with product choice is specific enough that I want to see if their deodorant is included."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'No white cast, no breakouts' is a specific claim, not vague fluff — curious whether they back it up with actual ingredients."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical's persimmon-based deodorizing products address the exact odor mechanism I've been researching — persimmon (kaki) extract is a known odor-neutralizing ingredient with a plausible biochemical basis, and the sale stacking rewards makes it worth checking the ingredient list now."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The specific callout of Nonenal® — the age-related odor compound — and the explanation of persimmon extract as the mechanism finally gives me something coherent to evaluate, not just a vague 'odor-free' promise."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 10821,
+        "outputTokens": 480,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "bg_salt-stone_4",
+        "e4TNCgHmj1",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "HuffPost + medical experts explaining the actual science of nonenal — that's exactly the kind of credible, specific framing that makes me want to read more."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "Salt & Stone makes deodorant I've tried before, and 15% off is a real reason to look — might be worth stocking up or trying another product in their line."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The specific science around Nonenal — oil-based, not removed by regular soap, tied to aging biology after 40 — is exactly the kind of mechanistic explanation I've been looking for, and the 97% elimination claim is specific enough to make me want to dig into their evidence and customer reviews."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "Nonenal is exactly the age-related odor compound I've been reading about on Reddit — this targets the specific chemistry, not just masking, and $20 is low enough to test without overthinking it."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 4217,
+        "outputTokens": 417,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "bg_salt-stone_4",
+        "EXeRL3JiLj",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is specifically marketed for body odor issues in older adults — this is directly in my wheelhouse, and 20% off plus expiring points is a real reason to act now."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "Salt & Stone makes deodorant I've had on my radar — 15% off anything is worth a quick look to see if their deodorant is in play."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is a persimmon-based deodorizing brand targeting exactly my problem — body odor that won't quit — and the Memorial Day sale stacking 20% off with expiring rewards points gives me a concrete reason to act now rather than sit on it."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The persimmon/Nonenal angle is specific to age-related odor chemistry — not generic 'feel fresh' language — and a concentrated body wash fits my existing shower routine better than swapping to a new bar soap."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 4216,
+        "outputTokens": 417,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_02_sylvia_okonkwo",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_tracksmith_5",
+        "bg_rhode_0",
+        "e4TNCgHmj1",
+        "bg_lumin_7",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "This is exactly my situation — I want to know what the science actually says about Nonenal and whether this company understands it honestly."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "I've been curious about Salt & Stone's natural deodorant line — a 15% off prompt might be worth a look if I can vet their ingredients."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The explanation of Nonenal — the oil-based aging odor that regular soap can't wash away — is exactly the science-backed, specific information I've been looking for to understand what's happening to my body, and the Japanese persimmon antioxidant angle feels genuinely novel and worth investigating."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 10688,
+        "outputTokens": 328,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_02_sylvia_okonkwo",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_glossier_6",
+        "bg_olipop_8",
+        "bg_tracksmith_5",
+        "bg_rhode_0",
+        "EXeRL3JiLj",
+        "bg_lumin_7",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical specifically addresses the body odor issue that's been affecting me — I've heard of their nonenal-targeting products and want to know more, even if the discount framing is a bit pushy."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "I've been curious about Salt & Stone's natural deodorant line and a 15% off sitewide offer might be a low-risk way to try something new."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire has earned some trust with me as a brand that's transparent about ingredients — 'Sinkcare' sounds like a real product concept, not just hype."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical's persimmon-based deodorizing products speak directly to my body odor concern, and the science-adjacent ingredient focus (Japanese persimmon) gives me enough curiosity to investigate further."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The persimmon-based nonenal targeting is scientifically specific to the hormonal odor shift I've been experiencing since my late fifties, and a body wash fits more naturally into my daily routine than a soap bar."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 10813,
+        "outputTokens": 490,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_03_tom_vasquez",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "e4TNCgHmj1",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "\"Old person smell\" and the science behind it — that's exactly what's been bugging me, and HuffPost covering it means it's probably a straight explanation, not just a sales pitch."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's skincare bundles that cut down the guesswork — I'm at the stage where I want a system, not just another single product swap."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The explanation of Nonenal — an oil-based compound that regular soap can't wash away — directly names what I've been experiencing and gives a biological reason for it, which is exactly the kind of specific, science-backed info that would make me want to look closer."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 6054,
+        "outputTokens": 329,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_03_tom_vasquez",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "EXeRL3JiLj",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is specifically about body odor — that's exactly what's been bugging me, and a Memorial Day discount with expiring points is a concrete reason to look now."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's skincare routines — 'less guesswork' language is honest and practical, curious if there's anything relevant to my situation in a bundle."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'Customer for life' SPF with no white cast sounds like a real claim worth scanning — SPF is something I actually need more of now that I'm biking more."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical's persimmon-based deodorizing products are specifically targeting body odor at a biochemical level — that's directly relevant to what I'm noticing, and the stacked discount (20% off + rewards points) gives me a low-risk reason to actually try it."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The body wash fits my existing shower routine better than swapping in a new bar soap, and the persimmon-targets-Nonenal angle is exactly the specific, science-adjacent explanation for the odor change I've been noticing that could actually move me to try it."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 7922,
+        "outputTokens": 480,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_04_linda_fenstein",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_olipop_8",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "e4TNCgHmj1",
+        "bg_lumin_7",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "This is exactly the kind of subject line that stops me cold — 'Nonenal and aging skin' is the actual science I've been trying to understand, and if HuffPost covered it, there might be something substantive here."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "I've looked at Salt & Stone's deodorant before — 15% off anything is a decent nudge to finally try it."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight, no white cast, no breakouts — that's specific enough to sound like they actually know their formula, not just marketing fluff."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The scientific explanation of Nonenal — a specific, named compound tied to aging biology — is exactly the kind of root-cause ingredient story I've been hunting for, and the claim that their persimmon-based formula dissolves it rather than masking it made me want to read more on their site."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "Persimmon targeting Nonenal specifically is a real, documented mechanism I've read about — this is the first product I've seen in the U.S. market that names it directly, and at $20 it's low enough risk to test."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 10779,
+        "outputTokens": 500,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_04_linda_fenstein",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_olipop_8",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "EXeRL3JiLj",
+        "bg_lumin_7",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical specifically targets the kind of odor issue I've been dealing with — I've been curious about their nubianin/persimmon approach and a 20% off sale is enough to make me actually look."
+          },
+          {
+            "emailId": "bg_salt-stone_4",
+            "reason": "Salt & Stone makes clean deodorant — 15% off with a pick-two offer means I could try their deodorant alongside something else without a big commitment."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'No white cast, no breakouts' on an SPF is a very specific claim that actually means something to me — that's the language of someone who understands the real complaints."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical's persimmon-based deodorizing products address the root cause of odor (not just masking it), and the specific ingredient story — Japanese persimmon — is something I've actually read about in clean beauty research, making this worth investigating further."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The persimmon extract targeting Nonenal — a specific hormonal compound, not just a generic 'odor' claim — is the most scientifically coherent explanation I've seen for why natural deodorant approaches have failed me at this life stage, and the body wash format fits into my existing shower routine without replacing my deodorant approach entirely."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 12585,
+        "outputTokens": 506,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_05_janet_morrissey",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "e4TNCgHmj1",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "HuffPost + medical experts + the word 'Nonenal' — this is exactly the science-backed framing I've been looking for around age-related odor change."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "It names the actual mechanism — Nonenal, oxidation of fatty acids, antioxidant deficiency — which matches exactly how I've been thinking about this physiologically, and the 97% elimination claim with a specific active ingredient (persimmon antioxidants) feels testable rather than vague."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4220,
+        "outputTokens": 267,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_05_janet_morrissey",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "EXeRL3JiLj",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is specifically formulated for age-related body odor — this is exactly the product category I'm actively trying to solve, and a Memorial Day discount with expiring points gives me a real reason to act now."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical uses persimmon-based science for odor control — a real biochemical mechanism — and I've been curious about this brand's clinical approach, so the sale makes it a reasonable moment to try"
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The specific call-out of Nonenal® — the hormonal byproduct I know is driving my age-related odor change — tells me this brand understands the actual mechanism, not just lifestyle marketing, and the body wash format fits my daily clinical hygiene routine better than a bar soap."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 4219,
+        "outputTokens": 363,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_06_ray_sutherland",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "e4TNCgHmj1",
+        "bg_salt-stone_4",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2",
+        "bg_versed_1",
+        "bg_n-cessaire_3"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "\"Nonenal\" is a specific chemical compound — if they're actually explaining the biochemistry, this is exactly the kind of information I'm looking for right now."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The Nonenal explanation — oil-based compound that regular soap can't wash away — is a specific, testable mechanism that matches what I've been reading, and the persimmon-derived antioxidant claim is concrete enough to investigate further."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "Directly addresses nonenal — the age-related compound I've been reading about — and persimmon is a credible, verifiable ingredient for that specific chemistry, which meets my bar for a first trial."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 4214,
+        "outputTokens": 341,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_06_ray_sutherland",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "EXeRL3JiLj",
+        "bg_salt-stone_4",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_tower-28-beauty_2",
+        "bg_versed_1",
+        "bg_n-cessaire_3"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical specifically addresses nonenal — age-related body odor — which is exactly what I'm researching right now. Worth seeing what they're selling and how they frame the science."
+          },
+          {
+            "emailId": "bg_lumin_7",
+            "reason": "Men's grooming brand, 'less guesswork' framing suggests some kind of curated simplicity — curious whether their ingredient approach aligns with what I'm looking for."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Persimmon as a natural deodorizing ingredient is something I haven't encountered before — credible enough to warrant a look at the ingredient list and the science behind it"
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "Soap is a simpler, more verifiable format than a body wash blend — easier to evaluate the ingredient list, and the persimmon-for-Nonenal mechanism is the specific thing I've been reading about and want to test."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 6084,
+        "outputTokens": 412,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_07_carolyn_yuen",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "e4TNCgHmj1",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "This is exactly what I've been quietly researching — 'nonenal' and aging-related odor is the specific, science-backed term I've seen in the communities I follow, and HuffPost coverage signals some mainstream credibility worth checking."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The specific explanation of Nonenal — oil-based, not sweat, can't be washed away with regular soap — directly names the exact experience I've been having and couldn't explain, which signals the brand actually understands the problem, not just 'odor' generically."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "The Nonenal-specific callout is exactly the hormonal odor issue I've been quietly researching — 'Fresher with Age' signals they understand the mid-life hormonal component, not just generic odor, and $20 is a low-risk trial price worth testing against my current routine."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 4239,
+        "outputTokens": 390,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_07_carolyn_yuen",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "EXeRL3JiLj",
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is literally the only brand in my inbox that makes products specifically for the kind of body odor issue I'm dealing with — I want to see if the sale + points expiry is worth acting on."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical's persimmon-based deodorizing products are specifically known in the communities I follow for addressing persistent body odor that hygiene alone doesn't fix — this is directly relevant to what I've been researching."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+            "spent": 24.97,
+            "reason": "The specific call-out of Nonenal® — the hormonal odor compound that starts in your mid-40s — signals this brand actually understands my situation, not just generic 'odor'; the body wash format fits my existing shower routine better than a bar soap, and the concentrated formula is a practical plus I can verify."
+          }
+        ],
+        "totalSpent": 24.97
+      },
+      "cost": {
+        "inputTokens": 6072,
+        "outputTokens": 384,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_08_gloria_hutchins",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_tower-28-beauty_2",
+        "e4TNCgHmj1",
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "bg_tracksmith_5"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "HuffPost and medical experts talking about the exact thing I've been quietly dealing with for eight years — I have to know what they're saying."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "The explanation of Nonenal as an oil-based compound that regular soap can't wash away — not a vague promise, but a specific biological mechanism — is the first time something in an email has matched what I've actually experienced and wondered about."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4228,
+        "outputTokens": 244,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_08_gloria_hutchins",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "bg_tower-28-beauty_2",
+        "EXeRL3JiLj",
+        "bg_rhode_0",
+        "bg_glossier_6",
+        "bg_tracksmith_5"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical is specifically for body odor — this is the one brand in my inbox that speaks directly to my problem, and a 20% off offer is worth a look."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4206,
+        "outputTokens": 126,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_09_patrick_doherty",
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "e4TNCgHmj1",
+        "bg_glossier_6",
+        "bg_salt-stone_4",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "HuffPost citing actual science on nonenal and aging skin odor — that's exactly the compound I've been reading about, and I want to see what formulation they're pushing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "e4TNCgHmj1",
+            "reason": "Directly names Nonenal, explains the oil-based mechanism that defeats regular soap/deodorant, and cites a specific 97% elimination claim — exactly the kind of ingredient-level detail I want to research further."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [
+          {
+            "productId": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+            "spent": 19.97,
+            "reason": "Persimmon targeting Nonenal specifically addresses the age-related body chemistry shift I've been researching — worth a systematic trial at this price point."
+          }
+        ],
+        "totalSpent": 19.97
+      },
+      "cost": {
+        "inputTokens": 4227,
+        "outputTokens": 329,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_51IbVnKs_09_patrick_doherty",
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "inboxOrder": [
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "bg_rhode_0",
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "EXeRL3JiLj",
+        "bg_glossier_6",
+        "bg_salt-stone_4",
+        "bg_versed_1"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "EXeRL3JiLj",
+            "reason": "Mirai Clinical specifically targets nonenal — the age-related odor compound I've been researching — and a Memorial Day discount is a concrete reason to act now."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4205,
+        "outputTokens": 124,
+        "cacheReadTokens": 0
+      }
+    }
+  ],
+  "aggregated": {
+    "A": {
+      "arm": "A",
+      "candidateEmailId": "e4TNCgHmj1",
+      "openedBy": 10,
+      "clickedBy": 10,
+      "purchasedBy": 5,
+      "revenue": 99.85,
+      "totalPersonas": 10
+    },
+    "B": {
+      "arm": "B",
+      "candidateEmailId": "EXeRL3JiLj",
+      "openedBy": 10,
+      "clickedBy": 8,
+      "purchasedBy": 8,
+      "revenue": 194.76,
+      "totalPersonas": 10
+    }
+  },
+  "productsById": {
+    "334a4294-ce7d-4efe-8f13-1692ea56d45e": {
+      "id": "334a4294-ce7d-4efe-8f13-1692ea56d45e",
+      "brandId": "51IbVnKsvsalX66sLGjmy_WU3CexdP",
+      "name": "Deodorizing Soap with Persimmon",
+      "price": 19.97,
+      "description": "Fresher with Age: The only U.S. soap with persimmon to eliminate Nonenal® (hormonal imbalance), armpit, vaginal, and foot odors.\n\nGentle & Effective: Natural ingredients for soft, silky skin. \n\n Feel Confident: Stay odor-free for any occasion!",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0293/6451/9044/files/Mirai_Clinical_Deodorizing_Soap_Wet.jpg?v=1767888045"
+    },
+    "807e6a52-604d-4ffb-9096-e827c9ff81a3": {
+      "id": "807e6a52-604d-4ffb-9096-e827c9ff81a3",
+      "brandId": "51IbVnKsvsalX66sLGjmy_WU3CexdP",
+      "name": "Purifying & Deodorizing Body Wash with Persimmon",
+      "price": 24.97,
+      "description": "Fresher with age: A skin loving body wash with Japanese persimmon extract which eliminates Nonenal®, armpit, vaginal and foot odors.\n\n Safe and effective natural ingredients: It gently cleanses while retaining skin's moisture and nourishes dull, dry skin.\n\n Concentrated formula: Use on its own or mix with your other body wash—a little goes a long way!",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0293/6451/9044/files/miraiclinical_Body_wash_2_hands_holding.webp?v=1767888045"
+    }
+  },
+  "totalCost": {
+    "inputTokens": 134707,
+    "outputTokens": 7247,
+    "cacheReadTokens": 0
+  }
+}

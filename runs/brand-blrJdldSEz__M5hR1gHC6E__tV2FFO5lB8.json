@@ -1,0 +1,1235 @@
+{
+  "id": "run_1778981031685_blrJdldS__M5hR1gHC6E__tV2FFO5lB8",
+  "generatedAt": "2026-05-17T01:23:51.685Z",
+  "brandId": "blrJdldSEz",
+  "brandName": "Everlane",
+  "audienceExcerpt": "The Everlane audience consists primarily of educated millennials and Gen Z individuals, aged 25-45, with a moderate to high disposable income, likely residing in urban or suburban areas. They are conscious consumers who actively seek out brands aligning with their personal values, prioritizing ethical production, environmental sustainability, and transparency. Their lifestyle is often busy but curated, balancing careers with social lives and personal well-being. They are digitally savvy, researc",
+  "axes": [
+    {
+      "name": "ethical_consumption_stage",
+      "values": [
+        "awareness_seeker",
+        "active_explorer",
+        "committed_practitioner"
+      ],
+      "rationale": "Where someone sits on the journey from recognizing the problem to having established trusted ethical purchasing habits drives how they respond to brand claims, proof points, and calls to action in email."
+    },
+    {
+      "name": "trust_orientation",
+      "values": [
+        "skeptic",
+        "cautious_optimist",
+        "ready_believer"
+      ],
+      "rationale": "Prior experience with greenwashing and hollow brand claims creates vastly different thresholds for persuasion — skeptics need hard evidence, while ready believers respond to narrative and mission; this shapes which email content converts."
+    },
+    {
+      "name": "style_priority",
+      "values": [
+        "aesthetics_first",
+        "balanced",
+        "ethics_first"
+      ],
+      "rationale": "Within this audience, the relative weight placed on style versus sustainability determines which email hooks — a striking product visual vs. a supply-chain transparency story — earn attention and drive clicks."
+    },
+    {
+      "name": "purchase_readiness",
+      "values": [
+        "browsing",
+        "comparing",
+        "ready_to_buy"
+      ],
+      "rationale": "This research-driven audience spans a wide spectrum from early discovery to decision-point; readiness level dictates whether an email should educate, differentiate, or offer a direct conversion trigger."
+    }
+  ],
+  "candidateA": {
+    "id": "tV2FFO5lB8",
+    "brandId": "blrJdldSEz",
+    "brandName": "Everlane",
+    "sender": "Everlane <hello@everlane.com>",
+    "subject": "Welcome to Everlane.",
+    "preheader": "Modern essentials, ethically made. Here's 10% off to start your wardrobe.",
+    "bodyText": "[Image: Two Everlane models against a soft bone backdrop. Left: profile of a woman in a chunky white knit sweater. Right: woman in a navy button-up and white wide-leg trousers holding a brown suede clutch. Embedded headline reads 'Welcome in — 10% off inside.']\n\n Modern essentials, ethically made. Hi {{ first_name|default:'friend' }}.\n\n[Button: \n Shop new arrivals\n ]\n\n Radical Transparency.\n\n The way clothing should be made.\n\n Real Costs\n\n Materials, labor, transit. All disclosed.\n\n Ethical Factories\n\n Vetted partners. Fair conditions.\n\n Sustainable Materials\n\n Recycled and organic, by design.\n\n Start with the essentials.\n\n Pieces worth investing in. Season after season.\n\n[Image: Woman wearing The Luxe Rib Crew tee in white with light-wash wide-leg jeans]\n\n The Luxe Rib Crew\n\n[Image: Model wearing The Way-High Jean 2.0 in washed black denim with a white tank]\n\n The Way-High® Jean\n\n[Image: Tan pebbled-leather ballet flats with a rounded toe and low heel on a clean backdrop]\n\n The Italian Leather Flat\n\n[Button: \n Shop new arrivals\n ]\n\n @import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap\");\n\n A welcome, on us\n\n 10% off your first order.\n\n Apply code WELCOME10 at checkout. Valid for 14 days.\n\n Claim your offer",
+    "previewScreenshotUrl": "https://file.rendit.io/n/03ae1e5cd134.png"
+  },
+  "candidateB": {
+    "id": "M5hR1gHC6E",
+    "brandId": "blrJdldSEz",
+    "brandName": "Everlane",
+    "sender": "Everlane <hello@everlane.com>",
+    "subject": "Welcome. Here's 10% off.",
+    "preheader": "Modern essentials, made ethically and priced transparently. Your first order is on us—well",
+    "bodyText": "[Image: Side-by-side editorial portraits. Left: a woman in profile wearing a chunky cream-colored sweater. Right: a woman in a black button-down shirt and white linen pants, holding a soft brown leather bag. Embedded text reads: Hello. Welcome in.]\n\n Modern essentials, made honestly.\n\n Ethical factories. Transparent prices. Quality that lasts.\n\n[Button: \n Shop the essentials\n ]\n\n RADICAL TRANSPARENCY\n\n No secrets. Just standards.\n\n True Cost\n\n Itemized pricing on every piece.\n\n Ethical Factories\n\n Visited, vetted, and trusted.\n\n Better Materials\n\n Organic, recycled, natural fibers.\n\n WELCOME GIFT\n\n 10% off your first order.\n\n Code WELCOME10 . Expires in 14 days.\n\n[Button: \n Shop the essentials\n ]",
+    "previewScreenshotUrl": "https://file.rendit.io/n/eceaad007d61.png"
+  },
+  "backgroundEmails": [
+    {
+      "id": "bg_rhode_0",
+      "brandId": "milled-rhode",
+      "brandName": "Rhode",
+      "sender": "Rhode <hello@rhode.com>",
+      "subject": "ask rhode: Spotwear",
+      "preheader": "when should i use a hydrocolloid patch?",
+      "bodyText": "when should i use a hydrocolloid patch?"
+    },
+    {
+      "id": "bg_versed_1",
+      "brandId": "milled-versed",
+      "brandName": "Versed",
+      "sender": "Versed <hello@versed.com>",
+      "subject": "A “Customer for life” SPF",
+      "preheader": "Lightweight, no white cast, no breakouts",
+      "bodyText": "Lightweight, no white cast, no breakouts"
+    },
+    {
+      "id": "bg_tower-28-beauty_2",
+      "brandId": "milled-tower-28-beauty",
+      "brandName": "Tower 28 Beauty",
+      "sender": "Tower 28 Beauty <hello@tower28beauty.com>",
+      "subject": "NEW! Lip plumper made for sensitive skin",
+      "preheader": "All plump, no pain",
+      "bodyText": "All plump, no pain"
+    },
+    {
+      "id": "bg_n-cessaire_3",
+      "brandId": "milled-n-cessaire",
+      "brandName": "Nécessaire",
+      "sender": "Nécessaire <hello@ncessaire.com>",
+      "subject": "NEW! The Hand Wash + The Hand Lotion",
+      "preheader": "Introducing Sinkcare.",
+      "bodyText": "Introducing Sinkcare."
+    },
+    {
+      "id": "bg_salt-stone_4",
+      "brandId": "milled-salt-stone",
+      "brandName": "Salt & Stone",
+      "sender": "Salt & Stone <hello@saltstone.com>",
+      "subject": "15% off—anything you want",
+      "preheader": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team",
+      "bodyText": "Pick two and save. ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ ­ /div> e/h1> ​ ;Important Delivery Information – Especially for Plain Text Readers Hi [Recipient Name], This message is particularly important for those of you reading this in plain text, which often means you're using an older device. We know that users like you are often more interested in how companies ensure the reliable delivery of their communications. Your email experience is important to us. Right now, your email experience with us is 100% optimized for delivery, and we've ensured all the necessary configurations are in place. We're committed to being proactive about your inbox experience, taking preventative measures to safeguard your ability to receive our important messages. Why We're Contacting You We believe in transparency and want to ensure you have all the information you need to receive our communications reliably. While we employ the latest email best practices to ensure your messages reach you, it's equally important for you to be informed about how we do this, especially if you're using an older email client. Understanding Our Email Delivery Measures In the unlikely event you don't receive an expected message from us, we want you to be prepared. We want to highlight our commitment to DKIM (DomainKeys Identified Mail) and SPF (Sender Policy Framework), which are crucial for ensuring the authenticity and deliverability of our emails. Here are some potential reasons for email delivery issues that these settings help mitigate: Messages being flagged as spam by your email provider. Emails not reaching your inbox due to sender verification failures. Spoofing attempts where malicious actors try to impersonate us. Proactive Email Delivery Measures We take a proactive approach to email deliverability, constantly monitoring our systems and implementing the latest protocols to ensure our messages reach your inbox. This includes: Robust DKIM signatures to verify the authenticity of our emails. Comprehensive SPF records to authorize our sending servers. Regular audits of our email sending infrastructure to identify and address potential issues. Well-defined protocols to handle any delivery incidents swiftly and effectively. Your Orders and Communications Are Safe We want to assure you that your orders with [Company Name] and related communications are completely safe. We take every precaution to ensure your information is protected throughout the entire order and communication process. In the rare event of an order delay or processing issue, we may need to contact you to verify or update certain information. This may include: Confirming your shipping address Clarifying order details Providing updates on the estimated delivery time Important Email Delivery Reminder Please remember that we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email. Protecting your data is our top priority. Ensuring Your Messages Reach You Is Our Top Priority At [Your Company Name], we take email deliverability very seriously. We have implemented robust measures to protect your ability to receive our information, including: Proper DKIM Configuration: This helps email providers verify that our emails are truly from us and haven't been tampered with. Accurate SPF Settings: This tells receiving mail servers which IP addresses are authorized to send email on our behalf, reducing the chance of our emails being marked as spam. Regular Monitoring: We constantly monitor our email sending reputation and deliverability rates to proactively address any issues. Dedicated Team: We have a team focused on ensuring our emails reach you reliably. Even though our settings are 100% optimized, it's important to understand these measures. In the event you experience issues, we may also ask you to: Take Action Now If you are experiencing issues receiving our emails, please click on the following link to verify your email settings: [link to a legitimate but non-sensitive page on your website, like a generic FAQ or contact page] Follow the on-screen instructions to complete the verification process. What Can Affect Email Delivery? Sometimes, issues can arise from your end, such as: Overly strict spam filters on your email client or provider. Outdated email client software that doesn't fully support modern email authentication. Incorrectly marked emails that you've moved to your spam folder. Welcoming All Customers At [Your Company Name], we believe in making our services accessible and reliable for all our customers, regardless of their device or email setup. Your cooperation in understanding these technical aspects helps us maintain a secure and efficient communication channel for everyone. Your Cooperation Is Crucial We understand that this information may seem technical, but your ability to receive our communications is our utmost concern. By understanding these settings, you are helping us maintain a secure and efficient email environment for all our users. If you have any questions or concerns about email deliverability, please contact our support team immediately at support@yourcompanyname.com. Thank you for your prompt attention to this matter. Sincerely, The [Your Company Name] Account Security Team The Importance of Reliable Communication In today's digital age, where clear and consistent communication is increasingly vital, ensuring the reliable delivery of messages has become a paramount concern for organizations worldwide. As we continue to operate in this complex landscape, it is imperative that we prioritize email deliverability and sender authentication as fundamental pillars of our business operations. The Importance of Email Deliverability Email deliverability is not merely a technical obligation; it is a strategic imperative that directly impacts our organization's reputation and long-term sustainability. By prioritizing email deliverability, we can: Mitigate Risk: Significantly reduce the risk of important messages being missed, regulatory fines for missed communications, and reputational damage that can severely impact our business. Differentiate ourselves as a responsible and trustworthy organization, attracting customers who value clear and consistent communication. Key Provisions of Our Enhanced Email Delivery Policy Our comprehensive email delivery policy outlines the following key principles to ensure the consistent receipt of your important information: Email Information We Utilize: Essential Contact Information: Name, email address. Usage Data: Information about your interactions with our emails (e.g., opens, clicks). How We Use Your Email Information: Delivering Exceptional Services: Providing our products and services to you seamlessly through email. Enhancing Our Offerings: Leveraging your feedback and usage data to continuously improve our email communications. Effective Communication: Keeping you informed through important notifications, updates, and relevant marketing materials. Adhering to Legal Requirements: Ensuring compliance with all applicable laws and regulations regarding email communication. Email Sharing and Disclosure: Trusted Third-Party Service Providers: We may share your email information with carefully vetted third-party service providers who assist us in delivering our emails (e.g., email service providers). Legal Obligations: In certain circumstances, we may be required to disclose your information to comply with legal obligations or to protect our rights. Robust Email Delivery Measures: Advanced DKIM and SPF Configuration: Employing state-of-the-art authentication techniques to safeguard email authenticity. Strict Sender Management: Implementing rigorous controls to manage our sending reputation. Regular Deliverability Audits: Conducting regular audits to identify and address potential vulnerabilities in our email sending. Comprehensive Incident Response Plans: Having well-defined incident response plans to effectively handle email delivery incidents. Ongoing Team Training: Providing continuous training to our team on email deliverability best practices. Email Minimization: Sending only necessary and relevant email communications. Data Retention Policies: Implementing clear data retention policies to ensure email data is securely stored and deleted when no longer needed. Your Rights: Access: You have the right to access information about your email interactions and request a copy. Correction: You have the right to correct any inaccuracies in your email preferences. Erasure: You have the right to request the deletion of your email information under certain circumstances (e.g., unsubscribing). Data Portability: You have the right to receive your email data in a portable format. Objection: You have the right to object to the processing of your email information for specific purposes (e.g., marketing). Immediate Action Encouraged: Review Your Email Preferences: Familiarize yourself with the details of our updated email communication policy, accessible on our company website. Adhere to Guidelines: Ensure that your daily email practices align with the principles outlined in the policy (e.g., whitelisting our address). Report Delivery Issues: If you suspect an email delivery issue, promptly report it to the [relevant department or individual]. By prioritizing reliable email delivery, we can protect our organization, our customers, and our employees. Your cooperation is essential in maintaining these high standards. We encourage you to review the policy in detail and reach out to us if you have any questions or concerns. Thank you for your attention to this critical matter. Sincerely, The [Company Name] Team"
+    },
+    {
+      "id": "bg_tracksmith_5",
+      "brandId": "milled-tracksmith",
+      "brandName": "Tracksmith",
+      "sender": "Tracksmith <hello@tracksmith.com>",
+      "subject": "Match Your Top to the Temps",
+      "preheader": "Warmer days incoming…",
+      "bodyText": "Warmer days incoming…"
+    },
+    {
+      "id": "bg_glossier_6",
+      "brandId": "milled-glossier",
+      "brandName": "Glossier",
+      "sender": "Glossier <hello@glossier.com>",
+      "subject": "Our community’s must-have products",
+      "preheader": "fall in love with them today",
+      "bodyText": "fall in love with them today"
+    },
+    {
+      "id": "bg_lumin_7",
+      "brandId": "milled-lumin",
+      "brandName": "Lumin",
+      "sender": "Lumin <hello@lumin.com>",
+      "subject": "More Routine, Less Guesswork",
+      "preheader": "Bundles that actually make sense",
+      "bodyText": "Bundles that actually make sense"
+    },
+    {
+      "id": "bg_olipop_8",
+      "brandId": "milled-olipop",
+      "brandName": "Olipop",
+      "sender": "Olipop <hello@olipop.com>",
+      "subject": "Back for Good: Blackberry Vanilla ✨",
+      "preheader": "Shop this fan-favorite ➡️",
+      "bodyText": "Shop this fan-favorite ➡️"
+    }
+  ],
+  "personas": [
+    {
+      "id": "p_blrJdldS_00_maya_okonkwo",
+      "name": "Maya Okonkwo",
+      "age": 31,
+      "shortBio": "UX designer in Chicago, methodical researcher who's been burned by greenwashing and buys almost nothing on impulse.",
+      "longProfile": "I'm a UX designer living in Chicago's Logan Square neighborhood, and the same analytical habits I bring to my work follow me into every purchase I make. I've spent the last four years deliberately overhauling my wardrobe — slowly, expensively, and with a lot of dead ends. I know enough now to recognize when a brand is performing sustainability rather than practicing it. Vague language about 'conscious collections' or 'eco-friendly fibers' with no sourcing data attached makes me close a tab immediately. My BS detector is finely tuned and frequently triggered.\n\nIn my inbox, I get a lot of marketing email from apparel brands. Most of it goes unread. What actually earns a click is something specific: a factory name, a wage figure, a certification I can independently verify. If an email leads with a beautiful product photo and nothing else, I assume there's nothing else. I'm not comparing prices — I've already accepted that doing this right costs more. What I'm comparing is credibility. I want to see that a brand can withstand scrutiny, not just survive a scroll. I'm currently in an active comparison phase for a few wardrobe gaps — specifically outerwear and everyday trousers — and I will spend weeks on this decision if I have to.",
+      "stratum": {
+        "ethical_consumption_stage": "committed_practitioner",
+        "trust_orientation": "skeptic",
+        "style_priority": "balanced",
+        "purchase_readiness": "comparing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_01_jordan_pryce",
+      "name": "Jordan Pryce",
+      "age": 27,
+      "shortBio": "Grad student in Portland, newly woke to fast fashion's harms but overwhelmed and not yet sure who to trust.",
+      "longProfile": "I'm finishing a master's in environmental policy in Portland, which means I know more than most people about what the apparel industry is actually doing to the planet — and I still find myself freezing in the checkout flow because I genuinely don't know who to believe. I became aware of the fast fashion problem a couple of years ago and it's been sitting on me since. I've started unsubscribing from the brands I used to love without guilt, but I haven't fully replaced them with anything I feel good about.\n\nI care a lot about how I look. I'll be honest about that. Style is a real form of self-expression for me and I'm not willing to dress like I'm punishing myself in order to be ethical. So what I'm searching for is proof that those two things can coexist — that clothing can be genuinely beautiful and genuinely made well. In my inbox, I respond to visuals first. If something catches my eye, I'll read further. But I have a soft wariness about 'sustainable' claims — I've clicked on things before that looked promising and turned out to be all messaging and no substance. I'm not a cynical person by nature, so I want to believe. I just need something more than a green color palette and a feel-good tagline to keep me engaged.",
+      "stratum": {
+        "ethical_consumption_stage": "awareness_seeker",
+        "trust_orientation": "cautious_optimist",
+        "style_priority": "aesthetics_first",
+        "purchase_readiness": "browsing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_02_daniel_whitmore",
+      "name": "Daniel Whitmore",
+      "age": 42,
+      "shortBio": "Finance director in Boston suburbs, values quality and longevity, doesn't moralize but makes deliberate choices.",
+      "longProfile": "I'm a finance director living just outside Boston with my partner and two kids. My relationship with clothing is pretty simple at its core: I want things that look good, fit well, and last. I started paying more attention to how clothes are made about five years ago — not because I had a political awakening, but because I got tired of replacing things. The economics of buying cheap and replacing often stopped making sense to me, and once I started looking at where things came from, I couldn't unsee it.\n\nI'm not an ideologue about this. I don't make every purchase a statement. But I've quietly shifted toward brands that can explain themselves — who made this, where, and why the price is what it is. I have a high income and I'm not especially price-sensitive for clothing I'll actually wear. What I'm sensitive to is wasted money and wasted time. In my inbox, I respond to emails that get to the point. Show me the product. Tell me why it's worth it. If the copy is dense with buzzwords or feels like it's trying to make me feel virtuous for buying something, I move on. I'm currently looking to replace a few wardrobe staples and I'm ready to make a purchase — I just need an email to give me enough to click through and trust the site I land on.",
+      "stratum": {
+        "ethical_consumption_stage": "committed_practitioner",
+        "trust_orientation": "cautious_optimist",
+        "style_priority": "aesthetics_first",
+        "purchase_readiness": "ready_to_buy"
+      }
+    },
+    {
+      "id": "p_blrJdldS_03_simone_beauchamp",
+      "name": "Simone Beauchamp",
+      "age": 34,
+      "shortBio": "Freelance photographer in Brooklyn, deeply values ethics but exhausted by the research burden of ethical fashion.",
+      "longProfile": "I'm a freelance photographer based in Brooklyn and I've been trying — genuinely trying — to build an ethical wardrobe for about three years. The problem is that it's a part-time job. The amount of research required to vet a single brand is exhausting, and I've been disappointed enough times that I approach anything new with significant suspicion. I've read the reports. I know what certifications actually mean and which ones are essentially self-reported. I don't find that knowledge comforting — it mostly just makes me more tired.\n\nMy values are clear to me: the people who make my clothes should be paid fairly and work in safe conditions, full stop. Environmental impact matters too, but the labor piece is what I care about most viscerally. When I get a marketing email from an apparel brand, my first instinct is distrust. I'm looking for reasons to dismiss it, not reasons to engage. What actually gets me to pause is specificity that I can check — not 'we partner with ethical factories' but actual verifiable detail. Authenticity of tone matters too. If something reads like it was written by a marketing committee trying to appeal to people like me, I feel it immediately and I'm gone. I'm in the middle of comparing options for a few specific wardrobe gaps, but I'm moving slowly on purpose.",
+      "stratum": {
+        "ethical_consumption_stage": "active_explorer",
+        "trust_orientation": "skeptic",
+        "style_priority": "ethics_first",
+        "purchase_readiness": "comparing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_04_tariq_nassar",
+      "name": "Tariq Nassar",
+      "age": 29,
+      "shortBio": "Software engineer in Austin, casual about sustainability but genuinely curious and open to being convinced.",
+      "longProfile": "I'm a software engineer living in Austin. I moved here two years ago from the East Coast and I've been gradually shedding the wardrobe I accumulated through my twenties — lots of it impulsive, a lot of it already falling apart. I've started to notice and care about that in a way I didn't before. A friend of mine went deep on ethical fashion and some of what she shared stuck with me. I'm not as informed as she is, but I'm more curious than I used to be.\n\nI'm not a heavy researcher when it comes to shopping. I rely more on recommendations and first impressions than deep independent investigation. When something feels trustworthy, I tend to go with it — I'm not naturally suspicious of brands, though I'm aware I probably should be more discerning. In my inbox, I respond to storytelling. If a brand can make me feel something or help me understand something I didn't before, I'm engaged. I don't need a wall of certifications; I need a narrative that feels real. I'm mostly browsing right now — not urgently looking for anything specific — but I'm genuinely open to discovering something worth paying attention to. I click when something feels fresh or tells me something I didn't already know.",
+      "stratum": {
+        "ethical_consumption_stage": "awareness_seeker",
+        "trust_orientation": "ready_believer",
+        "style_priority": "balanced",
+        "purchase_readiness": "browsing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_05_priya_menon",
+      "name": "Priya Menon",
+      "age": 38,
+      "shortBio": "Pediatric nurse practitioner in Seattle, time-starved, wants a trustworthy capsule wardrobe and wishes it were easier.",
+      "longProfile": "I'm a pediatric nurse practitioner in Seattle and my time is genuinely not my own. I work long shifts, I have two kids in elementary school, and by the time I sit down at night, I have limited bandwidth for anything that feels like homework. I care about ethical fashion — I've cared about it for years — but I've never fully cracked it because the research burden is so high and I've made enough wrong turns that I've become cautious about where I invest my time and money.\n\nWhat I want, more than anything, is simplicity. I want a small set of versatile, high-quality pieces I can trust completely — ethically and aesthetically — and stop thinking about it. The capsule wardrobe idea resonates with me deeply; I just haven't found the right set of pieces from the right source. When I get marketing email, I have about ten seconds of attention to give it. What keeps me reading is an immediate sense that the brand understands my actual problem — not a vague aspiration, but the specific frustration of wanting to shop ethically and finding it hard. I respond to warmth and practicality over polish. I'm ready to buy — I have specific items in mind and a real budget set aside. An email that earns my trust and shows me the right product gets a click.",
+      "stratum": {
+        "ethical_consumption_stage": "active_explorer",
+        "trust_orientation": "cautious_optimist",
+        "style_priority": "balanced",
+        "purchase_readiness": "ready_to_buy"
+      }
+    },
+    {
+      "id": "p_blrJdldS_06_ellis_nakamura",
+      "name": "Ellis Nakamura",
+      "age": 25,
+      "shortBio": "Junior copywriter in Los Angeles, style-conscious and idealistic, still forming their ethical consumption habits.",
+      "longProfile": "I'm a junior copywriter living in Silver Lake, Los Angeles, and I spend a lot of time thinking about aesthetics — it's kind of unavoidable in my work and my social world. I've always been drawn to clothing as a form of identity expression, and I've spent more than I probably should on building a wardrobe I feel good in. The ethical dimension of that has been creeping in over the last year or two. I started paying attention to where things come from, partly because of content I was consuming online and partly because some of what I was buying was visibly degrading after just a few washes.\n\nI'm still early in figuring this out. I don't have a systematic process yet — I respond more to gut feelings, recommendations from people whose taste I respect, and content that feels genuine rather than corporate. In email, I'm drawn in by beautiful visuals and a voice that doesn't feel like a brand performing for me. I'm aspirational — I want to buy into an ethos, not just a product. I'm not urgently looking for anything specific right now, but I'm very open to discovery. If something catches my eye and feels authentic, I'll click. I haven't yet built the skeptical muscle that would make me slow down and interrogate the claims.",
+      "stratum": {
+        "ethical_consumption_stage": "awareness_seeker",
+        "trust_orientation": "ready_believer",
+        "style_priority": "aesthetics_first",
+        "purchase_readiness": "browsing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_07_claire_oduya",
+      "name": "Claire Oduya",
+      "age": 45,
+      "shortBio": "High school principal in Minneapolis, pragmatic ethical consumer who has established clear rules for herself and shops efficiently.",
+      "longProfile": "I'm a high school principal in Minneapolis and I've been thoughtful about consumption — not just clothing — for over a decade. I have a clear personal framework: I buy less overall, I pay more for things that are made responsibly, and I keep things a long time. I've done enough reading and enough firsthand disappointment to know that the 'sustainable fashion' space has a significant gap between marketing and practice. I'm not cynical, but I'm rigorous.\n\nI don't need to be sold on the idea of ethical fashion — I'm already there. What I need from any brand trying to reach me is evidence, not persuasion. My email inbox is a place where a lot of brands are competing for my attention and most of them fail immediately. I'm looking for claims that hold up — specific materials sourcing, factory certifications I can look up, wage transparency. I have zero patience for vague mission statements or photography of golden-hour fields with words like 'intentional' or 'curated' floating over them. I respond to precision and honesty. I'm currently comparing options in a few categories — I know what I need, I've got the budget, and I'm evaluating which brand earns the trust, not which brand has the prettiest email. That distinction matters to me enormously.",
+      "stratum": {
+        "ethical_consumption_stage": "committed_practitioner",
+        "trust_orientation": "skeptic",
+        "style_priority": "ethics_first",
+        "purchase_readiness": "comparing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_08_marcus_leland",
+      "name": "Marcus Leland",
+      "age": 33,
+      "shortBio": "Product manager in Denver, mid-journey ethical consumer with growing frustration at the gap between good values and good options.",
+      "longProfile": "I'm a product manager in Denver and I've been on what I'd describe as an ongoing, frustrating journey with ethical fashion for about four years. I know the problem well. I know the landscape reasonably well. I've tried a handful of brands that promised a lot and delivered inconsistently — either the quality didn't hold, or I dug deeper and found the ethics story had holes in it, or both. I haven't given up, but I've recalibrated my expectations downward, which isn't where I want to land.\n\nI approach new brands with cautious curiosity. I want to believe there are companies doing this right, and I don't go in looking for reasons to dismiss them — but I've been let down enough that I need more than enthusiasm to stay engaged. In my inbox, what earns my continued attention is a combination of visual credibility (does this look like something I'd actually wear?) and substantive honesty (are they telling me anything real or just performing transparency?). I'm comparison-shopping right now for a few key pieces — I'm not impulse-buying anything, but I'm also not going to take forever. If an email gives me both the aesthetic pull and the informational hook, I'll click through and dig deeper. I just need a real reason to trust, not a curated one.",
+      "stratum": {
+        "ethical_consumption_stage": "active_explorer",
+        "trust_orientation": "cautious_optimist",
+        "style_priority": "balanced",
+        "purchase_readiness": "comparing"
+      }
+    },
+    {
+      "id": "p_blrJdldS_09_nadia_volkov",
+      "name": "Nadia Volkov",
+      "age": 36,
+      "shortBio": "Urban planner in Washington D.C., hyper-informed and highly skeptical, treats every brand claim as a hypothesis to test.",
+      "longProfile": "I'm an urban planner working for the D.C. city government and I approach most things in my life — including my inbox — like a policy analyst. I've spent years building what I consider a genuinely ethical wardrobe, and I'm meticulous about it. I read sourcing reports. I cross-reference third-party audits. I know which certifications carry real weight and which ones are structurally weak. I'm not trying to be difficult; I'm trying to be accurate. The apparel industry has given me plenty of reasons to hold this standard.\n\nI'm currently ready to buy — I have specific needs and a clear budget. What I'm doing now is final vetting. An email can absolutely be part of that process, but it has to give me something real to work with. I'm not going to be moved by lifestyle photography or a compelling mission statement. What might actually earn a click is a verifiable data point I haven't seen before, or a transparent acknowledgment of where a brand still falls short — that kind of honesty is rare and immediately credible to me. Red flags: buzzwords without definitions, certifications in tiny print I can't read, copy that tells me how to feel. Green flags: specificity, humility, and the implicit assumption that I'm smart enough to evaluate the evidence myself.",
+      "stratum": {
+        "ethical_consumption_stage": "committed_practitioner",
+        "trust_orientation": "skeptic",
+        "style_priority": "balanced",
+        "purchase_readiness": "ready_to_buy"
+      }
+    }
+  ],
+  "agentRuns": [
+    {
+      "personaId": "p_blrJdldS_00_maya_okonkwo",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_tracksmith_5",
+        "tV2FFO5lB8",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_lumin_7",
+        "bg_salt-stone_4",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": []
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4156,
+        "outputTokens": 33,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_00_maya_okonkwo",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_glossier_6",
+        "bg_tracksmith_5",
+        "M5hR1gHC6E",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_lumin_7",
+        "bg_salt-stone_4",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": []
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4159,
+        "outputTokens": 33,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_01_jordan_pryce",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "tV2FFO5lB8",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane is literally one of the brands I've been considering as a replacement — 'ethically made' is the exact thing I'm trying to verify, and a welcome offer means I haven't bought from them yet so this could be the starting point."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight, no white cast, no breakouts — that's a very specific SPF claim and I've been meaning to find a daily SPF that doesn't suck to wear."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "It's getting warmer in Portland and I actually do run — 'match your top to the temps' is practical and specific enough to feel useful right now."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "The aesthetic looks genuinely clean and considered, and 'Radical Transparency' with actual cost breakdowns is the kind of specific, substantive claim that makes me want to verify it — plus the 10% welcome offer gives me a low-risk reason to explore."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 6062,
+        "outputTokens": 386,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_01_jordan_pryce",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_n-cessaire_3",
+        "bg_salt-stone_4",
+        "M5hR1gHC6E",
+        "bg_glossier_6",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF with no white cast — that's a very specific claim and I've been on the hunt for a daily SPF that actually works without pilling under my stuff."
+          },
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane's the one brand I'm genuinely curious about right now — the 'made ethically, priced transparently' pitch hits exactly where I'm at, and 10% off a first order is worth a look."
+          },
+          {
+            "emailId": "bg_tower-28-beauty_2",
+            "reason": "Sensitive skin lip plumper is oddly specific in a good way — curious if the formula is actually clean or just marketing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane's itemized 'True Cost' pricing and 'visited, vetted factories' copy is exactly the kind of specific, substantive transparency I've been looking for — not just a green tagline — and the editorial visuals are genuinely clean and appealing."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7718,
+        "outputTokens": 383,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_02_daniel_whitmore",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "bg_salt-stone_4",
+        "tV2FFO5lB8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane is exactly the kind of brand I've been paying attention to — transparent supply chain, essentials focus, and 10% off to start is a reasonable hook."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "I run occasionally and Tracksmith makes quality stuff — 'match your top to the temps' is specific enough to be useful as the weather shifts."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5980,
+        "outputTokens": 174,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_02_daniel_whitmore",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_tracksmith_5",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_versed_1",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_glossier_6",
+        "bg_salt-stone_4",
+        "M5hR1gHC6E"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane checks the exact boxes I care about — ethical production, transparent pricing — and 10% off a first order is a real reason to click, not a fake-urgency trick."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "I run a few times a week and the subject is specific enough — seasonal gear matching — that I'm curious what they're actually showing."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane's itemized 'True Cost' pricing on every piece is exactly the kind of transparency I look for — plus I'm actively replacing wardrobe staples and 10% off is a straightforward incentive, not a manufactured-urgency gimmick."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4206,
+        "outputTokens": 314,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_03_simone_beauchamp",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_glossier_6",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "tV2FFO5lB8",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF is actually on my list right now and 'no white cast, no breakouts' is specific enough to make me curious about the formula."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire is a brand I trust and 'Sinkcare' as a concept is genuinely new — I want to see what they're doing with it."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4187,
+        "outputTokens": 172,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_03_simone_beauchamp",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_glossier_6",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "M5hR1gHC6E",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane claims ethical pricing transparency — I've been meaning to actually scrutinize whether that still holds up, and 'priced transparently' is at least a specific-enough claim to poke at."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4190,
+        "outputTokens": 134,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_04_tariq_nassar",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "tV2FFO5lB8",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane is exactly the kind of ethical basics brand I've been meaning to look into — and a welcome offer with 10% off is a solid reason to finally peek."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'No white cast, no breakouts' on an SPF actually sounds like something I'd use — that's the specific kind of claim that makes me curious."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "It's warming up in Austin and I've been thinking about running gear — 'Match Your Top to the Temps' feels timely and not generic."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "The 'Radical Transparency' framing with actual cost breakdowns hits the ethical fashion curiosity my friend sparked in me, and the 10% welcome offer makes it low-risk to explore."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 6040,
+        "outputTokens": 348,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_04_tariq_nassar",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_versed_1",
+        "bg_tracksmith_5",
+        "bg_n-cessaire_3",
+        "M5hR1gHC6E",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane is exactly the kind of ethical/transparent brand I've been trying to learn more about, and 10% off a first order is a real reason to actually look."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"No white cast, no breakouts\" for an SPF — that's a specific claim that addresses real problems I've had, curious what they're actually offering."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "\"Match your top to the temps\" feels like a real editorial angle, not just a sale — and Austin's weather swings actually make this relevant right now."
+          },
+          {
+            "emailId": "bg_olipop_8",
+            "reason": "Blackberry Vanilla sounds genuinely good and I've been curious about Olipop — a flavor comeback is a low-stakes reason to peek."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane hits the exact notes I've been thinking about — ethical factories, transparent pricing, real materials — and the 10% welcome discount gives me a low-stakes reason to actually browse."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 5932,
+        "outputTokens": 434,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_05_priya_menon",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "tV2FFO5lB8"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Ethical fashion, capsule wardrobe essentials, and a discount to start — this is almost exactly what I've been looking for, have to see what they're offering."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF with no white cast or breakouts sounds like exactly what I need — specific, practical claim, not vague marketing fluff."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire is a brand I trust for clean, simple formulas and 'Sinkcare' as a concept is genuinely intriguing — takes 3 seconds to look."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "The explicit 'Radical Transparency' breakdown — real costs, ethical factories, sustainable materials disclosed — directly addresses my specific frustration with the research burden of ethical fashion, and the 10% welcome offer on exactly the kind of versatile capsule pieces I'm actively looking for (a rib tee, high-waist jean, leather flat) makes it worth a tap."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7832,
+        "outputTokens": 394,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_05_priya_menon",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_tracksmith_5",
+        "bg_glossier_6",
+        "bg_lumin_7",
+        "bg_versed_1",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tower-28-beauty_2",
+        "M5hR1gHC6E"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane + ethical + 10% off my first order — this is literally what I've been looking for, I have to see what they're showing me."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'Lightweight, no white cast, no breakouts' — that's the exact SPF problem I have, this subject line is weirdly specific in a good way."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire is a brand I trust for clean, simple formulas — new hand products sounds like an easy add to my routine."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "The itemized 'True Cost' transparency and ethical factory language directly addresses my specific frustration with ethical fashion research, and a 10% welcome discount makes pulling the trigger on those capsule pieces I've been eyeing feel lower-risk."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7731,
+        "outputTokens": 357,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_06_ellis_nakamura",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "tV2FFO5lB8",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane's whole 'ethically made' thing is exactly the direction I'm trying to go, and 10% off as a welcome makes it feel like a low-stakes entry point."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'Lightweight, no white cast, no breakouts' — that's weirdly specific and exactly what I complain about with SPF, so it feels like someone actually listened."
+          },
+          {
+            "emailId": "bg_rhode_0",
+            "reason": "Rhode's voice is always pretty chill and the 'ask rhode' format feels more like content than a sales pitch — I'm curious."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire feels legit and calling it 'Sinkcare' is a cute angle — I'm a sucker for a brand that names a ritual."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "The 'ethically made' + radical transparency angle hits exactly where I'm at right now with wanting to understand where my clothes come from, and the 10% welcome offer on clean, minimal pieces I'd actually wear makes it feel worth a look."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7869,
+        "outputTokens": 423,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_06_ellis_nakamura",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "M5hR1gHC6E",
+        "bg_tower-28-beauty_2",
+        "bg_lumin_7",
+        "bg_olipop_8",
+        "bg_n-cessaire_3",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane's whole 'made ethically, priced transparently' thing is exactly the direction I've been trying to move in, and 10% off my first order makes it feel like a low-risk moment to finally try them."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF with no white cast and no breakouts — that's a very specific promise that actually addresses my real problems with sunscreen."
+          },
+          {
+            "emailId": "bg_rhode_0",
+            "reason": "The 'ask rhode' format feels editorial rather than salesy, and hydrocolloid patches are something I actually use — curious what they have to say."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire's aesthetic is gorgeous and I've been meaning to try them — 'Sinkcare' as a concept is a cute enough hook to make me look."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"Lightweight, no white cast, no breakouts\" is exactly the SPF promise I've been burned by before — specific enough to feel credible, not generic hype."
+          },
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "The itemized \"True Cost\" pricing angle genuinely intrigues me — that's the kind of transparency I've been trying to find in brands, and the editorial visuals looked clean and my aesthetic."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 7768,
+        "outputTokens": 497,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_07_claire_oduya",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "tV2FFO5lB8",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_lumin_7",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF is exactly what I'm evaluating right now — 'lightweight, no white cast, no breakouts' is a specific functional claim, not a vibe."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire is one of the few brands I actually trust on ingredient transparency — curious what their hand care formulation looks like."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF with specific functional claims (no white cast, no breakouts, lightweight) is exactly the kind of precise, outcome-focused language that signals a brand knows what skeptical buyers actually need to hear — worth checking the formulation details."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4178,
+        "outputTokens": 240,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_07_claire_oduya",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "M5hR1gHC6E",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_lumin_7",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF is exactly what I'm evaluating right now — 'lightweight, no white cast, no breakouts' is specific enough to make me want to see what's behind it."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire is a brand I trust to back up claims with actual ingredient transparency — curious what 'Sinkcare' means as a product category."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Specific functional claims (no white cast, no breakouts, lightweight) tell me something real about the formulation — that's the kind of evidence I'll follow up on for SPF I'm likely evaluating."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4181,
+        "outputTokens": 244,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_08_marcus_leland",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "tV2FFO5lB8",
+        "bg_n-cessaire_3",
+        "bg_glossier_6",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane is exactly in my wheelhouse right now — ethical basics, and a welcome discount means I haven't bought from them yet, so this is the natural entry point to see if their current story holds up."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "Seasonal, specific, and I'm always looking at running gear — 'match your top to the temps' is actually useful framing, not just a vague push."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "'Lightweight, no white cast, no breakouts' on an SPF — that's addressing every real objection I have, and I'm actively in the market for a better daily SPF."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "The specific callouts — lightweight, no white cast, no breakouts — address exactly the SPF complaints I've had; that's the kind of precise, honest product framing that makes me want to see what they're actually selling."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 6045,
+        "outputTokens": 340,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_08_marcus_leland",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_olipop_8",
+        "bg_lumin_7",
+        "bg_rhode_0",
+        "bg_tower-28-beauty_2",
+        "bg_tracksmith_5",
+        "bg_versed_1",
+        "M5hR1gHC6E",
+        "bg_n-cessaire_3",
+        "bg_glossier_6",
+        "bg_salt-stone_4"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane is one of the brands I've been meaning to actually investigate — a welcome discount plus their transparency pitch is exactly the kind of hook I'd click on to see if the ethics story holds up."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "Lightweight SPF with no white cast and no breakouts is a specific, functional claim — that's exactly the kind of thing I'm always trying to find and I want to see if there's substance behind it."
+          },
+          {
+            "emailId": "bg_tracksmith_5",
+            "reason": "I run, warmer weather is coming to Denver, and matching gear to conditions is genuinely useful — curious what they've got."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "\"No white cast, no breakouts\" is a specific, credible claim that cuts through SPF hype — I'd click to see if the formula details hold up."
+          }
+        ]
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4184,
+        "outputTokens": 301,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_09_nadia_volkov",
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "tV2FFO5lB8",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "tV2FFO5lB8",
+            "reason": "Everlane is actually on my vetting list right now — curious whether the welcome email has any concrete sourcing language or just vibes."
+          },
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF with specific claims (no white cast, no breakouts) is testable and relevant — I'm in the market and this sounds like it might have actual formulation detail."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire has earned some trust with me before — new product launch is worth a quick check for ingredient specifics."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 6058,
+        "outputTokens": 225,
+        "cacheReadTokens": 0
+      }
+    },
+    {
+      "personaId": "p_blrJdldS_09_nadia_volkov",
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "inboxOrder": [
+        "bg_lumin_7",
+        "bg_tracksmith_5",
+        "bg_tower-28-beauty_2",
+        "bg_olipop_8",
+        "bg_rhode_0",
+        "bg_salt-stone_4",
+        "bg_n-cessaire_3",
+        "bg_versed_1",
+        "M5hR1gHC6E",
+        "bg_glossier_6"
+      ],
+      "round1": {
+        "opens": [
+          {
+            "emailId": "bg_versed_1",
+            "reason": "SPF with specific claims — lightweight, no white cast, no breakouts — that's functional language I can actually evaluate, not lifestyle fluff."
+          },
+          {
+            "emailId": "M5hR1gHC6E",
+            "reason": "Everlane's 'radical transparency' model is something I've been meaning to audit more closely — a welcome offer might include supply chain specifics I haven't seen yet."
+          },
+          {
+            "emailId": "bg_n-cessaire_3",
+            "reason": "Nécessaire tends to publish ingredient sourcing clearly; curious whether their hand care line holds to the same standard as their body products."
+          }
+        ]
+      },
+      "round2": {
+        "clicks": []
+      },
+      "round3": {
+        "purchases": [],
+        "totalSpent": 0
+      },
+      "cost": {
+        "inputTokens": 4185,
+        "outputTokens": 229,
+        "cacheReadTokens": 0
+      }
+    }
+  ],
+  "aggregated": {
+    "A": {
+      "arm": "A",
+      "candidateEmailId": "tV2FFO5lB8",
+      "openedBy": 7,
+      "clickedBy": 4,
+      "purchasedBy": 0,
+      "revenue": 0,
+      "totalPersonas": 10
+    },
+    "B": {
+      "arm": "B",
+      "candidateEmailId": "M5hR1gHC6E",
+      "openedBy": 8,
+      "clickedBy": 5,
+      "purchasedBy": 0,
+      "revenue": 0,
+      "totalPersonas": 10
+    }
+  },
+  "productsById": {},
+  "totalCost": {
+    "inputTokens": 112661,
+    "outputTokens": 5661,
+    "cacheReadTokens": 0
+  }
+}
