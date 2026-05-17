@@ -27,16 +27,18 @@ const PHASE_DURATION = 30;
 function buildClickTimeline(run: SavedRun): ClickEvent[] {
   const personaById = new Map(run.personas.map((p) => [p.id, p]));
   const events: Omit<ClickEvent, "time">[] = [];
+  // Index every possible email (both candidates + all competitors) by id
+  const emailById = new Map<string, Email>();
+  emailById.set(run.candidateA.id, run.candidateA);
+  emailById.set(run.candidateB.id, run.candidateB);
+  for (const e of run.backgroundEmails) emailById.set(e.id, e);
 
-  // Sample real clicks from arm A
+  // Sample real clicks from BOTH arms — the masonry shows both A and B
   for (const agentRun of run.agentRuns) {
-    if (agentRun.arm !== "A") continue;
     const persona = personaById.get(agentRun.personaId);
     if (!persona) continue;
     for (const click of agentRun.round2.clicks) {
-      const emailA = run.candidateA;
-      const bg = run.backgroundEmails.find((e) => e.id === click.emailId);
-      const email = emailA.id === click.emailId ? emailA : bg;
+      const email = emailById.get(click.emailId);
       if (!email) continue;
       events.push({
         agentId: persona.id,
@@ -67,16 +69,18 @@ export function SimVizPhase2({
 }) {
   const timeline = useMemo(() => buildClickTimeline(run), [run]);
 
-  // Which emails were opened in arm A — these are the masonry cards
+  // Emails opened in EITHER arm — both candidates anchor the masonry,
+  // plus any competitor email at least one agent opened (in either arm).
   const openedEmails: Email[] = useMemo(() => {
     const openedIds = new Set<string>();
     for (const agentRun of run.agentRuns) {
-      if (agentRun.arm !== "A") continue;
       for (const o of agentRun.round1.opens) openedIds.add(o.emailId);
     }
-    // Always include candidate even if no opens (edge case)
+    // Always include both candidates so A and B sit side-by-side as heroes
     openedIds.add(run.candidateA.id);
-    const all = [run.candidateA, ...run.backgroundEmails];
+    openedIds.add(run.candidateB.id);
+    // Order: candidate A, candidate B, then competitors in their original order
+    const all = [run.candidateA, run.candidateB, ...run.backgroundEmails];
     return all.filter((e) => openedIds.has(e.id));
   }, [run]);
 
@@ -109,17 +113,23 @@ export function SimVizPhase2({
     }
   }, [elapsed, timeline, clicksByEmail, feed]);
 
-  // For the candidate, pull screenshot from fixtures (Rendit URL).
-  // For background emails, use the heroImageUrl baked into the run by the patch.
+  // Screenshot URL per email: prefer the demo-brand fixture URL (Rendit) for
+  // both candidate A and candidate B, fall back to heroImageUrl for competitors.
   const demoBrand = getDemoBrand(run.brandId);
-  const candidateScreenshot =
-    demoBrand?.emails.find((e) => e.chatId === run.candidateA.id)?.screenshotUrl;
+  const candidateScreenshotByEmailId: Record<string, string | undefined> = {
+    [run.candidateA.id]: demoBrand?.emails.find(
+      (e) => e.chatId === run.candidateA.id,
+    )?.screenshotUrl,
+    [run.candidateB.id]: demoBrand?.emails.find(
+      (e) => e.chatId === run.candidateB.id,
+    )?.screenshotUrl,
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-6 grid grid-cols-1 lg:grid-cols-[1.55fr_1fr] gap-6">
       {/* LEFT: Masonry */}
-      <section>
-        <div className="flex items-baseline justify-between mb-3">
+      <section className="space-y-3">
+        <div className="flex items-baseline justify-between">
           <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
             opened emails · {openedEmails.length}
           </div>
@@ -127,22 +137,48 @@ export function SimVizPhase2({
             phase 2 · click-through
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 auto-rows-min">
-          {openedEmails.map((email) => {
-            const isTest = email.id === run.candidateA.id;
+
+        {/* Hero row: both candidates side-by-side, equal treatment */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {([run.candidateA, run.candidateB] as Email[]).map((email) => {
+            const arm = email.id === run.candidateA.id ? "A" : "B";
             const clickers = clicksByEmail.get(email.id) ?? [];
-            const shot = isTest ? candidateScreenshot : email.heroImageUrl;
             return (
               <EmailCard
                 key={email.id}
                 email={email}
-                isTest={isTest}
+                hero
+                armLabel={arm}
                 clickers={clickers}
-                screenshotUrl={shot}
+                screenshotUrl={candidateScreenshotByEmailId[email.id]}
               />
             );
           })}
         </div>
+
+        {/* Competitor row: smaller cards in a tight masonry */}
+        {openedEmails.filter(
+          (e) => e.id !== run.candidateA.id && e.id !== run.candidateB.id,
+        ).length > 0 && (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 auto-rows-min">
+            {openedEmails
+              .filter(
+                (e) => e.id !== run.candidateA.id && e.id !== run.candidateB.id,
+              )
+              .map((email) => {
+                const clickers = clicksByEmail.get(email.id) ?? [];
+                return (
+                  <EmailCard
+                    key={email.id}
+                    email={email}
+                    hero={false}
+                    clickers={clickers}
+                    screenshotUrl={email.heroImageUrl}
+                  />
+                );
+              })}
+          </div>
+        )}
       </section>
 
       {/* RIGHT: live feed (click events) */}
@@ -158,12 +194,14 @@ export function SimVizPhase2({
 
 function EmailCard({
   email,
-  isTest,
+  hero,
+  armLabel,
   clickers,
   screenshotUrl,
 }: {
   email: Email;
-  isTest: boolean;
+  hero: boolean;
+  armLabel?: "A" | "B";
   clickers: { agentId: string; agentName: string; reason: string }[];
   screenshotUrl?: string;
 }) {
@@ -173,15 +211,14 @@ function EmailCard({
       className={[
         "bg-card border rounded-md overflow-hidden flex flex-col transition-all",
         clicked ? "border-ink" : "border-hairline",
-        isTest ? "sm:col-span-2 sm:row-span-2" : "",
       ].join(" ")}
     >
       {/* Top strip */}
       <div className="px-4 py-2 border-b border-hairline flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
-          {isTest && (
+          {armLabel && (
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink shrink-0">
-              [A]
+              [{armLabel}]
             </span>
           )}
           <span className="font-mono text-[10px] uppercase tracking-wider text-muted truncate">
@@ -198,9 +235,8 @@ function EmailCard({
       <div className="px-4 py-3 flex-1 flex flex-col">
         <div
           className={[
-            "font-display font-semibold leading-tight",
-            isTest ? "text-base" : "text-sm",
-            clicked ? "text-ink" : "text-ink",
+            "font-display font-semibold leading-tight text-ink",
+            hero ? "text-base" : "text-sm",
           ].join(" ")}
         >
           {email.subject}
@@ -218,7 +254,7 @@ function EmailCard({
             alt={email.subject}
             className={[
               "mt-3 w-full object-cover object-top rounded-sm border border-hairline",
-              isTest ? "max-h-96" : "max-h-32",
+              hero ? "max-h-80" : "max-h-32",
             ].join(" ")}
           />
         ) : (

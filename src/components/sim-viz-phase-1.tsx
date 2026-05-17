@@ -24,24 +24,25 @@ type OpenEvent = {
 const PHASE_DURATION = 30; // seconds
 
 function buildEventTimeline(run: SavedRun): OpenEvent[] {
-  // Pull real opens from arm A's runs. Stagger them across the phase duration.
-  // Cycle agents so every persona gets airtime; pick 2-3 opens each.
+  // Pull real opens from BOTH arms — viz shows both A and B in the inbox.
+  // Stagger across the phase duration; cycle agents so every persona gets airtime.
   const personaById = new Map(run.personas.map((p) => [p.id, p]));
+  const emailById = new Map<string, Email>();
+  emailById.set(run.candidateA.id, run.candidateA);
+  emailById.set(run.candidateB.id, run.candidateB);
+  for (const e of run.backgroundEmails) emailById.set(e.id, e);
+
   const events: Omit<OpenEvent, "time">[] = [];
 
-  // Round-robin through agents, sampling up to 2 opens per agent
+  // Round-robin: each pass takes one open from each agent run (both arms)
   for (let pass = 0; pass < 3; pass++) {
     for (const agentRun of run.agentRuns) {
-      if (agentRun.arm !== "A") continue;
       const persona = personaById.get(agentRun.personaId);
       if (!persona) continue;
       const opens = agentRun.round1.opens;
       if (pass >= opens.length) continue;
       const op = opens[pass];
-      // Find email metadata
-      const emailA = run.candidateA;
-      const bg = run.backgroundEmails.find((e) => e.id === op.emailId);
-      const email = emailA.id === op.emailId ? emailA : bg;
+      const email = emailById.get(op.emailId);
       if (!email) continue;
       events.push({
         agentId: persona.id,
@@ -101,9 +102,9 @@ export function SimVizPhase1({
     }
   }, [elapsed, timeline, openedIds, feed, activeAgentId]);
 
-  // The 10-email inbox shown: test email A first, then background emails
+  // The inbox shown: both candidates (starred A and B) + background emails
   const inbox: Email[] = useMemo(() => {
-    return [run.candidateA, ...run.backgroundEmails];
+    return [run.candidateA, run.candidateB, ...run.backgroundEmails];
   }, [run]);
 
   const totalOpens = openedIds.size;
@@ -144,7 +145,13 @@ export function SimVizPhase1({
         <ul className="divide-y divide-hairline">
           {inbox.map((e) => {
             const opened = openedIds.has(e.id);
-            const isTest = e.id === run.candidateA.id;
+            const armLabel: "A" | "B" | null =
+              e.id === run.candidateA.id
+                ? "A"
+                : e.id === run.candidateB.id
+                  ? "B"
+                  : null;
+            const isTest = armLabel !== null;
             return (
               <li
                 key={e.id}
@@ -194,9 +201,9 @@ export function SimVizPhase1({
                     opened
                   </span>
                 )}
-                {isTest && (
+                {armLabel && (
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink shrink-0 ml-1">
-                    [A]
+                    [{armLabel}]
                   </span>
                 )}
               </li>

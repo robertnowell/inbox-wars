@@ -26,17 +26,25 @@ function buildBuyTimeline(run: SavedRun): BuyEvent[] {
   const personaById = new Map(run.personas.map((p) => [p.id, p]));
   const events: Omit<BuyEvent, "time">[] = [];
 
+  // Build a product-name lookup that falls through productsById, then
+  // candidateAProducts, then candidateBProducts so we always have a name.
+  const productNameById = new Map<string, string>();
+  for (const p of Object.values(run.productsById ?? {})) {
+    productNameById.set(p.id, p.name);
+  }
+  for (const p of run.candidateAProducts ?? []) productNameById.set(p.id, p.name);
+  for (const p of run.candidateBProducts ?? []) productNameById.set(p.id, p.name);
+
+  // Source purchases from BOTH arms — both candidates contribute revenue
   for (const agentRun of run.agentRuns) {
-    if (agentRun.arm !== "A") continue;
     const persona = personaById.get(agentRun.personaId);
     if (!persona) continue;
     for (const p of agentRun.round3.purchases) {
-      const product = run.productsById?.[p.productId];
       events.push({
         agentId: persona.id,
         agentName: persona.name,
         productId: p.productId,
-        productName: product?.name ?? "Unknown product",
+        productName: productNameById.get(p.productId) ?? "Unknown product",
         spent: p.spent,
         reason: p.reason,
       });
