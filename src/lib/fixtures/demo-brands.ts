@@ -41,7 +41,7 @@ export const DEMO_BRANDS: DemoBrand[] = [
     blurb: "Japanese-formulated body care for the 45+ market",
     category: "body care",
     defaultA: "GDjhImfGuo",
-    defaultB: "hI30rpIrWp",
+    defaultB: "tAmsl9ZJsY",
     archetype: {
       title: "The quiet investigator",
       summary:
@@ -88,7 +88,7 @@ export const DEMO_BRANDS: DemoBrand[] = [
     blurb: "Performance apparel for Gen Z & millennial lifters",
     category: "fitness apparel",
     defaultA: "3JaFCWLn4V",
-    defaultB: "Nr2ymsryiP",
+    defaultB: "AU0eZUOqW0",
     archetype: {
       title: "The devoted lifter",
       summary:

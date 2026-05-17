@@ -225,10 +225,6 @@ function ArchetypeCard({
 
 function EmailCandidate({
   arm,
-  selected,
-  onChange,
-  emails,
-  other,
   preview,
 }: {
   arm: "A" | "B";
@@ -244,17 +240,9 @@ function EmailCandidate({
         <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink">
           [{arm}]
         </span>
-        <select
-          value={selected}
-          onChange={(e) => onChange(e.target.value)}
-          className="appearance-none bg-transparent border-0 font-mono text-xs text-ink cursor-pointer focus:outline-none pr-4"
-        >
-          {emails.map((e) => (
-            <option key={e.chatId} value={e.chatId} disabled={e.chatId === other}>
-              {e.subject}
-            </option>
-          ))}
-        </select>
+        <span className="font-mono text-[10px] uppercase tracking-wider text-muted">
+          cached test
+        </span>
       </div>
       <div className="p-4">
         <div className="font-display text-sm font-semibold text-ink leading-snug">
