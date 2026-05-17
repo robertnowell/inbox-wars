@@ -109,7 +109,8 @@ export function SimVizPhase2({
     }
   }, [elapsed, timeline, clicksByEmail, feed]);
 
-  // Pick a candidate screenshot URL from fixtures (we have rendit URLs for candidateA only)
+  // For the candidate, pull screenshot from fixtures (Rendit URL).
+  // For background emails, use the heroImageUrl baked into the run by the patch.
   const demoBrand = getDemoBrand(run.brandId);
   const candidateScreenshot =
     demoBrand?.emails.find((e) => e.chatId === run.candidateA.id)?.screenshotUrl;
@@ -126,17 +127,18 @@ export function SimVizPhase2({
             phase 2 · click-through
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 auto-rows-min">
           {openedEmails.map((email) => {
             const isTest = email.id === run.candidateA.id;
             const clickers = clicksByEmail.get(email.id) ?? [];
+            const shot = isTest ? candidateScreenshot : email.heroImageUrl;
             return (
               <EmailCard
                 key={email.id}
                 email={email}
                 isTest={isTest}
                 clickers={clickers}
-                screenshotUrl={isTest ? candidateScreenshot : undefined}
+                screenshotUrl={shot}
               />
             );
           })}

@@ -69,7 +69,8 @@
       "sender": "Rhode <hello@rhode.com>",
       "subject": "ask rhode: Spotwear",
       "preheader": "when should i use a hydrocolloid patch?",
-      "bodyText": "when should i use a hydrocolloid patch?"
+      "bodyText": "when should i use a hydrocolloid patch?",
+      "heroImageUrl": "https://file.rendit.io/n/6716bf921396.png"
     },
     {
       "id": "bg_versed_1",
@@ -78,7 +79,8 @@
       "sender": "Versed <hello@versed.com>",
       "subject": "A “Customer for life” SPF",
       "preheader": "Lightweight, no white cast, no breakouts",
-      "bodyText": "Lightweight, no white cast, no breakouts"
+      "bodyText": "Lightweight, no white cast, no breakouts",
+      "heroImageUrl": "https://file.rendit.io/n/2a20b383367f.png"
     },
     {
       "id": "bg_tower-28-beauty_2",
@@ -87,7 +89,8 @@
       "sender": "Tower 28 Beauty <hello@tower28beauty.com>",
       "subject": "NEW! Lip plumper made for sensitive skin",
       "preheader": "All plump, no pain",
-      "bodyText": "All plump, no pain"
+      "bodyText": "All plump, no pain",
+      "heroImageUrl": "https://file.rendit.io/n/496a83c6cbc9.png"
     },
     {
       "id": "bg_n-cessaire_3",
@@ -114,7 +117,8 @@
       "sender": "Tracksmith <hello@tracksmith.com>",
       "subject": "Match Your Top to the Temps",
       "preheader": "Warmer days incoming…",
-      "bodyText": "Warmer days incoming…"
+      "bodyText": "Warmer days incoming…",
+      "heroImageUrl": "https://file.rendit.io/n/419723509d4c.png"
     },
     {
       "id": "bg_glossier_6",
@@ -123,7 +127,8 @@
       "sender": "Glossier <hello@glossier.com>",
       "subject": "Our community’s must-have products",
       "preheader": "fall in love with them today",
-      "bodyText": "fall in love with them today"
+      "bodyText": "fall in love with them today",
+      "heroImageUrl": "https://file.rendit.io/n/cdedf8376dd0.png"
     },
     {
       "id": "bg_lumin_7",
@@ -132,7 +137,8 @@
       "sender": "Lumin <hello@lumin.com>",
       "subject": "More Routine, Less Guesswork",
       "preheader": "Bundles that actually make sense",
-      "bodyText": "Bundles that actually make sense"
+      "bodyText": "Bundles that actually make sense",
+      "heroImageUrl": "https://file.rendit.io/n/17d88ebace03.png"
     },
     {
       "id": "bg_olipop_8",
@@ -141,7 +147,8 @@
       "sender": "Olipop <hello@olipop.com>",
       "subject": "Back for Good: Blackberry Vanilla ✨",
       "preheader": "Shop this fan-favorite ➡️",
-      "bodyText": "Shop this fan-favorite ➡️"
+      "bodyText": "Shop this fan-favorite ➡️",
+      "heroImageUrl": "https://file.rendit.io/n/a40127f79af8.png"
     }
   ],
   "personas": [
