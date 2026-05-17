@@ -129,23 +129,14 @@ function Concept() {
         </p>
       </Block>
 
-      {/* Why agentic */}
+      {/* The constraint — budget visualization */}
       <Block
-        eyebrow="Why agentic"
-        heading="Independent state. Real budgets. Self-narrated reasoning."
+        eyebrow="The constraint"
+        heading="100 emails compete for 20 opens, 5 clicks, and $100 of spend."
       >
-        <p>
-          Each persona is an autonomous agent, not a prompt to a single judge.
-          Every agent has its own attention budget, click budget, and{" "}
-          <strong className="text-ink">$100 of weekly spend</strong>. Every
-          agent narrates its own rationale for what it opened, clicked, and
-          bought.
-        </p>
-        <p>
-          You don&apos;t get an opinion. You get a{" "}
-          <strong className="text-ink">distribution</strong> — top decile,
-          bottom decile, edge cases — across a population that behaves like
-          your real list.
+        <BudgetCard />
+        <p className="font-display text-3xl md:text-4xl font-bold text-ink leading-tight pt-4">
+          How will your brand emails fare against your competitors?
         </p>
       </Block>
     </section>
@@ -200,6 +191,79 @@ function Steps() {
           <div className="text-sm text-muted">{s.detail}</div>
         </div>
       ))}
+    </div>
+  );
+}
+
+// Deterministic positions so the funnel reads as designed, not random.
+// 20 "opened" dots distributed evenly across the 10x10 grid; 5 "clicked"
+// dots are a subset of the opened set.
+const OPENED_INDICES = new Set([
+  2, 7, 14, 19, 21, 26, 33, 38, 40, 45,
+  52, 57, 64, 69, 71, 76, 83, 88, 90, 95,
+]);
+const CLICKED_INDICES = new Set([19, 38, 52, 76, 90]);
+
+function BudgetCard() {
+  const legend = [
+    { swatch: "bg-hairline", count: "100", label: "inbox", detail: "emails per agent" },
+    { swatch: "bg-ink/40", count: "20", label: "opens", detail: "attention budget" },
+    { swatch: "bg-ink", count: "5", label: "clicks", detail: "action budget" },
+  ];
+
+  return (
+    <div className="rounded-md border border-hairline bg-card p-6 md:p-8">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-10 gap-2 shrink-0 mx-auto lg:mx-0">
+          {Array.from({ length: 100 }, (_, i) => {
+            const fill = CLICKED_INDICES.has(i)
+              ? "bg-ink"
+              : OPENED_INDICES.has(i)
+                ? "bg-ink/40"
+                : "bg-hairline";
+            return (
+              <div
+                key={i}
+                className={`w-3.5 h-3.5 rounded-full ${fill}`}
+              />
+            );
+          })}
+        </div>
+
+        <div className="divide-y divide-hairline">
+          {legend.map((r) => (
+            <div
+              key={r.label}
+              className="flex items-center gap-4 py-3 first:pt-0 last:pb-0"
+            >
+              <div className={`w-3.5 h-3.5 rounded-full shrink-0 ${r.swatch}`} />
+              <div className="font-display text-2xl md:text-3xl font-extrabold text-ink tabular-nums w-16">
+                {r.count}
+              </div>
+              <div className="min-w-0">
+                <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink">
+                  {r.label}
+                </div>
+                <div className="text-sm text-muted">{r.detail}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-6 pt-6 border-t border-hairline flex items-center gap-4">
+        <div className="font-display text-4xl md:text-5xl font-extrabold text-ink tabular-nums">
+          $100
+        </div>
+        <div className="min-w-0">
+          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink">
+            weekly spend
+          </div>
+          <div className="text-sm text-muted">
+            purchase budget — agents only buy what they actually want
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
