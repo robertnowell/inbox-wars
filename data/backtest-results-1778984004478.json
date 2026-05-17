@@ -1,0 +1,81 @@
+{
+  "generatedAt": "2026-05-17T02:13:24.478Z",
+  "nPersonas": 10,
+  "nPairs": 3,
+  "agreements": 1,
+  "agreementRate": 0.3333333333333333,
+  "details": [
+    {
+      "pair": 1,
+      "realWinnerName": "April 1, 2026 Faisal Kopi : Out of business sale for April Fool's day 15% OFF Sitewide for 24h Only",
+      "realLoserName": "Feb 26, 2026 Faisal Kopi: Risk-Free Return, Money Back Guarantee to Sunset Suppressable Profiles to \"unproven, old + low volume\" segment",
+      "realWinnerArm": "A",
+      "metric": "clickRate",
+      "realRatio": 14.077720207253885,
+      "sim": {
+        "armA": {
+          "openedBy": 10,
+          "clickedBy": 2,
+          "purchasedBy": 2,
+          "revenue": 49.94
+        },
+        "armB": {
+          "openedBy": 10,
+          "clickedBy": 10,
+          "purchasedBy": 10,
+          "revenue": 327.6
+        }
+      },
+      "simWinner": "B",
+      "agreed": false
+    },
+    {
+      "pair": 2,
+      "realWinnerName": "May 14, 2026 Faisal Kopi : Why does is smell musty",
+      "realLoserName": "Mar 4, 2026 Faisal Kopi : Caregiver Appreciation Day 1 FREE wipes orders $70  | 24h",
+      "realWinnerArm": "B",
+      "metric": "clickRate",
+      "realRatio": 6.798955613577023,
+      "sim": {
+        "armA": {
+          "openedBy": 10,
+          "clickedBy": 10,
+          "purchasedBy": 10,
+          "revenue": 354.55
+        },
+        "armB": {
+          "openedBy": 10,
+          "clickedBy": 10,
+          "purchasedBy": 9,
+          "revenue": 184.73
+        }
+      },
+      "simWinner": "A",
+      "agreed": false
+    },
+    {
+      "pair": 3,
+      "realWinnerName": "May 16, 2026 Kopi : Laundry Detergent Sheet Waitlist",
+      "realLoserName": "YOCTO - February 22 - OTP to Subscription Conversion #7",
+      "realWinnerArm": "A",
+      "metric": "clickRate",
+      "realRatio": 6.124031007751937,
+      "sim": {
+        "armA": {
+          "openedBy": 10,
+          "clickedBy": 10,
+          "purchasedBy": 10,
+          "revenue": 284.65
+        },
+        "armB": {
+          "openedBy": 9,
+          "clickedBy": 5,
+          "purchasedBy": 5,
+          "revenue": 159.79999999999998
+        }
+      },
+      "simWinner": "A",
+      "agreed": true
+    }
+  ]
+}

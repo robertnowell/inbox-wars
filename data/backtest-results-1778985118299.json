@@ -1,0 +1,279 @@
+{
+  "generatedAt": "2026-05-17T02:31:58.299Z",
+  "nPersonas": 30,
+  "nPairs": 3,
+  "agreements": 3,
+  "agreementRate": 1,
+  "details": [
+    {
+      "pair": 1,
+      "realWinnerName": "April 1, 2026 Faisal Kopi : Out of business sale for April Fool's day 15% OFF Sitewide for 24h Only",
+      "realLoserName": "Feb 26, 2026 Faisal Kopi: Risk-Free Return, Money Back Guarantee to Sunset Suppressable Profiles to \"unproven, old + low volume\" segment",
+      "realWinnerArm": "A",
+      "metric": "clickRate",
+      "realRatio": 14.077720207253885,
+      "sim": {
+        "armA": {
+          "openedBy": 9,
+          "clickedBy": 7,
+          "purchasedBy": 7,
+          "revenue": 287.64
+        },
+        "armB": {
+          "openedBy": 3,
+          "clickedBy": 2,
+          "purchasedBy": 2,
+          "revenue": 135.84
+        }
+      },
+      "simWinner": "A",
+      "agreed": true,
+      "candidateClicks": {
+        "A": [
+          {
+            "personaId": "p_51IbVnKs_00_diane_kowalski",
+            "reason": "The specific mention of 'Nonenal' — the actual compound behind post-40 body odor — tells me this brand understands the mechanism, not just the symptom, which is exactly what I look for."
+          },
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "The nonenal-specific angle (odor compound in people over 40) is exactly the problem I've been researching, and the Shark Tank + Washington Post callouts plus a doctor recommendation give it enough credibility to warrant a look at their product page."
+          },
+          {
+            "personaId": "p_51IbVnKs_03_tom_vasquez",
+            "reason": "The 'Nonenal Eliminating' angle — specifically targeting odor changes in people over 40 — is exactly what I've been noticing, and the Shark Tank + Washington Post credibility signals plus a concrete 15% off made me want to look closer at the product."
+          },
+          {
+            "personaId": "p_51IbVnKs_04_linda_fenstein",
+            "reason": "Mirai Clinical specifically addresses nonenal — the age-related odor compound — with persimmon-based products, which directly targets my root-cause concern in a way no other email here does."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "The nonenal-targeting mechanism (persimmon/nonenal science) and the Shark Tank + physician endorsement reference are credible enough to warrant a look, and 15% off sitewide is a concrete discount — despite the obnoxious April Fools framing."
+          },
+          {
+            "personaId": "p_51IbVnKs_06_ray_sutherland",
+            "reason": "The mention of 'Nonenal' — a specific compound tied to age-related body odor — is exactly the technical detail I've been researching, and persimmon as an active ingredient is something I want to verify independently on their site."
+          },
+          {
+            "personaId": "p_51IbVnKs_07_carolyn_yuen",
+            "reason": "The specific callout of 'nonenal' and 'over 40' odor elimination speaks directly to the persistent, age-related issue I've been quietly researching — even through the annoying April Fools gimmick, the product relevance is real."
+          }
+        ],
+        "B": [
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "The specific claim that it targets Nonenal — the aging-related odor compound — names exactly what I've been researching, and the Shark Tank + Washington Post callouts plus a doctor recommendation give it enough credibility to warrant a closer look."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "The specific claim that Mirai eliminates 97% of Nonenal — named as the compound behind aging/hormonal odor — directly maps to what I've been trying to understand about my own situation physiologically, and the chart format feels data-backed rather than just marketing fluff."
+          }
+        ]
+      }
+    },
+    {
+      "pair": 2,
+      "realWinnerName": "May 14, 2026 Faisal Kopi : Why does is smell musty",
+      "realLoserName": "Mar 4, 2026 Faisal Kopi : Caregiver Appreciation Day 1 FREE wipes orders $70  | 24h",
+      "realWinnerArm": "B",
+      "metric": "clickRate",
+      "realRatio": 6.798955613577023,
+      "sim": {
+        "armA": {
+          "openedBy": 8,
+          "clickedBy": 3,
+          "purchasedBy": 3,
+          "revenue": 160.81
+        },
+        "armB": {
+          "openedBy": 12,
+          "clickedBy": 12,
+          "purchasedBy": 9,
+          "revenue": 239.68
+        }
+      },
+      "simWinner": "B",
+      "agreed": true,
+      "candidateClicks": {
+        "A": [
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "The Shark Tank quote specifically mentioning persimmon eliminating 'Nonenal' odor in men and women over 40 is exactly the kind of specific, problem-named social proof I look for — that's my situation described precisely."
+          },
+          {
+            "personaId": "p_51IbVnKs_04_linda_fenstein",
+            "reason": "The specific mention of 'Nonenal' (the compound behind aging-related odor) in the Shark Tank quote signals this brand actually understands the root-cause science I've been researching — that's enough to make me want to read more on their site."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "The Shark Tank quote specifically naming Nonenal elimination for over-40s, plus a clinician (Dr. Jeannie Giese) recommending it to patients, directly addresses my physiological understanding of age-related odor — more credible signal than anything else in front of me right now."
+          }
+        ],
+        "B": [
+          {
+            "personaId": "p_51IbVnKs_00_diane_kowalski",
+            "reason": "Names 'nonenal' specifically — the compound that survives washing and increases after 40 — which is exactly the mechanism I've been trying to understand and haven't seen other brands actually explain."
+          },
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "Naming 'nonenal' specifically as the post-40 compound that survives washing — that's the exact technical explanation I've been looking for and haven't seen in any drugstore marketing."
+          },
+          {
+            "personaId": "p_51IbVnKs_02_sylvia_okonkwo",
+            "reason": "The specific explanation of Nonenal — a compound the body produces more of after 40 that survives washing — named exactly the mystery I've been living with and couldn't explain, and the persimmon extract angle is genuinely novel science I haven't seen before."
+          },
+          {
+            "personaId": "p_51IbVnKs_03_tom_vasquez",
+            "reason": "The specific explanation of nonenal — a compound your body produces more of after 40 that survives washing — directly names what I've been experiencing and offers a concrete, science-backed reason why my usual routine stopped working."
+          },
+          {
+            "personaId": "p_51IbVnKs_04_linda_fenstein",
+            "reason": "It names 'nonenal' specifically — a compound that increases after 40 and survives washing — which is exactly the science-based root-cause explanation I've been looking for and haven't found anywhere else."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "It names Nonenal specifically — a real compound I recognize clinically as the mechanism behind age-related body odor — and claims 97% elimination with a named active ingredient (persimmon extract), which is exactly the kind of mechanistic specificity that makes me want to investigate further."
+          },
+          {
+            "personaId": "p_51IbVnKs_06_ray_sutherland",
+            "reason": "Names 'nonenal' specifically — the actual compound I've been reading about — and explains why regular soap can't break it down, which is exactly the mechanistic detail I'm looking for right now."
+          },
+          {
+            "personaId": "p_51IbVnKs_07_carolyn_yuen",
+            "reason": "The specific explanation of Nonenal — a compound produced more after 40 that survives washing and regular soap can't break down — named exactly the persistent, hygiene-resistant odor issue I've been quietly researching."
+          },
+          {
+            "personaId": "p_51IbVnKs_08_gloria_hutchins",
+            "reason": "It named exactly what I've been experiencing — that musty smell that survives washing — and gave a specific scientific reason (Nonenal, a compound that increases after 40) rather than just promising results, which is the first time I've seen my actual problem described so precisely."
+          },
+          {
+            "personaId": "p_51IbVnKs_09_patrick_doherty",
+            "reason": "Names Nonenal specifically — the age-related compound I've read about — and claims 97% elimination with a persimmon extract mechanism, which is exactly the kind of ingredient-level specificity I want to research further."
+          },
+          {
+            "personaId": "p_blrJdldS_02_daniel_whitmore",
+            "reason": "The specific explanation of Nonenal — a compound your body produces more of after 40 that survives washing — is exactly the kind of concrete, science-backed framing that gets my attention rather than vague wellness claims."
+          },
+          {
+            "personaId": "p_blrJdldS_07_claire_oduya",
+            "reason": "Names a specific compound — Nonenal — with a specific claim (97% elimination) that I can actually look up and verify, addressing a real age-related concern I've noticed."
+          }
+        ]
+      }
+    },
+    {
+      "pair": 3,
+      "realWinnerName": "May 16, 2026 Kopi : Laundry Detergent Sheet Waitlist",
+      "realLoserName": "YOCTO - February 22 - OTP to Subscription Conversion #7",
+      "realWinnerArm": "A",
+      "metric": "clickRate",
+      "realRatio": 6.124031007751937,
+      "sim": {
+        "armA": {
+          "openedBy": 12,
+          "clickedBy": 11,
+          "purchasedBy": 10,
+          "revenue": 344.57
+        },
+        "armB": {
+          "openedBy": 10,
+          "clickedBy": 10,
+          "purchasedBy": 10,
+          "revenue": 249.7
+        }
+      },
+      "simWinner": "A",
+      "agreed": true,
+      "candidateClicks": {
+        "A": [
+          {
+            "personaId": "p_51IbVnKs_00_diane_kowalski",
+            "reason": "The specific claim of 'clinically proven to eliminate 97% of Nonenal aging odor' names the exact compound behind the odor shift I've been experiencing — that's the kind of mechanistic specificity that makes me want to read more."
+          },
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "The specific claim — 'clinically proven to eliminate 97% of Nonenal aging odor' plus the new laundry detergent sheet product aimed at people 40+ — directly maps to what I've been researching and nothing else in my rotation has addressed Nonenal specifically."
+          },
+          {
+            "personaId": "p_51IbVnKs_02_sylvia_okonkwo",
+            "reason": "Names 'Nonenal aging odor' specifically — that's the exact phenomenon I've been quietly dealing with since my late fifties, and a clinically-framed laundry product targeting it is something I haven't seen before."
+          },
+          {
+            "personaId": "p_51IbVnKs_03_tom_vasquez",
+            "reason": "The specific claim of eliminating 97% of Nonenal aging odor — named the exact thing I've been noticing differently this past year — plus the Shark Tank and Washington Post callouts made me want to see what this product actually is."
+          },
+          {
+            "personaId": "p_51IbVnKs_04_linda_fenstein",
+            "reason": "The specific claim — 'clinically proven to eliminate 97% of Nonenal aging odor' from a laundry detergent — directly names the exact compound I've been researching as the root cause of my odor issue, and a laundry application angle I haven't tried before."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "The specific claim — 'clinically proven to eliminate 97% of Nonenal aging odor' — names the exact physiological mechanism (Nonenal) I've been researching, and the laundry detergent angle is something I hadn't considered as part of my routine."
+          },
+          {
+            "personaId": "p_51IbVnKs_06_ray_sutherland",
+            "reason": "The specific claim — 'clinically proven to eliminate 97% of Nonenal aging odor' — names the exact compound I've been reading about, which is credible enough to warrant checking their ingredient approach and the underlying evidence."
+          },
+          {
+            "personaId": "p_51IbVnKs_07_carolyn_yuen",
+            "reason": "The specific callout of Nonenal aging odor — the actual compound, not just vague 'odor' — signals this brand understands exactly what I've been researching, and a persimmon-based laundry detergent targeting it is genuinely novel enough to investigate further."
+          },
+          {
+            "personaId": "p_51IbVnKs_08_gloria_hutchins",
+            "reason": "The specific claim of clinically proven to eliminate 97% of Nonenal aging odor — a named, concrete mechanism for exactly the problem I've been struggling with for eight years — made me want to learn more."
+          },
+          {
+            "personaId": "p_51IbVnKs_09_patrick_doherty",
+            "reason": "Specifically names Nonenal — the age-related compound I've been researching — and claims 97% elimination, which is a concrete, testable claim worth investigating further."
+          },
+          {
+            "personaId": "p_blrJdldS_09_nadia_volkov",
+            "reason": "The specific claim — '97% of Nonenal aging odor eliminated, clinically proven' — is a concrete, verifiable data point on a product mechanism I haven't seen before, and the 'first in the U.S.' framing makes it worth investigating the sourcing."
+          }
+        ],
+        "B": [
+          {
+            "personaId": "p_51IbVnKs_00_diane_kowalski",
+            "reason": "The reviews from women my age mentioning nonenal odor specifically — 'I'm 67 and had a problem with nonenal odor' — named exactly the thing I've been experiencing and couldn't fix, which made me want to look at what's actually in their persimmon products."
+          },
+          {
+            "personaId": "p_51IbVnKs_01_marcus_thibodeau",
+            "reason": "The customer quotes are specific and credible — 'I'm 67 and had a problem with nonenal odor' and 'I stunk but with Mirai, I stink no more' are exactly the kind of real, detailed testimonials from older people describing my exact situation that would make me want to investigate further."
+          },
+          {
+            "personaId": "p_51IbVnKs_02_sylvia_okonkwo",
+            "reason": "The review from 'Anita I.' — '67 and had a problem with nonenal odor until I tried Mirai Clinical' — names my exact age and exact symptom (nonenal odor), which tells me this brand understands the hormonal/aging science behind what I'm experiencing, not just generic odor."
+          },
+          {
+            "personaId": "p_51IbVnKs_03_tom_vasquez",
+            "reason": "The two real user reviews from older active people — specifically 'I'm 67 and had a problem with nonenal odor' and 'I stunk but with Mirai, I stink no more' — name my exact situation concretely enough to make me want to see what this product actually is."
+          },
+          {
+            "personaId": "p_51IbVnKs_04_linda_fenstein",
+            "reason": "The reviews from women 67+ describing nonenal-specific odor problems — and the claim that it actually worked — speaks directly to my exact situation in a way nothing else in this batch does."
+          },
+          {
+            "personaId": "p_51IbVnKs_05_janet_morrissey",
+            "reason": "The 'do I smell?' mental weight framing named my exact daily anxiety, and the age-specific testimonials (67-year-old with nonenal odor) reference a real physiological mechanism I recognize clinically — enough to want to investigate the product."
+          },
+          {
+            "personaId": "p_51IbVnKs_06_ray_sutherland",
+            "reason": "The reviews from age-matched users (67, 68) naming 'nonenal odor' specifically validate the exact problem I've been researching, and persimmon as an active ingredient is something I can actually look up independently."
+          },
+          {
+            "personaId": "p_51IbVnKs_07_carolyn_yuen",
+            "reason": "The copy naming 'the mental weight of do I smell?' and the reviews from older women describing nonenal odor specifically spoke directly to my situation — that's the kind of candid, experience-level language that makes me want to learn more."
+          },
+          {
+            "personaId": "p_51IbVnKs_08_gloria_hutchins",
+            "reason": "The review from 'Anita I.' — 'I'm 67 and had a problem with nonenal odor until I tried Mirai Clinical. IT WORKS!' — named my exact situation (age, the specific nonenal odor issue) and sounded like a real person, not marketing copy."
+          },
+          {
+            "personaId": "p_51IbVnKs_09_patrick_doherty",
+            "reason": "Mirai Clinical specifically targets nonenal/age-related body odor with persimmon-based formulations — that's the exact mechanism-specific angle I've been looking for after clinical-strength antiperspirants failed me."
+          }
+        ]
+      }
+    }
+  ]
+}

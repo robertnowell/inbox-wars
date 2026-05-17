@@ -34,6 +34,38 @@ export function buildSystemPrompt(persona: Persona): string {
     ? `You are ${persona.name}.`
     : `Your profile:\nName: ${persona.name}\nAge: ${persona.age}`;
 
+  // SKEPTICAL_PERSONAS=1 adds COMPARATIVE-discrimination priors.
+  // Goal: force the agent to rank-order emails based on what would compel
+  // THIS specific persona most, instead of clicking everything that looks vaguely
+  // good. We're NOT trying to suppress clicks — we're trying to make clicks
+  // discriminate between options. Each round is a comparative judgment: of what's
+  // here, which speaks to ME specifically right now?
+  const skepticalAddendum =
+    process.env.SKEPTICAL_PERSONAS === "1"
+      ? `
+
+HOW TO MAKE THESE DECISIONS — comparative, not absolute:
+
+Your job is to pick the BEST of what's in front of you, not to decide whether each thing individually deserves engagement. You have limited attention; you're rank-ordering the options based on what would speak to YOU SPECIFICALLY — your profile, your current concerns, your purchase history, what you've been thinking about lately.
+
+When you read an email, ask: "Compared to the others I just saw, which of these 1-2 is most relevant TO ME RIGHT NOW?" Pick those. Not all of them.
+
+PATTERN FATIGUE — you are NOT a marketer; you're a real human who's seen ten thousand promo emails. The following move people LESS, not more, because they signal generic blast rather than thought:
+• Hollow urgency phrasing ("LAST CHANCE", "24h ONLY", "Don't miss out") without a concrete reason WHY this matters TO YOU
+• Vague "FREE" offers (free product, free gift, free wipes) — your default reaction is "what's the catch?" not "great!"
+• ALL CAPS subjects + multiple 🚨 emoji — reads as desperate, not exciting
+• "Risk-Free", "Money-Back Guarantee" — table stakes for a real brand, not a differentiator
+
+What MOVES you more (rank these higher):
+• A pain point, question, or symptom you've actually experienced — named specifically (not "feel better!" but "Why does X happen?")
+• A specific percentage discount on something concrete (15% off sitewide > vague "free gift")
+• A new product launch in a category you've been researching
+• Editorial / informational content that teaches you something
+• Personalization that's clearly EARNED (e.g., references your purchase history or stated interest), not just inserted ({first_name})
+
+You will pick some emails to click in most rounds — the question is WHICH ones, based on which speak to YOUR specific situation more than the alternatives.`
+      : "";
+
   return `${intro}
 
 ${identityBlock}
@@ -42,7 +74,7 @@ ${persona.longProfile}
 
 When choosing what to open, click, or buy, weigh: does this match what I actually care about right now? Am I in the mood / season / financial spot for this? Have I bought from this brand before? Does the subject sound generic ("Last chance!") or specific ("New mineral SPF in matte")?
 
-Be selective. Picking nothing is a valid answer at every stage.`;
+Be selective. Picking nothing is a valid answer at every stage.${skepticalAddendum}`;
 }
 
 // -----------------------------------------------------------------------------
@@ -180,30 +212,41 @@ export async function runClickRound(
     return { clicks: [], tokens: emptyTokens() };
   }
 
-  const rendered = openedEmails
-    .map(
-      (e) =>
-        `=====================================
-[${e.id}]
-From: ${e.sender}
-Subject: ${e.subject}
-Preview: ${e.preheader}
-
-Body:
-${e.bodyText}
-=====================================`,
-    )
-    .join("\n\n");
-
-  const userPrompt = `You opened ${openedEmails.length} of the emails. Now you're reading each one. You have the time / curiosity to actually tap the CTA and visit the brand's site on at most 5 of them — probably fewer. It's fine to click none.
+  // Vision mode: when USE_VISION=1 and an email has a screenshot URL,
+  // send the rendered email as an image (closer to what a real user sees)
+  // instead of plain text. Falls back to text per-email if no screenshot.
+  const useVision = process.env.USE_VISION === "1";
+  const intro = `You opened ${openedEmails.length} of the emails. Now you're reading each one. You have the time / curiosity to actually tap the CTA and visit the brand's site on at most 5 of them — probably fewer. It's fine to click none.
 
 For each one you'd click, one-line reason (what specifically in the email pulled you to act). Skip the rest.
 
 The emails you opened:
+`;
+  const outro = `\nCall submit_clicks with your picks.`;
 
-${rendered}
-
-Call submit_clicks with your picks.`;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const content: any[] = [{ type: "text", text: intro }];
+  for (const e of openedEmails) {
+    const header = `\n=====================================
+[${e.id}]
+From: ${e.sender}
+Subject: ${e.subject}
+Preview: ${e.preheader}`;
+    if (useVision && e.previewScreenshotUrl) {
+      content.push({ type: "text", text: header });
+      content.push({
+        type: "image",
+        source: { type: "url", url: e.previewScreenshotUrl },
+      });
+      content.push({ type: "text", text: "=====================================" });
+    } else {
+      content.push({
+        type: "text",
+        text: `${header}\n\nBody:\n${e.bodyText}\n=====================================`,
+      });
+    }
+  }
+  content.push({ type: "text", text: outro });
 
   const response = await client.messages.create({
     model: MODEL,
@@ -215,7 +258,7 @@ Call submit_clicks with your picks.`;
         cache_control: { type: "ephemeral" },
       },
     ],
-    messages: [{ role: "user", content: userPrompt }],
+    messages: [{ role: "user", content }],
     tools: [clickTool],
     tool_choice: { type: "tool", name: "submit_clicks" },
   });

@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backtest · Inbox Wars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #faf9f5;
+      --card: #ffffff;
+      --ink: #141413;
+      --muted: #6b6862;
+      --hairline: #e8e3d8;
+      --verdict: #00e091;
+      --verdict-deep: #008a52;
+      --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+      --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+
+    .topbar { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--hairline); background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); }
+    .topbar-inner { max-width: 1280px; margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; justify-content: space-between; }
+    .wordmark { font-family: var(--font-display); font-size: 24px; font-weight: 800; letter-spacing: -0.01em; line-height: 1; color: var(--ink); text-decoration: none; }
+    .topbar-mono { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); }
+
+    main { max-width: 1280px; margin: 0 auto; padding: 64px 32px 96px; }
+
+    .eyebrow { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.25em; color: var(--muted); }
+
+    .hero { display: grid; grid-template-columns: 200px 1fr; gap: 48px; padding-bottom: 56px; margin-bottom: 56px; border-bottom: 1px solid var(--hairline); }
+    .hero-eyebrow { padding-top: 8px; }
+    .hero-num { font-family: var(--font-display); font-weight: 800; font-size: 112px; letter-spacing: -0.05em; line-height: 0.9; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .hero-num .sep { color: var(--muted); font-weight: 600; padding: 0 6px; }
+    .hero-rule { margin-top: 14px; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--verdict-deep); }
+    .hero-headline { font-family: var(--font-display); font-size: 44px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; margin-top: 28px; color: var(--ink); max-width: 760px; }
+    .hero-sub { font-size: 17px; line-height: 1.55; color: var(--muted); margin-top: 18px; max-width: 720px; }
+    .hero-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0; margin-top: 28px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--card); }
+    .hero-meta-cell { padding: 14px 18px; border-right: 1px solid var(--hairline); }
+    .hero-meta-cell:last-child { border-right: none; }
+    .hero-meta-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 4px; }
+    .hero-meta-val { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--ink); }
+
+    .pair-grid { display: grid; grid-template-columns: 200px 1fr; gap: 48px; margin-bottom: 64px; align-items: start; }
+    .pair-eyebrow { padding-top: 8px; position: sticky; top: 80px; }
+    .pair-eyebrow .ratio { margin-top: 14px; display: flex; flex-direction: column; gap: 4px; }
+    .ratio-num { font-family: var(--font-display); font-size: 36px; font-weight: 800; line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
+    .ratio-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); }
+    .verdict-chip { display: inline-flex; margin-top: 18px; padding: 8px 12px; border: 1px solid var(--hairline); border-radius: 6px; background: var(--card); font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; }
+    .verdict-chip.agreed { color: var(--verdict-deep); border-color: var(--verdict); background: rgba(0, 224, 145, 0.06); }
+    .verdict-chip.disagreed { color: var(--muted); }
+
+    .pair-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .candidate { background: var(--card); border: 1px solid var(--hairline); border-radius: 10px; overflow: hidden; }
+    .candidate-winner { border-color: var(--verdict); box-shadow: 0 0 0 1px var(--verdict); }
+
+    .candidate-head { padding: 14px 18px; border-bottom: 1px solid var(--hairline); }
+    .candidate-tag { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 6px; }
+    .candidate-winner .candidate-tag { color: var(--verdict-deep); }
+    .candidate-name { font-family: var(--font-sans); font-size: 12px; color: var(--muted); line-height: 1.35; }
+
+    .candidate-body { padding: 18px; display: flex; flex-direction: column; gap: 18px; }
+
+    .screenshot-wrap { background: var(--paper); border: 1px solid var(--hairline); border-radius: 6px; overflow: hidden; }
+    .screenshot { width: 100%; height: 320px; object-fit: cover; object-position: top; display: block; }
+
+    .copy .subject { font-family: var(--font-display); font-weight: 700; font-size: 17px; line-height: 1.3; color: var(--ink); margin-bottom: 6px; }
+    .copy .preview { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+    .stats { border: 1px solid var(--hairline); border-radius: 6px; overflow: hidden; }
+    .stat-header { display: grid; grid-template-columns: 1.4fr 1fr 1fr; padding: 8px 12px; background: var(--paper); border-bottom: 1px solid var(--hairline); }
+    .col-label { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); }
+    .col-label.sim { color: var(--ink); }
+    .stat-row { display: grid; grid-template-columns: 1.4fr 1fr 1fr; padding: 8px 12px; border-bottom: 1px solid var(--hairline); align-items: baseline; }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-row.stat-highlight { background: rgba(0, 224, 145, 0.04); }
+    .candidate-loser .stat-row.stat-highlight { background: transparent; }
+    .stat-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted); }
+    .stat-val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink); font-weight: 500; }
+    .stat-val.sim { color: var(--ink); font-weight: 600; }
+    .candidate-loser .stat-val { color: var(--muted); }
+
+    .quotes-block .quotes-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 10px; }
+    .quotes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+    .quote { padding: 10px 12px; background: var(--paper); border-left: 2px solid var(--hairline); border-radius: 0 4px 4px 0; font-size: 13px; color: var(--ink); line-height: 1.45; }
+    .candidate-winner .quote { border-left-color: var(--verdict); }
+    .qmark { color: var(--muted); font-family: var(--font-display); font-size: 18px; line-height: 0; vertical-align: middle; margin-right: 4px; }
+    .qfrom { font-family: var(--font-mono); font-size: 10px; color: var(--muted); margin-top: 4px; letter-spacing: 0.04em; }
+    .no-quotes { font-family: var(--font-mono); font-size: 11px; color: var(--muted); padding: 8px 0; text-transform: lowercase; letter-spacing: 0.05em; }
+
+    .footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--hairline); display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .footer .footer-meta { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); }
+
+    @media (max-width: 1100px) {
+      .pair-cards { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 760px) {
+      main, .topbar-inner { padding-left: 20px; padding-right: 20px; }
+      .hero, .pair-grid { grid-template-columns: 1fr; gap: 24px; }
+      .hero-num { font-size: 80px; }
+      .hero-headline { font-size: 32px; }
+      .pair-eyebrow { position: static; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+      .pair-eyebrow .ratio { margin-top: 0; flex-direction: row; align-items: baseline; gap: 8px; }
+      .verdict-chip { margin-top: 0; }
+      .screenshot { height: 240px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="wordmark">INBOX WARS</a>
+      <div class="topbar-mono">backtest · mirai clinical · 2026-05-17</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <aside class="hero-eyebrow">
+        <div class="eyebrow">Real Klaviyo backtest</div>
+      </aside>
+      <div>
+        <div class="hero-num">3<span class="sep">/</span>3</div>
+        <div class="hero-rule">100% agreement · open · click · revenue all aligned</div>
+        <h1 class="hero-headline">Sim picked the real winner on every pair.</h1>
+        <p class="hero-sub">
+          Three pairs of real Mirai Clinical campaigns sent in the last 90 days via Klaviyo, each with a 6×–14× clickRate gap.
+          We blinded the labels, rendered the real HTML to images, then ran 30 stratified persona agents through each pair as
+          a between-subjects A/B with vision in the click round. Verdict: the simulator's clicks ranked the real winner first
+          in every pair — and open, click, and revenue signals all agreed.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-cell">
+            <div class="hero-meta-label">Agents / pair</div>
+            <div class="hero-meta-val tabular-nums">30</div>
+          </div>
+          <div class="hero-meta-cell">
+            <div class="hero-meta-label">Persona pools</div>
+            <div class="hero-meta-val">Mirai · Gymshark · Everlane</div>
+          </div>
+          <div class="hero-meta-cell">
+            <div class="hero-meta-label">Click round</div>
+            <div class="hero-meta-val">Vision (HCTI)</div>
+          </div>
+          <div class="hero-meta-cell">
+            <div class="hero-meta-label">Klaviyo window</div>
+            <div class="hero-meta-val">Last 90 days</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  <section class="pair-grid">
+    <aside class="pair-eyebrow">
+      <div class="eyebrow">Pair 01</div>
+      <div class="ratio">
+        <span class="ratio-num tabular-nums">14.08×</span>
+        <span class="ratio-label">real clickRate gap</span>
+      </div>
+      <div class="verdict-chip agreed">
+        ✓ Sim picked the real winner
+      </div>
+    </aside>
+    <div class="pair-cards">
+      
+  <article class="candidate candidate-winner">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real winner
+      </div>
+      <div class="candidate-name">April 1, 2026 Faisal Kopi : Out of business sale for April Fool's d…</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e3390-e0d4-74ca-a4c2-48b10b396629" alt="GOING OUT OF BUSINESS SALE 🚨" />
+      </div>
+      <div class="copy">
+        <div class="subject">GOING OUT OF BUSINESS SALE 🚨</div>
+        <div class="preview">Our warehouse is almost completely empty...</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">57.75%</div>
+    <div class="stat-val sim">30.00%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">2.72%</div>
+    <div class="stat-val sim">23.33%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">23.33%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$9.59</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$288</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">11,713</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific mention of 'Nonenal' — the actual compound behind post-40 body odor — tells me this brand understands the mechanism, not just the symptom, which is exactly what I look for.</span>
+    <div class="qfrom">— p_51IbVnKs_00_diane_kowalski</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The nonenal-specific angle (odor compound in people over 40) is exactly the problem I've been researching, and the Shark Tank + Washington Post callouts plus a doctor recommendation give it enough credibility to warrant a look at their product page.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The 'Nonenal Eliminating' angle — specifically targeting odor changes in people over 40 — is exactly what I've been noticing, and the Shark Tank + Washington Post credibility signals plus a concrete 15% off made me want to look closer at the product.</span>
+    <div class="qfrom">— p_51IbVnKs_03_tom_vasquez</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+      
+  <article class="candidate candidate-loser">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real loser
+      </div>
+      <div class="candidate-name">Feb 26, 2026 Faisal Kopi: Risk-Free Return, Money Back Guarantee to…</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e3390-dfc6-789f-a042-9c503969c125" alt="No Returns Needed on Free Products 🚨 Ends 24h" />
+      </div>
+      <div class="copy">
+        <div class="subject">No Returns Needed on Free Products 🚨 Ends 24h</div>
+        <div class="preview">Money-back guarantee. No return needed.</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">26.91%</div>
+    <div class="stat-val sim">10.00%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">0.19%</div>
+    <div class="stat-val sim">6.67%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">6.67%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$4.53</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$136</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">16,212</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific claim that it targets Nonenal — the aging-related odor compound — names exactly what I've been researching, and the Shark Tank + Washington Post callouts plus a doctor recommendation give it enough credibility to warrant a closer look.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific claim that Mirai eliminates 97% of Nonenal — named as the compound behind aging/hormonal odor — directly maps to what I've been trying to understand about my own situation physiologically, and the chart format feels data-backed rather than just marketing fluff.</span>
+    <div class="qfrom">— p_51IbVnKs_05_janet_morrissey</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+    </div>
+  </section>
+
+  <section class="pair-grid">
+    <aside class="pair-eyebrow">
+      <div class="eyebrow">Pair 02</div>
+      <div class="ratio">
+        <span class="ratio-num tabular-nums">6.80×</span>
+        <span class="ratio-label">real clickRate gap</span>
+      </div>
+      <div class="verdict-chip agreed">
+        ✓ Sim picked the real winner
+      </div>
+    </aside>
+    <div class="pair-cards">
+      
+  <article class="candidate candidate-winner">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real winner
+      </div>
+      <div class="candidate-name">May 14, 2026 Faisal Kopi : Why does is smell musty</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e3390-e225-7bb0-bfda-5c78699aacee" alt="Does your laundry still smell musty, {{ person.first_name|default:'friend' }}?" />
+      </div>
+      <div class="copy">
+        <div class="subject">Does your laundry still smell musty, friend?</div>
+        <div class="preview">It's not your detergent but nonenal aging odor.</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">51.51%</div>
+    <div class="stat-val sim">40.00%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">2.60%</div>
+    <div class="stat-val sim">40.00%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">30.00%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$7.99</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$240</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">17,670</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">Names 'nonenal' specifically — the compound that survives washing and increases after 40 — which is exactly the mechanism I've been trying to understand and haven't seen other brands actually explain.</span>
+    <div class="qfrom">— p_51IbVnKs_00_diane_kowalski</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">Naming 'nonenal' specifically as the post-40 compound that survives washing — that's the exact technical explanation I've been looking for and haven't seen in any drugstore marketing.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific explanation of Nonenal — a compound the body produces more of after 40 that survives washing — named exactly the mystery I've been living with and couldn't explain, and the persimmon extract angle is genuinely novel science I haven't seen before.</span>
+    <div class="qfrom">— p_51IbVnKs_02_sylvia_okonkwo</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+      
+  <article class="candidate candidate-loser">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real loser
+      </div>
+      <div class="candidate-name">Mar 4, 2026 Faisal Kopi : Caregiver Appreciation Day 1 FREE wipes o…</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e3390-e2d8-7393-b272-ad17ff40ec57" alt="⏳24h Only: FREE Wipes for Caregiver Appreciation" />
+      </div>
+      <div class="copy">
+        <div class="subject">⏳24h Only: FREE Wipes for Caregiver Appreciation</div>
+        <div class="preview">Helping eliminate aging odor for lasting comfort and confidence.</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">38.42%</div>
+    <div class="stat-val sim">26.67%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">0.38%</div>
+    <div class="stat-val sim">10.00%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">10.00%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$5.36</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$161</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">43,356</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The Shark Tank quote specifically mentioning persimmon eliminating 'Nonenal' odor in men and women over 40 is exactly the kind of specific, problem-named social proof I look for — that's my situation described precisely.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific mention of 'Nonenal' (the compound behind aging-related odor) in the Shark Tank quote signals this brand actually understands the root-cause science I've been researching — that's enough to make me want to read more on their site.</span>
+    <div class="qfrom">— p_51IbVnKs_04_linda_fenstein</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The Shark Tank quote specifically naming Nonenal elimination for over-40s, plus a clinician (Dr. Jeannie Giese) recommending it to patients, directly addresses my physiological understanding of age-related odor — more credible signal than anything else in front of me right now.</span>
+    <div class="qfrom">— p_51IbVnKs_05_janet_morrissey</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+    </div>
+  </section>
+
+  <section class="pair-grid">
+    <aside class="pair-eyebrow">
+      <div class="eyebrow">Pair 03</div>
+      <div class="ratio">
+        <span class="ratio-num tabular-nums">6.12×</span>
+        <span class="ratio-label">real clickRate gap</span>
+      </div>
+      <div class="verdict-chip agreed">
+        ✓ Sim picked the real winner
+      </div>
+    </aside>
+    <div class="pair-cards">
+      
+  <article class="candidate candidate-winner">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real winner
+      </div>
+      <div class="candidate-name">May 16, 2026 Kopi : Laundry Detergent Sheet Waitlist</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e33b2-dd55-7f25-be32-f8e7e67e17b4" alt="NEW Persimmon Laundry Detergent Coming" />
+      </div>
+      <div class="copy">
+        <div class="subject">NEW Persimmon Laundry Detergent Coming</div>
+        <div class="preview">Only U.S. detergent that eliminate Nonenal aging odor.</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">42.21%</div>
+    <div class="stat-val sim">40.00%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">2.37%</div>
+    <div class="stat-val sim">36.67%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">33.33%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$11.49</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$345</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">19,048</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific claim of 'clinically proven to eliminate 97% of Nonenal aging odor' names the exact compound behind the odor shift I've been experiencing — that's the kind of mechanistic specificity that makes me want to read more.</span>
+    <div class="qfrom">— p_51IbVnKs_00_diane_kowalski</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The specific claim — 'clinically proven to eliminate 97% of Nonenal aging odor' plus the new laundry detergent sheet product aimed at people 40+ — directly maps to what I've been researching and nothing else in my rotation has addressed Nonenal specifically.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">Names 'Nonenal aging odor' specifically — that's the exact phenomenon I've been quietly dealing with since my late fifties, and a clinically-framed laundry product targeting it is something I haven't seen before.</span>
+    <div class="qfrom">— p_51IbVnKs_02_sylvia_okonkwo</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+      
+  <article class="candidate candidate-loser">
+    <header class="candidate-head">
+      <div class="candidate-tag">
+        Real loser
+      </div>
+      <div class="candidate-name">YOCTO - February 22 - OTP to Subscription Conversion #7</div>
+    </header>
+    <div class="candidate-body">
+      <div class="screenshot-wrap">
+        <img class="screenshot" src="https://hcti.io/v1/image/019e3390-e438-78c8-86eb-cdc3aee180cc" alt="Are you the stinky one, {{ person.first_name|default:'friend' }}?" />
+      </div>
+      <div class="copy">
+        <div class="subject">Are you the stinky one, friend?</div>
+        <div class="preview">Feel confident at family gatherings again. Subscribe and save up to 40% OFF your first order.</div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-header">
+          <div></div>
+          <div class="col-label">Real (Klaviyo)</div>
+          <div class="col-label sim">Sim · 30 agents</div>
+        </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Open rate</div>
+    <div class="stat-val">51.86%</div>
+    <div class="stat-val sim">33.33%</div>
+  </div>
+        
+  <div class="stat-row stat-highlight">
+    <div class="stat-label">Click rate</div>
+    <div class="stat-val">0.39%</div>
+    <div class="stat-val sim">33.33%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Conversion rate</div>
+    <div class="stat-val">0.00%</div>
+    <div class="stat-val sim">33.33%</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Revenue / recipient</div>
+    <div class="stat-val">$0.00</div>
+    <div class="stat-val sim">$8.32</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Total revenue</div>
+    <div class="stat-val">$0</div>
+    <div class="stat-val sim">$250</div>
+  </div>
+        
+  <div class="stat-row ">
+    <div class="stat-label">Recipients</div>
+    <div class="stat-val">24,300</div>
+    <div class="stat-val sim">30</div>
+  </div>
+      </div>
+
+      <div class="quotes-block">
+        <div class="quotes-label">Why agents clicked this</div>
+        <ul class="quotes">
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The reviews from women my age mentioning nonenal odor specifically — 'I'm 67 and had a problem with nonenal odor' — named exactly the thing I've been experiencing and couldn't fix, which made me want to look at what's actually in their persimmon products.</span>
+    <div class="qfrom">— p_51IbVnKs_00_diane_kowalski</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The customer quotes are specific and credible — 'I'm 67 and had a problem with nonenal odor' and 'I stunk but with Mirai, I stink no more' are exactly the kind of real, detailed testimonials from older people describing my exact situation that would make me want to investigate further.</span>
+    <div class="qfrom">— p_51IbVnKs_01_marcus_thibodeau</div>
+  </li>
+  <li class="quote">
+    <span class="qmark">"</span>
+    <span class="qtext">The review from 'Anita I.' — '67 and had a problem with nonenal odor until I tried Mirai Clinical' — names my exact age and exact symptom (nonenal odor), which tells me this brand understands the hormonal/aging science behind what I'm experiencing, not just generic odor.</span>
+    <div class="qfrom">— p_51IbVnKs_02_sylvia_okonkwo</div>
+  </li></ul>
+      </div>
+    </div>
+  </article>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="footer-meta">
+        inbox wars · agentic A/B simulator · claude sonnet 4.6
+      </div>
+      <div class="footer-meta">
+        5/16/2026, 7:31:58 PM
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
